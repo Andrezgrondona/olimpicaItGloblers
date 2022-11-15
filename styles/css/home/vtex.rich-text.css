@@ -1,0 +1,27 @@
+.paragraph--home__section--title{
+    color:blue
+}
+
+.paragraph--button_link_supermercado{
+    background-color: rgb(79, 222, 32);
+    border-radius: 10px;
+    color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.paragraph--button_link_drogueria{
+    background-color: rgb(32, 54, 222);
+    border-radius: 10px;
+    color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.paragraph--button_link_electrodomesticos{
+    background-color: rgb(222, 149, 32);
+    border-radius: 10px;
+    color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,92 @@
+{
+    "drawer#header__mobile--menu":{
+        "children":[
+          "menu#header__menu"
+        ]
+      }, 
+      "menu#header__menu":{
+        "children":[
+          "menu-item#department__one",
+          "menu-item#department__two"
+        ],
+        "props":{
+          "orientation":"vertical"
+        }
+      },
+      "menu-item#department__one":{
+        "props":{
+          "id":"department-one",
+          "type":"custom",
+          "itemProps":{
+             "type":"external",
+             "href":"https://www.google.com/",
+             "noFollow":true,
+             "tagTitle":"Google title",
+             "text":"categoria 1"
+          }
+        },
+        "blocks":["submenu.accordion#department__one"]
+    
+      },
+      "submenu.accordion#department__one":{
+        "children":[
+          "menu#department__one"
+        ]
+      },
+      "menu#department__one":{
+        "children":[
+          "menu-item#category__one",
+          "menu-item#category__two"
+        ],
+        "props":{
+          "orientation":"vertical"
+        }
+      },
+      "menu-item#category__one":{
+        "props":{
+          "id":"category__one",
+          "type":"custom",
+          "itemProps":{
+            "type":"external",
+            "href":"/",
+            "noFollow":true,
+            "tagTitle":"google drive",
+            "text":"google drive"
+          }
+        }
+      },
+      "menu-item#category__two":{
+        "props":{
+          "id":"category__two",
+          "type":"custom",
+          "itemProps":{
+            "type":"external",
+            "href":"/",
+            "noFollow":true,
+            "tagTitle":"google meet",
+            "text":"google meet"
+          }
+        }
+      },
+      "menu-item#department__two":{
+        "props":{
+          "id":"department-one",
+          "type":"custom",
+          "itemProps":{
+             "type":"external",
+             "href":"https://www.google.com/",
+             "noFollow":true,
+             "tagTitle":"bing title",
+             "text":"categoria 2"
+          }
+        }
+    
+      },
+      
+      /* ........texto de prueba........ */
+      "rich-text#test":{
+        "props":{
+          "text":"texto de pruebas"
+        }
+      }
+}

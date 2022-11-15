@@ -1,0 +1,10 @@
+{
+    "rich-text#ofertas_imperdibles": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "¡Ofertas imperdibles en tecnologiass!",
+          "font": "t-heading-5"
+        }
+      }
+}

@@ -1,0 +1,16 @@
+{
+    "image#home__banner--one":{
+        "title":"Imagen del home",
+        "props":{
+            "src":"assets/img/card-shop/card.jpg",
+            
+            "title":"B2B commerce",
+            "blockClass":"home__image",
+            "link":{
+                "url":"www.google.com",
+                "newTab":true,
+                "attributeNoFollow":true
+            }
+        }
+    }
+}

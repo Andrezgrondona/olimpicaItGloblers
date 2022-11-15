@@ -1,0 +1,71 @@
+{
+    "header-layout.mobile":{
+        "title":"header mobile",
+         "children":[
+          "header-row#desktop__container-header",
+          "header-row#header__middle"
+           ]
+      },
+      "header-row#desktop__container-header":{
+        "title":"header superior",
+        "children":[
+          "logo#header__top--logo",
+          "header-spacer",
+          "search-bar",
+          "minicart.v2",
+          "login"
+         
+        ],
+        "props": {
+          "blockClass": "desktop__container-header"
+        }
+      
+      },
+      "logo#header__top--logo":{
+        "title":"logo",
+        "props":{
+          "url":"assets/img/logo/logo_olimpica.png",
+          "width":160,
+          "href":"/"
+        }
+      },
+      "login":{
+        "props": {
+          "emailAndPasswordTitle": "LOG-IN",
+          "accessCodeTitle": "Acess Code LOG-IN",
+          "emailPlaceholder": "e-mail",
+          "passwordPlaceholder": "password",
+          "showPasswordVerificationIntoTooltip": true,
+          "showIconProfile":true
+        }
+      },
+      "header-row#header__middle":{
+        "title":"header medio",
+        "children":[
+          "drawer#header__mobile--menu" ,
+          "search-bar#header__search" 
+        ],
+        "props":{
+          "blockClass":"header__middle"
+        }
+      },
+       //auto complete de la version mobile
+        "autocomplete-result-list.v2": {
+          "blocks": ["product-summary"]
+        },
+      "search-bar#header__search":{
+        "blocks": ["autocomplete-result-list.v2"],
+        "props":{
+          "openAutocompleteOnFocus": true} 
+      } ,
+      "minicart.v2":{
+        "props":{
+          //"MinicartIcon":"mpa-pause",
+          "variation":"popup",
+          "itemCountMode":"total",
+          "quantityDisplay":"always"
+        }
+      }
+      
+    
+}

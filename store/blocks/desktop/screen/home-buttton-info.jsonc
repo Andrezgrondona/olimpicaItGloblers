@@ -1,0 +1,41 @@
+{
+    "flex-layout.row#home__section--button_info":{
+        "children":[
+            "rich-text#_button_supermercado",
+            "rich-text#_button_drogueria",
+            "rich-text#_electrodomesticos"
+        ],
+        "props":{
+            "horizontalAlign":"center",
+            "colSizing":"auto"
+        }
+    },
+    "rich-text#_button_supermercado":{
+        "props": {
+            "blockClass":"button_link_supermercado",
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Supermercado",
+            "font": "t-heading-5"
+          }
+    },
+    "rich-text#_button_drogueria":{
+        "props": {
+            "blockClass":"button_link_drogueria",
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Drogueria",
+            "font": "t-heading-5"
+          }
+    },
+    "rich-text#_electrodomesticos":{
+        "props": {
+            "blockClass":"button_link_electrodomesticos",
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Electrodomestiocos",
+            "font": "t-heading-5"
+          }
+    }
+
+}
