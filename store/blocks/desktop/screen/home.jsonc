@@ -9,7 +9,8 @@
       "list-context.image-list#home__slider--promo",
       "flex-layout.row#banner-imagenes2",
       "list-context.image-list#home__slider--list",
-      "rich-text#ofertas_imperdibles"
+      "rich-text#ofertas_imperdibles",
+      "search-result-layout.customQuery#home__search"
      
 
 
@@ -72,30 +73,49 @@
     "props":{
       "showCloseButton":true
     }
-  }
+  },
+
+  //...............Carga productos al inicio del home(traemos los productos del backoffice)..............................
+  "search-result-layout.customQuery#home__search":{
+    "props":{
+      "querySchema":{
+        "skusFilter":"ALL",
+        "simulationBehavior":"skip"
+      }
+    },
+    "blocks":[
+      "search-result-layout.desktop#home__search--desktop",
+      "search-result-layout.desktop#home__search--mobile"
+    ]
+  },
+    "search-result-layout.desktop#home__search--desktop":{
+      "children":[
+        "rich-text#ofertas_imperdibles"
+      ]
+    },
+    "search-result-layout.desktop#home__search--mobile":{
+      "children":[
+        "flex-layout.row#home__results"
+      ]
+    },
+    "flex-layout.row#home__results":{
+      "children":[
+        "flex-layout.col#home__results--search"
+      ]
+    },
+    "flex-layout.col#home__results--search":{
+      "children":[
+        "search-content#home_results--search"
+      ]
+    },
+    "search-content#home_results--search":{
+      "blocks":["gallery", "not-found"]
+    },
+    "gallery":{
+      "blocks":["product-summary.shelf"]
+    }
 }
 
 
 
 
-
-
-
-/* -------------Ejercico 1 -------------------------- */
-/* {
-  "store.home": { 
-    "blocks": [
-      "flex-layout.row#home__section--one"
-    ]
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "Texto de prueba del home 10",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  }
-} */
-
-/* Ejercicio slides */

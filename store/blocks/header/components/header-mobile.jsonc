@@ -10,6 +10,7 @@
         "title":"header superior",
         "children":[
           "logo#header__top--logo",
+          "rich-text#categorias__header--desktop",
           "header-spacer",
           "search-bar",
           "minicart.v2",
@@ -27,6 +28,14 @@
           "url":"assets/img/logo/logo_olimpica.png",
           "width":160,
           "href":"/"
+        }
+      },
+      "rich-text#categorias__header--desktop":{
+        "props": {
+          "blockClass":"Categorias_link",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "Categorias"
         }
       },
       "login":{
@@ -57,15 +66,46 @@
         "blocks": ["autocomplete-result-list.v2"],
         "props":{
           "openAutocompleteOnFocus": true} 
-      } ,
+      },
+      /* ............................MINICART carrito vacio ................................................. */
       "minicart.v2":{
         "props":{
           //"MinicartIcon":"mpa-pause",
+          "icon":"hpa-arrow-to-bottom",
           "variation":"popup",
           "itemCountMode":"total",
           "quantityDisplay":"always"
+        },
+        "children":["minicart-base-content"]
+      },
+      "minicart-base-content":{
+        "blocks":["minicart-empty-state"],
+        "children":["minicart-product-list","flex-layout.row#minicart__footer"]
+      },
+      "minicart-empty-state":{
+        "children":["flex-layout.row#minicart__empty"]
+      },
+      "flex-layout.row#minicart__empty":{
+        "children":[
+        "flex-layout.col#minicart__empty"
+        ] 
+      },
+      "flex-layout.col#minicart__empty":{
+        "children":[
+            "rich-text#minicart__empty--text"
+        ]
+      },
+      "rich-text#minicart__empty--text":{
+        "props":{
+            "text": "El carrito esta vacio",
+            "textAligment":"CENTER",
+            "textPosition":"CENTER"
         }
-      }
+      },
+      "flex-layout.row#minicart__footer":{
+        "children":["minicart-summary", "minicart-checkout-button"]
+      } 
+      
       
     
 }
