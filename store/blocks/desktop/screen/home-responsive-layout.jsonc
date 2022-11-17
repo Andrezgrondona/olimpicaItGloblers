@@ -5,6 +5,49 @@
           "rich-text#home__info--phone"
         ]
       },
+      
+      "responsive-layout.tablet#home__info--tablet":{
+        "title":"componente Tableta",
+        "children":[
+          "rich-text#home__info--tablet"
+        ]
+      },
+      "responsive-layout.desktop#home__info--desktop":{
+        "title":"componente Escritorio",
+        "children":[
+          "rich-text#home__info--dektop"
+        ]
+      },
+      "rich-text#home__info--phone":{
+        "props":{
+          "text":"#resolucion de telefono"
+        }
+      },
+      
+      "rich-text#home__info--tablet":{
+        "props":{
+          "text":"#resolucion de tableta"
+        }
+      },
+      "rich-text#home__info--dektop":{
+        "props":{
+          "text":"#resolucion de escritorios"
+        }
+      }
+}
+
+
+
+/* 
+
+
+{
+    "responsive-layout.phone#home__info--phone":{
+        "title":"componente Telefono",
+        "children":[
+          "rich-text#home__info--phone"
+        ]
+      },
       "responsive-layout.mobile#home__info--mobile":{
         "title":"componente Movil",
         "children":[
@@ -44,3 +87,7 @@
         }
       }
 }
+
+
+
+*/

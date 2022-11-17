@@ -10,19 +10,17 @@
       "flex-layout.row#banner-imagenes2",
       "list-context.image-list#home__slider--list",
       "rich-text#ofertas_imperdibles",
-      "search-result-layout.customQuery#home__search"
+      "search-result-layout.customQuery#home__search",
      
-
-
       //RESPONSIVE LAYOUT
-       /*  "responsive-layout.phone#home__info--phone",
+       "responsive-layout.phone#home__info--phone",
         "responsive-layout.mobile#home__info--mobile",
         "responsive-layout.tablet#home__info--tablet",
         "responsive-layout.desktop#home__info--desktop"
 
       //MODAL
-      "modal-trigger#home__modal--children",
-      "modal-trigger#home__modal--event",*/ 
+      /* "modal-trigger#home__modal--children",
+      "modal-trigger#home__modal--event",  */
     ]
   },
   "modal-trigger#home__modal--children":{

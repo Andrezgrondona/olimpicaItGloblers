@@ -1,0 +1,26 @@
+{
+    "responsive-layout.mobile#home__info--mobile":{
+        "title":"componente Movil",
+        "children":[
+          "rich-text#home__info--mobile",
+          "image#home__banner-mobile"
+
+        ]
+      },
+      "rich-text#home__info--mobile":{
+        "props":{
+          "text":"#resolucion de movil"
+        }
+      },
+      "image#home__banner-mobile": {
+        "props": {
+     
+          "src": "assets/img/banner--principal.jpg",
+          "width":"80%",
+          "horizontalAlign":"center"
+    
+        }
+      }
+}
+
+

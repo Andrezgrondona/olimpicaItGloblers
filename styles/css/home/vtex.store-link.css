@@ -1,0 +1,9 @@
+.label--botonLinkeable{
+    color: rgb(124, 100, 100);
+    margin: auto;
+}
+
+.link--botonLinkeable{
+    margin: auto;
+    background-color: rgb(17, 255, 0);
+}

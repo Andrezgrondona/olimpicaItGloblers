@@ -12,7 +12,7 @@
           "logo#header__top--logo",
           "rich-text#categorias__header--desktop",
           "header-spacer",
-          "search-bar",
+          "search-bar#header__search",
           "minicart.v2",
           "login"
          
@@ -48,6 +48,7 @@
           "showIconProfile":true
         }
       },
+      /* ..........................Buscador ineligente............................. */
       "header-row#header__middle":{
         "title":"header medio",
         "children":[
@@ -55,7 +56,8 @@
           "search-bar#header__search" 
         ],
         "props":{
-          "blockClass":"header__middle"
+          "blockClass":"header__middle",
+          "width":"50%"
         }
       },
        //auto complete de la version mobile
