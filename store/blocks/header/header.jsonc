@@ -16,9 +16,57 @@
   "header-layout.desktop":{
     "title":"header desktop",
     "children":[
+      "header-row#notification_bar",
       "header-row#desktop__container-header"
+      
     ]
+  },
+  /* ....Barra Notificaciones header desktop */
+  "header-row#notification_bar": {
+    "children": [
+      "header-border",
+      "notification.bar#home",
+      "notification.bar#home1",
+      "notification.bar#home2",
+      "notification.bar#home3",
+      "notification.bar#home4"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "blockClass":"notification_bar",
+      "content": "Venta telefonicas"
+    }
+  },
+  "notification.bar#home1": {
+    "props": {
+      "blockClass":"notification_bar",
+      "content": "Atencion al cliente"
+    }
+  },
+  "notification.bar#home2": {
+    "props": {
+      "blockClass":"notification_bar",
+      "content": "Whatssap 3027363373"
+    }
+  },
+  "notification.bar#home3": {
+    "props": {
+      "blockClass":"notification_bar",
+      "content": "Viajar olimpica"
+    }
+  },
+  "notification.bar#home4": {
+    "props": {
+      "blockClass":"notification_bar",
+      "content": "Tarjeta olipmpica"
+    }
   }
+ 
+ 
    
 }
 

@@ -1,109 +1,129 @@
 {
-    "header-layout.mobile":{
-        "title":"header mobile",
+  "header-layout.mobile":{
          "children":[
-          "header-row#desktop__container-header",
-          "header-row#header__middle"
-           ]
+          "header-row#mobile__container-header",
+          "search-bar#header__search" 
+           ],
+           "props":{
+            "blockClass":"container_search_bar--mobile"
+           } 
       },
-      "header-row#desktop__container-header":{
-        "title":"header superior",
+      /* .................Header Mobile................... */
+      "header-row#mobile__container-header":{
         "children":[
-          "logo#header__top--logo",
-          "rich-text#categorias__header--desktop",
-          "header-spacer",
-          "search-bar#header__search",
-          "minicart.v2",
-          "login"
-         
+          "drawer#header__mobile--menu",
+          "logo#header__top--logo_mobile",
+          //"flex-layout.row#icon_login_mobile",
+          "flex-layout.row#login__mobile",
+          "flex-layout.row#icon_cart"
         ],
-        "props": {
-          "blockClass": "desktop__container-header"
-        }
-      
-      },
-      "logo#header__top--logo":{
-        "title":"logo",
         "props":{
+          "blockClass":"headerMobile",
+          //"width":70,
+          "horizontalAlign":"between"
+        }
+      },
+      "flex-layout.row#login__mobile":{
+        "children":[
+          "flex-layout.col#login__mobile"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "flex-layout.col#login__mobile":{
+        "children":[
+          "icon#home_mobile",
+         "login"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "icon#home_mobile":{
+        "props":{
+          "id":"hpa-profile",
+          "size":30
+        }
+     },
+      
+       /* ............Link Categorias del header mobile............ */
+          "link#categorias_header-mobile": {
+            "children":[
+              "icon#home_bars-mobile",
+              "rich-text#categorias_header-mobile"
+            ],
+            "props": {
+            "blockClass":"botonLinkeable_categorias_header-mobile",
+              "href": "login"
+            }
+          },
+          "icon#home_bars-mobile":{
+            "props":{
+              "id":"menu-burger",
+              "size":20
+            }
+          },
+          "rich-text#categorias_header-mobile":{
+          "props":{
+            "blockClass":"botonLinkeable",
+            "text":"Categorias"
+          }
+          },
+    /* ............Link Categorias del header mobile............ */
+      
+      "logo#header__top--logo_mobile":{
+        "title":"logo mobile",
+        "props":{
+          "blockClass":"logo_olimpica_mobile",
           "url":"assets/img/logo/logo_olimpica.png",
-          "width":160,
           "href":"/"
         }
       },
-      "rich-text#categorias__header--desktop":{
-        "props": {
-          "blockClass":"Categorias_link",
-          "textAlignment": "CENTER",
-          "textPosition": "LEFT",
-          "text": "Categorias"
-        }
+     
+      /* vitrina de producto para el minicart (product-list) - Dia 9 min.12 */
+      "minicart-product-list":{
+        "blocks":["product-list#minicart"]
       },
-      "login":{
-        "props": {
-          "emailAndPasswordTitle": "LOG-IN",
-          "accessCodeTitle": "Acess Code LOG-IN",
-          "emailPlaceholder": "e-mail",
-          "passwordPlaceholder": "password",
-          "showPasswordVerificationIntoTooltip": true,
-          "showIconProfile":true
-        }
-      },
-      /* ..........................Buscador ineligente............................. */
-      "header-row#header__middle":{
-        "title":"header medio",
-        "children":[
-          "drawer#header__mobile--menu" ,
-          "search-bar#header__search" 
-        ],
-        "props":{
-          "blockClass":"header__middle",
-          "width":"50%"
-        }
-      },
-       //auto complete de la version mobile
-        "autocomplete-result-list.v2": {
-          "blocks": ["product-summary"]
-        },
-      "search-bar#header__search":{
-        "blocks": ["autocomplete-result-list.v2"],
-        "props":{
-          "openAutocompleteOnFocus": true} 
-      },
-      /* ............................MINICART carrito vacio ................................................. */
-      "minicart.v2":{
-        "props":{
-          //"MinicartIcon":"mpa-pause",
-          "icon":"hpa-arrow-to-bottom",
-          "variation":"popup",
-          "itemCountMode":"total",
-          "quantityDisplay":"always"
-        },
-        "children":["minicart-base-content"]
-      },
-      "minicart-base-content":{
-        "blocks":["minicart-empty-state"],
-        "children":["minicart-product-list","flex-layout.row#minicart__footer"]
-      },
-      "minicart-empty-state":{
-        "children":["flex-layout.row#minicart__empty"]
-      },
-      "flex-layout.row#minicart__empty":{
-        "children":[
-        "flex-layout.col#minicart__empty"
-        ] 
-      },
-      "flex-layout.col#minicart__empty":{
-        "children":[
-            "rich-text#minicart__empty--text"
+      "product-list#minicart":{
+        "blocks":[
+          "product-list-content-mobile"
         ]
       },
-      "rich-text#minicart__empty--text":{
-        "props":{
-            "text": "El carrito esta vacio",
-            "textAligment":"CENTER",
-            "textPosition":"CENTER"
-        }
+      "product-list-content-mobile":{
+        "children":[
+          "flex-layout.row#minicart__row--mobile"
+        ]
       },
+      "flex-layout.row#minicart__row--mobile":{
+        "children":[
+          "flex-layout.col#minicart_col--image",
+          "flex-layout.col#minicart_col--info",
+          "flex-layout.col#minicart_col--remove"
+        ]
+      },
+        "flex-layout.col#minicart_col--image":{
+          "children":[
+            "product-list-image"
+          ]
+        },
+        "flex-layout.col#minicart_col--info":{
+          "children":[
+            "vtex.product-list@0.x:product-name",
+            "quantity-selector#minicart",
+            "price"
+          ]
+        },
+        "flex-layout.col#minicart_col--remove":{
+          "children":[
+            "remove-button" 
+          ]
+        },
+        "quantity-selector#minicart":{
+          "props":{
+            "mode":"stepper"
+          }
+        },
       "flex-layout.row#minicart__footer":{
         "children":["minicart-summary", "minicart-checkout-button"]
       } 

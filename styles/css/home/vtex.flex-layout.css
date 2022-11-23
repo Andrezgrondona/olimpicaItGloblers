@@ -7,6 +7,15 @@
     background-color: red;
 }
 
+.flexColChild--img_grid-four{
+    width: 90%;
+}
+/* responsive imagenes grid four */
+@media (max-width: 670px) {
+    .flexColChild--img_grid-four{
+        width: 80%;
+    }
+  }
 
 
 

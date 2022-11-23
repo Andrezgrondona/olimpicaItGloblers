@@ -1,0 +1,162 @@
+{
+    "flex-layout.row#home__section--button_info":{
+        "children":[
+            "link#metodo_de_envio",
+            "link#metodo_de_envio",
+            "link#supermercado_button",
+            "link#drogueria_button",
+            "link#electrodomesticos_button",
+            "link#catalogos_button" ,
+            "link#nuestras_tiendas_button" 
+        ],
+        "props":{
+            "horizontalAlign":"around"/* ,
+            "colSizing":"auto",
+            "preserveLayoutOnMobile" : true */
+        }
+    },
+    
+     /* ............supermercado............ */
+    "link#supermercado_button": {
+        "children":[
+          "icon#home_icon-market",
+          "rich-text#market"
+        ],
+        "props": {
+        "blockClass":"botonLinkeable_supermercado",
+          "href": "/electrodomesticos"
+        }
+      },
+      "icon#home_icon-market":{
+        "props":{
+          "id":"menu-market",
+          "size":20
+        }
+     },
+     "rich-text#market":{
+      "props":{
+        "blockClass":"botonLinkeable",
+        "text":"Supermercado"
+      }
+     },
+     /* ............Drogueria............ */
+     "link#drogueria_button":{
+      "children":[
+        "icon#home_icon-medicine",
+        "rich-text#medicine"
+      ],
+      "props": {
+        "blockClass":"botonLinkeable_medicine",
+          "href": "/electrodomesticos"
+        }
+     },
+     "icon#home_icon-medicine":{
+      "props":{
+        "id":"menu-medicine",
+        "size":17
+      }
+      },
+      "rich-text#medicine":{
+        "props":{
+          "blockClass":"botonLinkeable",
+          "text":"Drogueria"
+        }
+      },
+      /* ............Electrodomesticos............ */
+      "link#electrodomesticos_button":{
+        "children":[
+          "icon#home_tvicon",
+          "rich-text#tv-icon"
+        ],
+        "props": {
+          "blockClass":"botonLinkeable_tvicon",
+            "href": "/electrodomesticos"
+          }
+      },
+      "icon#home_tvicon":{
+        "props":{
+          "id":"menu-tvicon",
+          "size":20
+        }
+        },
+        "rich-text#tv-icon":{
+          "props":{
+            "blockClass":"botonLinkeable",
+            "text":"Electrodomesticos"
+          }
+        },
+        /* ............Catalogos............ */
+        "link#catalogos_button":{
+          "children":[
+            "icon#home_catalogo-icon",
+            "rich-text#tv-catalogo-icon"
+          ],
+          "props": {
+            "blockClass":"botonLinkeable_catalogo-icon",
+              "href": "/electrodomesticos"
+            }
+        },
+        "icon#home_catalogo-icon":{
+          "props":{
+            "id":"catalogo-icon",
+            "size":20
+          }
+          },
+          "rich-text#tv-catalogo-icon":{
+            "props":{
+              "blockClass":"botonLinkeable_2",
+              "text":"Catalogo"
+            }
+          },
+
+          /* ...............Nuestras Tiendas.............. */
+          "link#nuestras_tiendas_button":{
+            "children":[
+              "icon#home_nuestras-tiendas",
+              "rich-text#nuestras-tiendas"
+            ],
+            "props": {
+              "blockClass":"botonLinkeable_nuestras-tiendas",
+                "href": "/electrodomesticos"
+              }
+          },
+          "icon#home_nuestras-tiendas":{
+            "props":{
+              "id":"menu-location",
+              "size":20
+            }
+            },
+            "rich-text#nuestras-tiendas":{
+              "props":{
+                "blockClass":"botonLinkeable_2",
+                "text":"Nuestras tiendas"
+              }
+            },
+            /* ...............Metodo de envio.............. */
+            "link#metodo_de_envio":{
+              "children":[
+                "icon#home_metodo_de_envio",
+                "rich-text#metodo_de_envio"
+              ],
+              "props": {
+                "blockClass":"botonLinkeable_metodo_de_envio",
+                  "href": "/electrodomesticos"
+                }
+            },
+            "icon#home_metodo_de_envio":{
+              "props":{
+                "id":"menu-building",
+                "size":20
+              }
+              },
+              "rich-text#metodo_de_envio":{
+                "props":{
+                  "blockClass":"botonLinkeable_3",
+                  "text":"Metodo de envio"
+                }
+              }
+            }
+          
+
+
+

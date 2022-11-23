@@ -1,0 +1,15 @@
+{
+    "flex-layout.row#home__text-lanzamientos_semana":{
+        "children":[
+            "rich-text#lanzamientos_de_la_semana"
+        ]
+    },
+    "rich-text#lanzamientos_de_la_semana":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "Lanzamientos de la semana",
+            "font": "t-heading-5"
+          }
+    }
+}

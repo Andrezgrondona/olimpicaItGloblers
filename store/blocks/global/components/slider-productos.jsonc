@@ -1,0 +1,31 @@
+{
+    "list-context.product-list#demo1": {
+        "blocks": ["product-summary.shelf#demo1"],
+        "children": ["slider-layout#demo-products"]
+      },
+        "product-summary.shelf#demo1": {
+         "children": [
+          "product-summary-name",
+          //"product-summary-description",
+          "product-summary-image",
+          "product-summary-price",
+          //"product-summary-sku-selector",
+          "product-summary-buy-button"
+        ]
+      },
+       "slider-layout#demo-products": {
+          "props": {
+            "maxItemsPerPage":1,
+            "showPaginationDots":"never",
+            "itemsPerPage": {
+             "desktop": 1,
+             "tablet": 1,
+              "phone": 1
+           },
+            "infinite": true,
+           "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel"
+          },
+          "children": ["search-result-layout.customQuery#home__search"]
+      }
+  }

@@ -1,0 +1,69 @@
+{
+    "flex-layout.row#home__cardShop_section_two":{
+        "children":[
+          "flex-layout.col#card__one_section_two",
+          "flex-layout.col#card__two_section_two",
+          "flex-layout.col#card__three_section_two",
+          "flex-layout.col#card__four_section_two"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "flex-layout.col#card__one_section_two":{
+        "children":[
+          "image#one_section_two"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "flex-layout.col#card__two_section_two":{
+        "children":[
+          "image#two_section_two"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "flex-layout.col#card__three_section_two":{
+        "children":[
+          "image#three_section_two"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "flex-layout.col#card__four_section_two":{
+        "children":[
+          "image#four_section_two"
+        ],
+        "props":{
+          "horizontalAlign":"center"
+        }
+      },
+      "image#one_section_two":{
+        "props": {
+          "src": "assets/img/grid4-img-2/a.png",
+           "width":"100%"
+        }
+      },
+      "image#two_section_two":{
+        "props": {
+          "src": "assets/img/grid4-img-2/b.png",
+          "width":"100%"
+        }
+      },
+      "image#three_section_two":{
+        "props": {
+          "src": "assets/img/grid4-img-2/c.png",
+          "width":"100%"
+        }
+      },
+      "image#four_section_two":{
+        "props": {
+          "src": "assets/img/grid4-img-2/d.png",
+          "width":"100%"
+        }
+      }
+}

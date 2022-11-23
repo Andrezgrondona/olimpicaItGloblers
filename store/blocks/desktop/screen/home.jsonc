@@ -2,82 +2,47 @@
 {
   "store.home":{
     "blocks":[
-      "flex-layout.row#home__section--button_info",
-      "flex-layout.row#baner",
-      "flex-layout.row#banner-imagenes",
-      "flex-layout.row#home__cardShop",
-      "list-context.image-list#home__slider--promo",
-      "flex-layout.row#banner-imagenes2",
-      "list-context.image-list#home__slider--list",
-      "rich-text#ofertas_imperdibles",
-      "search-result-layout.customQuery#home__search",
+      
+      /* 1 */"flex-layout.row#home__section--button_info",
+      /* 2 */"flex-layout.row#banner",
+      /* 3 */"flex-layout.row#banner-imagenes",
+      /* 4 */"flex-layout.row#home__cardShop",
+      /* 5 */"list-context.image-list#home__slider--promo",
+      /* 6 */"flex-layout.row#banner-imagenes2",
+      /* 7 *///"list-context.image-list#home__slider--list",
+      /* 8 */"rich-text#ofertas_imperdibles",
+      /* 4 */"flex-layout.row#home__cardShop",
+      /* 3 */"flex-layout.row#banner-imagenes",
+      /* 9 */"flex-layout.row#home__cardShop_section_two",
+      /* 10 */"flex-layout.row#home__two_images",
+      /* 11 */"flex-layout.row#home__slider_products",
+      /* 12 */"flex-layout.row#home__text-lanzamientos_semana",
+      ///* 13 */"flex-layout.row#home__slider_fulldesktop",
+      
+      //"search-result-layout.customQuery#home__search",
+      
+      //slider productos
+      //"list-context.product-list#demo1",
+      
      
       //RESPONSIVE LAYOUT
-       "responsive-layout.phone#home__info--phone",
-        "responsive-layout.mobile#home__info--mobile",
-        "responsive-layout.tablet#home__info--tablet",
-        "responsive-layout.desktop#home__info--desktop"
+      "responsive-layout.phone#home__info--phone",
+      "responsive-layout.mobile#home__info--mobile",
+      "responsive-layout.tablet#home__info--tablet",
+      "responsive-layout.desktop#home__info--desktop"
 
       //MODAL
-      /* "modal-trigger#home__modal--children",
-      "modal-trigger#home__modal--event",  */
+       // "modal-trigger#home__modal--children",
+        //"modal-trigger#home__modal--event"
     ]
   },
-  "modal-trigger#home__modal--children":{
-    "children":[
-      "rich-text#home__modal--trigger",
-      "modal-layout#home__modal--layout"
-    ]
-  },
-  "rich-text#home__modal--trigger":{
-    "props":{
-      "text":"Terminos y& Condiciones"
-    }
-  },
-  "modal-layout#home__modal--layout":{
-    "children":[
-      "rich-text#home__modal--content"
-    ]
-  },
-  "rich-text#home__modal--content":{
-    "props":{
-      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet congue mi. Duis in maximus massa. Curabitur ante arcu, fringilla eget venenatis ac, venenatis ut est. Aenean in leo id ex bibendum luctus. Suspendisse iaculis augue a velit varius, eu placerat nisl hendrerit. Sed efficitur fermentum magna nec lobortis. Mauris sit amet est id neque molestie auctor. Integer luctus diam leo, vitae mollis lorem egestas sit amet."
-    }
-  },
-
-  /* ..................................SEGUNDO EJEMPLLO DE MODALTRIGGER 1.09 ....................................................... */
-  /* carga un modal al inicio de la pagina del home */
-  "modal-trigger#home__modal--event":{
-    "children":[
-      "modal-layout#home__modal--event"
-    ],
-    "props":{
-      "trigger":"event",
-      "customPixelEventName":"pageView"
-    }
-  },
-  "modal-layout#home__modal--event":{
-    "children":[
-      "modal-header#home__modal--event",
-      "rich-text#home__modal--event--content"
-    ]
-  },
-  "rich-text#home__modal--event--content":{
-    "props":{
-      "text":"Bienvenidoss a la Olimpica"
-    }
-  },
-  "modal-header#home__modal--event":{
-    "props":{
-      "showCloseButton":true
-    }
-  },
+  
 
   //...............Carga productos al inicio del home(traemos los productos del backoffice)..............................
   "search-result-layout.customQuery#home__search":{
     "props":{
       "querySchema":{
-        "skusFilter":"ALL",
+        "skusFilter":"FIRST_AVAILABLE",
         "simulationBehavior":"skip"
       }
     },
@@ -111,9 +76,12 @@
     },
     "gallery":{
       "blocks":["product-summary.shelf"]
+    },
+    /* ..............ICONOS PERSONALIZADOS........................ */
+    "icon#home_icon-book":{
+       "props":{
+        "id":"catalogo-icon",
+        "size":40
+       }
     }
 }
-
-
-
-

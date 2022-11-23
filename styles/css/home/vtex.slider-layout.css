@@ -1,3 +1,7 @@
+
+.slideChildrenContainer--carousel{
+    height: 300px;
+}
 /* Ajustamos margenes */
 .sliderLayoutContainer--home__slider{
     max-width: 1200px;
@@ -13,4 +17,18 @@
     /* Ajustamos la altura del slide */
     max-height: initial !important ;
 }
+
+.sliderArrows--home__slider_promo{
+    margin-right: 50px;
+    margin-left: 50px;
+    color: white;
+}
+
+/* responsive slider  mobilw*/
+@media (max-width: 420px) {
+    .sliderLayoutContainer--home__slider_promo{
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+  }
 
