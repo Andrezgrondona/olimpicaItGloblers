@@ -59,7 +59,7 @@
       "rich-text#medicine":{
         "props":{
           "blockClass":"botonLinkeable",
-          "text":"Drogueria"
+          "text":"Farmacos"
         }
       },
       /* ............Electrodomesticos............ */
