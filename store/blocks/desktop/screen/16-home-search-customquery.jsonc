@@ -1,0 +1,41 @@
+{
+    //...............Carga productos al inicio del home(traemos los productos del backoffice)..............................
+  "search-result-layout.customQuery#home__search":{
+    "props":{
+      "querySchema":{
+        "skusFilter":"FIRST_AVAILABLE",
+        "simulationBehavior":"skip"
+      }
+    },
+    "blocks":[
+      "search-result-layout.desktop#home__search--desktop",
+      "search-result-layout.desktop#home__search--mobile"
+    ]
+  },
+    "search-result-layout.desktop#home__search--desktop":{
+      "children":[
+        "rich-text#ofertas_imperdibles"
+      ]
+    },
+    "search-result-layout.desktop#home__search--mobile":{
+      "children":[
+        "flex-layout.row#home__results"
+      ]
+    },
+    "flex-layout.row#home__results":{
+      "children":[
+        "flex-layout.col#home__results--search"
+      ]
+    },
+    "flex-layout.col#home__results--search":{
+      "children":[
+        "search-content#home_results--search"
+      ]
+    },
+    "search-content#home_results--search":{
+      "blocks":["gallery", "not-found"]
+    },
+    "gallery":{
+      "blocks":["product-summary.shelf"]
+    }
+}
