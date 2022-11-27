@@ -1,0 +1,72 @@
+{
+    "flex-layout.row#home__img-grid__section":{
+        "children":[
+            "flex-layout.col#one_image",
+            "flex-layout.col#grid_image"
+        ],
+        "props":{
+            "marginBottom":5,
+            "paddingTop":5,
+            "fullWidth":false,
+            "width":"90%",
+            "colSizing":"auto",
+            "horizontalAlign":"center"
+        }
+    },
+    "flex-layout.col#one_image":{
+        "children":[
+            "image#one_image"
+        ],
+        "props":{
+            "marginRight":5
+        }
+    },
+    "image#one_image":{
+        "props": {
+            "blockClass":"promotion-image",
+            "src": "assets/img/img-grid/1.png",
+             "width":"100%"
+          }
+    },
+    "flex-layout.col#grid_image":{
+        "children":[
+            "flex-layout.row#img_one_grid",
+            "flex-layout.row#img_two_allsize"
+        ],
+        "props":{
+            "marginRight":5
+            
+        }
+    },
+    "flex-layout.row#img_one_grid":{
+        "children":[
+            "image#grid_one",
+            "image#grid_two"
+        ]
+    },
+    "image#grid_one":{
+        "props": {
+            "src": "assets/img/img-grid/2.png",
+             "width":"100%"
+          }
+          
+        },
+        "image#grid_two":{
+            "props": {
+                "src": "assets/img/img-grid/3.png",
+                 "width":"100%"
+              }
+            },
+    "flex-layout.row#img_two_allsize":{
+        "children":[
+            "image#img_allsize"  
+        ]
+    },
+    "image#img_allsize" :{
+        "props": {
+            "src": "assets/img/img-grid/4.png",
+             "width":"100%"
+          }
+    }
+           
+}

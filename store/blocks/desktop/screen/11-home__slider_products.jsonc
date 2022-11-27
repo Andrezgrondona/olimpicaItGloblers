@@ -7,15 +7,13 @@
         "props":{
             "width":"40%",
             "horizontalAlign":"center",
-            "paddingTop":5
-            
+            "paddingTop":5  
         }
     },
         "flex-layout.col#home__image_products":{
             "children":[
                 "image#promo__image"
-            ]
-            ,
+            ],
         "props":{
             "horizontalAlign":"center"
         }

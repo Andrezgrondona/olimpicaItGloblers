@@ -59,7 +59,7 @@
       "rich-text#medicine":{
         "props":{
           "blockClass":"botonLinkeable",
-          "text":"Farmacos"
+          "text":"Drogueria"
         }
       },
       /* ............Electrodomesticos............ */
@@ -76,7 +76,7 @@
       "icon#home_tvicon":{
         "props":{
           "id":"menu-tvicon",
-          "size":20
+          "size":25
         }
         },
         "rich-text#tv-icon":{

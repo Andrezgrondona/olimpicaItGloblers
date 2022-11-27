@@ -14,7 +14,8 @@
         "children":[
           "image#one_section_two"
         ],
-        "props":{
+        "props":{ 
+          "blockClass":"img_grid-four",
           "horizontalAlign":"center"
         }
       },
@@ -23,6 +24,7 @@
           "image#two_section_two"
         ],
         "props":{
+          "blockClass":"img_grid-four",
           "horizontalAlign":"center"
         }
       },
@@ -31,6 +33,7 @@
           "image#three_section_two"
         ],
         "props":{
+          "blockClass":"img_grid-four",
           "horizontalAlign":"center"
         }
       },
@@ -39,6 +42,7 @@
           "image#four_section_two"
         ],
         "props":{
+          "blockClass":"img_grid-four",
           "horizontalAlign":"center"
         }
       },

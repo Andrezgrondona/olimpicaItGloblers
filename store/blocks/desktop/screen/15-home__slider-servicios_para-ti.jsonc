@@ -1,0 +1,45 @@
+{
+    "list-context.image-list#home__slider-servicios_para-ti":{
+        "title":"Lista de imagenes",
+        "children":["slider-layout#home_slider-servicios_para-ti"],
+        "props":{
+          "maxWidth":false,
+          "preload":true,
+          "images":[
+            {
+              "image":"assets/img/slider-section-final/1.png",
+              "description":"slide 1",
+              "width":"70%"
+            },
+            {
+              "image":"assets/img/slider-section-final/2.png",
+              "description":"slide 2",
+              "width":"70%"
+            },
+            {
+              "image":"assets/img/slider-section-final/3.png",
+              "description":"slide 3",
+              "width":"70%"
+            },
+            {
+              "image":"assets/img/slider-section-final/4.png",
+              "description":"slide 4",
+              "width":"70%"
+            }
+          ]
+        }
+      },
+      "slider-layout#home_slider-servicios_para-ti":{
+        "title":"Slider con lista",
+        "props":{
+          "itemsPerPage":{
+            "desktop":2,
+            "tablet":1,
+            "mobile":1
+          },
+          "infinite":true,
+          "blockClass":"home__slider",
+          "fullWidth":false
+        }
+      }
+}

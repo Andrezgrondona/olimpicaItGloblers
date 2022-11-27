@@ -1,0 +1,116 @@
+{
+    /* ....Barra Notificaciones header desktop */
+    "flex-layout.row#notification_bar": {
+        "children": [
+            "flex-layout.row#notification_bar-info-one",
+            "flex-layout.row#notification_bar-info-two"
+        ],
+        "props": {
+            "blockClass": "notification-bar"
+            //"width": 90
+            // "horizontalAlign":"between"
+        }
+    },
+    "flex-layout.row#notification_bar-info-one": {
+        "children": [
+            "link#venta_telefonica",
+            "link#atencion_al_cliente",
+            "link#whatssap"
+        ],
+        "props": {
+            "blockClass":"bar-info-one",
+            "horizontalAlign": "left"
+        }
+    },
+    "link#venta_telefonica": {
+        "children": [
+            "icon#home_venta_telefonica",
+            "rich-text#venta_telefonica"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_venta_telefonica",
+            "href": "/electrodomesticos"
+        }
+    },
+    "icon#home_venta_telefonica": {
+        "props": {
+            "id": "menu-market",
+            "size": 20
+        }
+    },
+    "rich-text#venta_telefonica": {
+        "props": {
+            "blockClass": "Barra-Notificaciones",
+            "text": "Venta telefonicas",
+            "link": "/"
+        }
+    },
+    "link#atencion_al_cliente": {
+        "children": [
+            "icon#home_atencion_al_cliente",
+            "rich-text#atencion_al_cliente"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_atencion_al_cliente",
+            "href": "/electrodomesticos"
+        }
+    },
+    "icon#home_atencion_al_cliente": {
+        "props": {
+            "blockClass": "Icono-Notificaciones",
+            "id": "menu-market",
+            "size": 20
+        }
+    },
+    "rich-text#atencion_al_cliente": {
+        "props": {
+            "blockClass": "Barra-Notificaciones",
+            "text": "Atencion al cliente",
+            "link": "/"
+        }
+    },
+    "link#whatssap": {
+        "children": [
+            "icon#home_whatssap",
+            "rich-text#whatssap"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_whatssap",
+            "href": "/electrodomesticos"
+        }
+    },
+    "icon#home_whatssap": {
+        "props": {
+            "id": "menu-market",
+            "size": 20
+        }
+    },
+    "rich-text#whatssap": {
+        "props": {
+            "blockClass": "Barra-Notificaciones",
+            "text": "whatssap",
+            "link": "/"
+        }
+    },
+    "flex-layout.row#notification_bar-info-two": {
+        "children": [
+            "rich-text#viajar_olimpica",
+            "rich-text#tarjeta_olimpica"
+        ],
+        "props": {
+            "horizontalAlign": "right"
+        }
+    },
+    "rich-text#viajar_olimpica": {
+        "props": {
+            "blockClass": "Barra-Notificaciones_viajar",
+            "text": "Viajar olimpica"
+        }
+    },
+    "rich-text#tarjeta_olimpica": {
+        "props": {
+            "blockClass": "Barra-Notificaciones_tarjeta",
+            "text": "Tarjeta olimpica"
+        }
+    }
+}
