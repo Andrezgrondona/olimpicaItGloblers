@@ -1,0 +1,81 @@
+{
+    "flex-layout.row#home__img-grid__section":{
+        "title":"container grid section three",
+        "children":[
+            "flex-layout.col#one_image",
+            "flex-layout.col#grid_image"
+        ],
+        "props":{
+            "marginBottom":5,
+            "paddingTop":5,
+            "fullWidth":false,
+            "width":"90%",
+            "colSizing":"auto",
+            "horizontalAlign":"center"
+        }
+    },
+    "flex-layout.col#one_image":{
+        "title":" grid section three image",
+        "children":[
+            "image#one_image"
+        ],
+        "props":{
+            "marginRight":5
+        }
+    },
+    "image#one_image":{
+        "title":" grid image one section",
+        "props": {
+            "blockClass":"promotion-image",
+            "src": "assets/img/img-grid/1.png",
+             "width":"100%"
+          }
+    },
+    "flex-layout.col#grid_image":{
+        "title":" grid section three image two",
+        "children":[
+            "flex-layout.row#img_one_grid",
+            "flex-layout.row#img_two_allsize"
+        ],
+        "props":{
+            "marginRight":5
+            
+        }
+    },
+    "flex-layout.row#img_one_grid":{
+        "title":" grid section three image three",
+        "children":[
+            "image#grid_one",
+            "image#grid_two"
+        ]
+    },
+    "image#grid_one":{
+        "title":" grid one",
+        "props": {
+            "src": "assets/img/img-grid/2.png",
+             "width":"100%"
+          }
+          
+        },
+        "image#grid_two":{
+            "title":" grid two",
+            "props": {
+                "src": "assets/img/img-grid/3.png",
+                 "width":"100%"
+              }
+            },
+    "flex-layout.row#img_two_allsize":{
+        "title":" grid section allsize section three",
+        "children":[
+            "image#img_allsize"  
+        ]
+    },
+    "image#img_allsize" :{
+        "title":" image all size section three",
+        "props": {
+            "src": "assets/img/img-grid/4.png",
+             "width":"100%"
+          }
+    }
+           
+}

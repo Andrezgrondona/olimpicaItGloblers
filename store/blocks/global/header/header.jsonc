@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "header",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "title": "header full",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "title": "header desktop",
+    "children": [
+      "flex-layout.row#notification_bar",
+      "header-row#desktop__container-header"
+    ]
+  }
+  
+}

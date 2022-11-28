@@ -1,0 +1,188 @@
+{
+  "drawer#header__mobile--menu":{
+    "title":"header mobile menu",
+      "children":[
+        "menu#header__menu"
+      ]
+    }, 
+    "menu#header__menu":{
+      "title":"header menu",
+      "children":[
+        "menu-item#department__one",
+        "menu-item#department__two"
+      ],
+      "props":{
+        "orientation":"vertical"
+      }
+    },
+    "menu-item#department__one":{
+      "title":"menu item department menu",
+      "props":{
+        "id":"department-one",
+        "type":"custom",
+        "itemProps":{
+           "type":"external",
+           "href":"https://www.google.com/",
+           "noFollow":true,
+           "tagTitle":"Supermercado",
+           "text":"Supermercado"
+        }
+      },
+      "blocks":["submenu.accordion#department__one"]
+  
+    },
+    "submenu.accordion#department__one":{
+      "title":"department one",
+      "children":[
+        "menu#department__one"
+      ]
+    },
+    "menu#department__one":{
+      "title":"menu department one",
+      "children":[
+        "menu-item#category__one",
+        "menu-item#category__two",
+        "menu-item#category__three"
+      ],
+      "props":{
+        "orientation":"vertical"
+      }
+    },
+    "menu-item#category__one":{
+      "title":"item category one",
+      "props":{
+        "id":"category__one",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Drogueria",
+          "text":"Drogueria"
+        }
+      }
+    },
+    "menu-item#category__two":{
+      "title":"menu item category two",
+      "props":{
+        "id":"category__two",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Dermocosmeticos",
+          "text":"Dermocosmeticos"
+        }
+      }
+    },
+    "menu-item#category__three":{
+      "title":"menu item category three",
+      "props":{
+        "id":"category__two",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Medicamentos formulados",
+          "text":"Medicamentos formuladosss"
+        }
+      }
+    },
+    "menu-item#department__three":{
+      "title":"menu item three",
+      "props":{
+        "id":"department-one",
+        "type":"custom",
+        "itemProps":{
+           "type":"external",
+           "href":"https://www.google.com/",
+           "noFollow":true,
+           "tagTitle":"bing title",
+           "text":"categoria 2"
+        }
+      }
+    } ,
+    //categoria Electrohogar 
+    "menu-item#department__two":{
+      "title":"menu item department two",
+      "props":{
+        "id":"department-one",
+        "type":"custom",
+        "itemProps":{
+           "type":"external",
+           "href":"https://www.google.com/",
+           "noFollow":true,
+           "tagTitle":"bing title",
+           "text":"Electrohogar"
+        }
+      },
+      "blocks":["submenu.accordion#department__two"]
+    },
+    "submenu.accordion#department__two":{
+      "title":"accordion department two",
+      "children":[
+        "menu#department_electrohogar__one"
+      ]
+    },
+    "menu#department_electrohogar__one":{
+      "title":"menu item department electrohogar one",
+      "children":[
+        "menu-item#category_electrohogar__one",
+        "menu-item#category_electrohogar__two",
+        "menu-item#category_electrohogar__three"
+      ],
+      "props":{
+        "orientation":"vertical"
+      }
+    },
+    "menu-item#category_electrohogar__one":{
+      "title":"menu item electrogar one",
+      "props":{
+        "id":"category__two",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Estufas y empotrables",
+          "text":"Estufas y empotrables"
+        }
+      }
+    },
+    "menu-item#category_electrohogar__two":{
+      "title":"menu item electrogar two",
+      "props":{
+        "id":"category__two",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Lavado y secado",
+          "text":"Lavado y secado "
+        }
+      }
+    },
+    "menu-item#category_electrohogar__three":{
+      "title":"menu item electrogar three",
+      "props":{
+        "id":"category__two",
+        "type":"custom",
+        "itemProps":{
+          "type":"external",
+          "href":"/electrodomesticos",
+          "noFollow":true,
+          "tagTitle":"Refrigeracion",
+          "text":"Refrigeracion"
+        }
+      }
+    },
+    // ........texto de prueba........ 
+    "rich-text#test":{
+      "props":{
+        "text":"texto de pruebas"
+      }
+    } 
+}
