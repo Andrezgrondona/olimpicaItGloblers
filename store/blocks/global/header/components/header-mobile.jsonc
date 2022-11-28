@@ -1,5 +1,6 @@
 {
   "header-layout.mobile":{
+    "title":"container header mobile",
          "children":[
           "header-row#mobile__container-header",
           "search-bar#header__search" 
@@ -10,6 +11,7 @@
       },
       /* .................Header Mobile................... */
       "header-row#mobile__container-header":{
+        "title":"header mobile__container",
         "children":[
           "drawer#header__mobile--menu",
           "logo#header__top--logo_mobile",
@@ -24,6 +26,7 @@
         }
       },
       "flex-layout.row#login__mobile":{
+        "title":"login mobile",
         "children":[
           "flex-layout.col#login__mobile"
         ],
@@ -32,6 +35,7 @@
         }
       },
       "flex-layout.col#login__mobile":{
+        "title":"section login mobile ",
         "children":[
           "icon#home_mobile",
          "login"
@@ -41,6 +45,7 @@
         }
       },
       "icon#home_mobile":{
+        "title":"icon mobile",
         "props":{
           "id":"hpa-profile",
           "size":30
@@ -49,6 +54,7 @@
       
        /* ............Link Categorias del header mobile............ */
           "link#categorias_header-mobile": {
+            "title":"link categorias mobile",
             "children":[
               "icon#home_bars-mobile",
               "rich-text#categorias_header-mobile"
@@ -59,12 +65,14 @@
             }
           },
           "icon#home_bars-mobile":{
+            "title":"icon bars",
             "props":{
               "id":"menu-burger",
               "size":20
             }
           },
           "rich-text#categorias_header-mobile":{
+            "title":"text categorias header",
           "props":{
             "blockClass":"botonLinkeable",
             "text":"Categorias"
@@ -83,19 +91,23 @@
      
       /* vitrina de producto para el minicart (product-list) - Dia 9 min.12 */
       "minicart-product-list":{
+        "title":"minicar product list",
         "blocks":["product-list#minicart"]
       },
       "product-list#minicart":{
+        "title":"producto summary minicart",
         "blocks":[
           "product-list-content-mobile"
         ]
       },
       "product-list-content-mobile":{
+        "title":"list content mobile",
         "children":[
           "flex-layout.row#minicart__row--mobile"
         ]
       },
       "flex-layout.row#minicart__row--mobile":{
+        "title":"minicart mobile",
         "children":[
           "flex-layout.col#minicart_col--image",
           "flex-layout.col#minicart_col--info",
@@ -103,11 +115,13 @@
         ]
       },
         "flex-layout.col#minicart_col--image":{
+          "title":"minicart col image",
           "children":[
             "product-list-image"
           ]
         },
         "flex-layout.col#minicart_col--info":{
+          "title":"minicart col info ",
           "children":[
             "vtex.product-list@0.x:product-name",
             "quantity-selector#minicart",
@@ -115,16 +129,19 @@
           ]
         },
         "flex-layout.col#minicart_col--remove":{
+          "title":"minicar col remove",
           "children":[
             "remove-button" 
           ]
         },
         "quantity-selector#minicart":{
+          "title":"quiantity selector minicart",
           "props":{
             "mode":"stepper"
           }
         },
       "flex-layout.row#minicart__footer":{
+        "title":"minicart footer",
         "children":["minicart-summary", "minicart-checkout-button"]
       } 
       

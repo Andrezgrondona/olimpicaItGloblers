@@ -1,22 +1,23 @@
 {
-    "flex-layout.row#banner":{
-        "children":[
+    "flex-layout.row#banner": {
+        "title":"container banner home",
+        "children": [
             "image#banner_inicio_home"
         ],
-        "props":{
-            "blockClass":"banner_inicio_home",
-            "horizontalAlign":"center",
-            "fullWidth":false,
-            "marginTop":"3"
+        "props": {
+            "blockClass": "banner_inicio_home",
+            "horizontalAlign": "center",
+            "fullWidth": false,
+            "marginTop": "3"
         }
     },
     "image#banner_inicio_home": {
+        "title":"image banner",
         "props": {
-          "src": "assets/img/banner_principal/banner_principal.png",
-          //"maxHeight": 100,
-          "width":"97%",
-          "height":"50"
-          
+            "src": "assets/img/banner_principal/banner_principal.png",
+            //"maxHeight": 100,
+            "width": "97%",
+            "height": "50"
         }
-      }
+    }
 }

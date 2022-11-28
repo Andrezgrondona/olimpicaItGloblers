@@ -1,5 +1,6 @@
 {
     "rich-text#ofertas_imperdibles": {
+      "title":"text ofertas imperdibles",
         "props": {
           "textAlignment": "CENTER",
           "textPosition": "LEFT",

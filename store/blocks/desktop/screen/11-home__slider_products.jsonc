@@ -1,5 +1,6 @@
 {
     "flex-layout.row#home__slider_products":{
+        "title":"Container home slider productos",
         "children":[
             "flex-layout.col#home__image_products",
             "flex-layout.col#home__slider_products"   
@@ -11,6 +12,7 @@
         }
     },
         "flex-layout.col#home__image_products":{
+            "title":"image products",
             "children":[
                 "image#promo__image"
             ],
@@ -19,6 +21,7 @@
         }
         },
         "flex-layout.col#home__slider_products"  :{
+            "title":"home slider products ",
             "children":[
                 "list-context.product-list#demo1"
             ],
@@ -29,6 +32,7 @@
 
         } ,
         "image#promo__image":{
+            "title":"home promo image",
         "props": {
           "src": "assets/img/img-slider/1.png",
            "width":"100%"
