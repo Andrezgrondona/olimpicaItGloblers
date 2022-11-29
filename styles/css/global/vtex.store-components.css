@@ -56,26 +56,3 @@
   width: 100%;
 }
 
-/* imagen promo grid home (flex-layout.row#home__img-grid__section )*/
-.imageElement--promotion-image{
-  height: 500px;
-}
-
-@media (max-width: 688px) {
-  .imageElement--promotion-image{
-    height: 300px;
-  }
-}
-
-
-/* imagen promo desktop / home__slider--body2 */
-.imageElement--image_slider--body2{
-  margin-left: 80px;
-}
-@media (max-width: 420px) {
-  .imageElement--image_slider--body2{
-    margin-right: 80px;
-    margin-top: 10px;
-  }
-}
-

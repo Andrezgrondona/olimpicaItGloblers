@@ -1,4 +1,12 @@
 .styledLinkContent--txt_category-footer{
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 15px;
+}
+
+/* textos informacion footer */
+.styledLinkContent--txt_menu-item{
+    color: rgb(203, 196, 196);
+    font-size: 12px;
+  
+   
 }
