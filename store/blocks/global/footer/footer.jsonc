@@ -1,11 +1,13 @@
 {
   "footer": {
+    "title":"container footer",
     "blocks": [
       "footer-layout.desktop",
       "footer-layout.mobile"
     ]
   },
   "footer-layout.desktop": {
+    "title":"fotter desktop",
     "children": [
       // "flex-layout.row#footer__image",
       //"flex-layout.row#footer__container",
@@ -16,6 +18,7 @@
     }
   },
   "flex-layout.row#desktop_footer__container": {
+    "title":"container footer container",
     "children": [
       "flex-layout.col#desktop-footer__container--col-one",
       "flex-layout.col#desktop-footer__container--col-two",
@@ -30,12 +33,14 @@
   },
   /* .............columna # 1........................... */
   "flex-layout.col#desktop-footer__container--col-one": {
+    "title":"col one desktop",
     "children": [
       "rich-text#pruebafooter"
     ]
   },
   /* .............columna # 2........................... */
   "flex-layout.col#desktop-footer__container--col-two": {
+    "title":"col two desktop",
     "children": [
       "menu#categorias",
       "menu-item#Electrohogar"
@@ -45,6 +50,7 @@
     }
   },
   "menu#categorias": {
+    "title":"menu categorys",
     "children": [
       "menu-item#categorias"
     ],
@@ -53,6 +59,7 @@
     }
   },
   "menu-item#categorias": {
+    "title":"menu item categorys",
     "props": {
       "blockClass": "txt_category-footer",
       "id": "menu-categorias",
@@ -66,6 +73,7 @@
     }
   },
   "menu-item#Electrohogar": {
+    "title":"menu item electrohogar",
     "props": {
       "id": "Electrohogar",
       "type": "custom",
@@ -79,24 +87,28 @@
   },
   /* .............columna # 3........................... */
   "flex-layout.col#desktop-footer__container--col-three": {
+    "title":"col three desktop",
     "children": [
       "rich-text#pruebafooter"
     ]
   },
   /* .............columna # 4........................... */
   "flex-layout.col#desktop-footer__container--col-four": {
+    "title":"col four desktop",
     "children": [
       "rich-text#pruebafooter"
     ]
   },
   /* .............columna # 5........................... */
   "flex-layout.col#desktop-footer__container--col-five": {
+    "title":"col five desktop",
     "children": [
       "rich-text#pruebafooter"
     ]
   },
   /* .............columna # 6.......................... */
   "flex-layout.col#desktop-footer__container--col-six": {
+    "title":"col six desktop",
     "children": [
       "rich-text#pruebafooter"
     ]

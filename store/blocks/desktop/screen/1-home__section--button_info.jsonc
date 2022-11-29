@@ -1,5 +1,6 @@
 {
     "flex-layout.row#home__section--button_info":{
+      "title":"container buttons",
         "children":[
             "link#metodo_de_envio",
             "link#metodo_de_envio",
@@ -18,6 +19,7 @@
     
      /* ............supermercado............ */
     "link#supermercado_button": {
+      "title":"button supermercado",
         "children":[
           "icon#home_icon-market",
           "rich-text#market"
@@ -28,12 +30,14 @@
         }
       },
       "icon#home_icon-market":{
+        "title":"icono market",
         "props":{
           "id":"menu-market",
           "size":20
         }
      },
      "rich-text#market":{
+      "title":"text market",
       "props":{
         "blockClass":"botonLinkeable",
         "text":"Supermercado"
@@ -41,6 +45,7 @@
      },
      /* ............Drogueria............ */
      "link#drogueria_button":{
+      "title":"drogueria button",
       "children":[
         "icon#home_icon-medicine",
         "rich-text#medicine"
@@ -51,12 +56,14 @@
         }
      },
      "icon#home_icon-medicine":{
+      "title":"icon medicine",
       "props":{
         "id":"menu-medicine",
         "size":17
       }
       },
       "rich-text#medicine":{
+        "title":"text drogueria",
         "props":{
           "blockClass":"botonLinkeable",
           "text":"Drogueria"
@@ -64,6 +71,7 @@
       },
       /* ............Electrodomesticos............ */
       "link#electrodomesticos_button":{
+        "title":"button electrodomestios",
         "children":[
           "icon#home_tvicon",
           "rich-text#tv-icon"
@@ -74,12 +82,14 @@
           }
       },
       "icon#home_tvicon":{
+        "title":"icon electrodomesticos",
         "props":{
           "id":"menu-tvicon",
           "size":25
         }
         },
         "rich-text#tv-icon":{
+          "title":"text electrodomesticos",
           "props":{
             "blockClass":"botonLinkeable",
             "text":"Electrodomesticos"
@@ -87,6 +97,7 @@
         },
         /* ............Catalogos............ */
         "link#catalogos_button":{
+          "title":"button catalogo",
           "children":[
             "icon#home_catalogo-icon",
             "rich-text#tv-catalogo-icon"
@@ -97,12 +108,14 @@
             }
         },
         "icon#home_catalogo-icon":{
+          "title":"icon catalogo",
           "props":{
             "id":"catalogo-icon",
             "size":20
           }
           },
           "rich-text#tv-catalogo-icon":{
+            "title":"text catalogo",
             "props":{
               "blockClass":"botonLinkeable_2",
               "text":"Catalogo"
@@ -111,6 +124,7 @@
 
           /* ...............Nuestras Tiendas.............. */
           "link#nuestras_tiendas_button":{
+            "title":"button nuestras tiendas ",
             "children":[
               "icon#home_nuestras-tiendas",
               "rich-text#nuestras-tiendas"
@@ -121,12 +135,14 @@
               }
           },
           "icon#home_nuestras-tiendas":{
+            "title":"icon nuestras tiendas",
             "props":{
               "id":"menu-location",
               "size":20
             }
             },
             "rich-text#nuestras-tiendas":{
+              "title":"text nuestras tiendas",
               "props":{
                 "blockClass":"botonLinkeable_2",
                 "text":"Nuestras tiendas"
@@ -134,6 +150,7 @@
             },
             /* ...............Metodo de envio.............. */
             "link#metodo_de_envio":{
+              "title":"button metodo de envio ",
               "children":[
                 "icon#home_metodo_de_envio",
                 "rich-text#metodo_de_envio"
@@ -144,12 +161,14 @@
                 }
             },
             "icon#home_metodo_de_envio":{
+              "title":"icono metodo de envio",
               "props":{
                 "id":"menu-building",
                 "size":20
               }
               },
               "rich-text#metodo_de_envio":{
+                "title":"text metodo de envio",
                 "props":{
                   "blockClass":"botonLinkeable_3",
                   "text":"Metodo de envio"

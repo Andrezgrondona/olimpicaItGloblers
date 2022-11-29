@@ -4,9 +4,7 @@
         "title":"header superior",
         "children":[
           "flex-layout.row#text-header__desktop__olimpica",
-          //"header-spacer",
           "search-bar#header__search",
-         // "minicart.v2",
          "link#category_home--listas-pedidos",
          "flex-layout.row#icon_cart",
           "flex-layout.row#icon_login"
@@ -35,16 +33,19 @@
           }
         },
         "link#category_home--desktop":{
+          "title":"category home desktop",
           "children":[
-            "icon#desktop_menu",
+            "drawer#header__mobile--menu",
+            //"icon#desktop_menu",
             "rich-text#olimpica_text--desktop"
           ],
           "props": {
             "blockClass":"botonLinkeable_olimpica_text--desktop",
-              "href": "/electrodomesticos"
+              "href": ""
             }
         },
         "icon#desktop_menu":{
+          "title":"icon desktop menu",
           "props":{
             "blockClass":"olimpica_icon_menu--desktop",
             "id":"menu-burger3",
@@ -52,6 +53,7 @@
           }
           },
           "rich-text#olimpica_text--desktop":{
+            "title":"text desktop",
             "props":{
               "blockClass":"botonLinkeable_olimpica_text--desktop",
               "text":"Categorias"
@@ -59,11 +61,13 @@
           },
       /* ............Icon & text - login ..............*/
       "flex-layout.row#icon_login":{
+        "title":"icon login",
         "children":[
           "flex-layout.col#login"
         ]
       },
       "flex-layout.col#login":{
+        "title":"login user",
         "children":[
           "icon#home_icon-user",
           "login"
@@ -74,6 +78,7 @@
         }
       },
       "icon#home_icon-user":{
+        "title":"home icon user",
         "props":{
           "blockClass":"icon_user",
           "id":"hpa-profile",
@@ -95,11 +100,13 @@
       },
       /*.............. Icon & text - Cart.............. */
       "flex-layout.row#icon_cart":{
+        "title":"icon cart",
         "children":[
           "flex-layout.col#cart"
         ]
       },
       "flex-layout.col#cart":{
+        "title":"container cart dsktop",
         "children":[
           "minicart.v2",
           "rich-text#carrito"
@@ -109,6 +116,7 @@
         }
       },
       "rich-text#carrito":{
+        "title":"text carrito",
         "props":{
           "blockClass":"text_carrito_desktop",
           "text":"Carrito",
@@ -117,6 +125,7 @@
       },
       /* ..........listas de pedidos.............. */
       "link#category_home--listas-pedidos":{
+        "title":"category listas pedidos",
         "children":[
           "icon#desktop_listas-pedidos",
           "rich-text#olimpica_text--listas-pedidos"
@@ -127,6 +136,7 @@
           }
       },
       "icon#desktop_listas-pedidos":{
+        "title":"icon listas pedidos",
         "props":{
           "blockClass":"olimpica_listas-pedidos",
           "id":"menu-burger2",
@@ -134,6 +144,7 @@
         }
         },
         "rich-text#olimpica_text--listas-pedidos":{
+          "title":"text listas pedidos",
           "props":{
             "blockClass":"botonLinkeable_listas-pedidos",
             "text":"Listas de pedidos"
@@ -157,13 +168,16 @@
           "blocks": ["product-summary"]
         },
       "search-bar#header__search":{
+        "title":"header seacrh",
         "blocks": ["autocomplete-result-list.v2"],
         "props":{
+          "placeholder":"¿Que estas buscando hoy?",
           "blockClass":"Barra_busqueda_inteligente",
           "openAutocompleteOnFocus": true}
       },
       /* ............................MINICART carrito vacio ................................................. */
       "minicart.v2":{
+        "title":"minicart V2",
         "props":{
           "blockClass":"carrito",
           "icon":"hpa-arrow-to-bottom",
@@ -174,23 +188,28 @@
         "children":["minicart-base-content"]
       },
       "minicart-base-content":{
+        "title":"base content",
         "blocks":["minicart-empty-state"],
         "children":["minicart-product-list","flex-layout.row#minicart__footer"]
       },
       "minicart-empty-state":{
+        "title":"empty state",
         "children":["flex-layout.row#minicart__empty"]
       },
       "flex-layout.row#minicart__empty":{
+        "title":"minicart empy ",
         "children":[
         "flex-layout.col#minicart__empty"
         ] 
       },
       "flex-layout.col#minicart__empty":{
+        "title":"sectiontext cart empty",
         "children":[
             "rich-text#minicart__empty--text"
         ]
       },
       "rich-text#minicart__empty--text":{
+        "title":"text empty",
         "props":{
             "text": "El carrito esta vacio",
             "textAligment":"CENTER",

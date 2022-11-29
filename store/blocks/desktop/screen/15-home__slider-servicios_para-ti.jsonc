@@ -1,6 +1,6 @@
 {
     "list-context.image-list#home__slider-servicios_para-ti":{
-        "title":"Lista de imagenes",
+        "title":"container slider servicios para ti",
         "children":["slider-layout#home_slider-servicios_para-ti"],
         "props":{
           "maxWidth":false,
@@ -30,7 +30,7 @@
         }
       },
       "slider-layout#home_slider-servicios_para-ti":{
-        "title":"Slider con lista",
+        "title":"Slider con lista servcios para ti",
         "props":{
           "itemsPerPage":{
             "desktop":2,

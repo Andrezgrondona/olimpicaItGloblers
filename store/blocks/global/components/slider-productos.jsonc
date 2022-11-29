@@ -1,9 +1,11 @@
 {
     "list-context.product-list#demo1": {
+      "title":"container slider productos backoffice",
         "blocks": ["product-summary.shelf#demo1"],
         "children": ["slider-layout#demo-products"]
       },
         "product-summary.shelf#demo1": {
+          "title":"product-summary",
          "children": [
           "product-summary-name",
           //"product-summary-description",

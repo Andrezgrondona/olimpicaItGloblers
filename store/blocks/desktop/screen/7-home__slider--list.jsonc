@@ -1,6 +1,6 @@
 {
     "list-context.image-list#home__slider--list":{
-        "title":"Lista de imagenes",
+        "title":"Images list",
         "children":["slider-layout#home__slider--list"],
         "props":{
           "maxWidth":false,
@@ -22,7 +22,7 @@
         }
       },
       "slider-layout#home__slider--list":{
-        "title":"Slider con lista",
+        "title":"Slider home",
         "props":{
           "itemsPerPage":{
             "desktop":1,

@@ -1,4 +1,24 @@
+/* Link ventas */
+.childrenContainer--botonLinkeable_venta{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    height: 30px;
+    margin-top: 10px;
+   }
 
+   .link--botonLinkeable_venta_venta_telefonica{
+    border-radius: 20px;
+    margin: auto;
+    background-color: none;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 /* Link supermercado */
 .childrenContainer--botonLinkeable_supermercado{
     display:flex;
@@ -53,7 +73,7 @@
    .link--botonLinkeable_tvicon{
     border-radius: 20px;
     margin: auto;
-    background-color: rgb(202, 117, 37);
+    background-color: rgb(223, 143, 14);
     font-size: 25px;
     text-decoration: none;
     margin-top: 10px;

@@ -7,19 +7,19 @@
         ]
       },
         "flex-layout.col#product__info--image":{
-            "title":"imagenes de Producto",
+            "title":"product images",
             "children":[
                 "product-images#product__info--image"
             ]
         },
         "product-images#product__info--image":{
-            "title":"imagenes",
+            "title":"images",
             "props":{
                "zoomMode":"open-modal"
             }
         },
         "flex-layout.col#product__info--data":{
-            "title":"Data de producto ",
+            "title":"Produc info data ",
             "children":[
                 "share",
                 "vtex.store-components:product-name",

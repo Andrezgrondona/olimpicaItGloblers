@@ -3,3 +3,9 @@
     src: url(assets/fonts/Montserrat-VariableFont_wght.ttf) ;
     font-weight: bold;
   }
+
+  @font-face {
+    font-family: 'Montserrathin';
+    src: url(assets/fonts/Montserrat-Thin.ttf) ;
+    font-weight:bolder
+  }

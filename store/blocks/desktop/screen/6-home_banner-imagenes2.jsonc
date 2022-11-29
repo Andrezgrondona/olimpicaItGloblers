@@ -1,8 +1,9 @@
 {
     "flex-layout.row#banner-imagenes2":{
+      "title":"container two images",
         "children":[
           "image#PROMO",
-          "flex-layout.row#BNR"   
+          "flex-layout.row#banner_two_images"   
         ],
         "props":{
             "blockClass":"banner-imagenes",
@@ -13,7 +14,8 @@
             "fullWidth":false
         }
     },
-    "flex-layout.row#BNR":{
+    "flex-layout.row#banner_two_images" :{
+      "title":"banner two images",
       "children":[
         "list-context.image-list#home__slider--body3"
       ],
@@ -29,7 +31,7 @@
       }
     },
     "list-context.image-list#home__slider--body3":{
-      "title":"Lista de imagenes",
+      "title":"image list image",
       "children":["slider-layout#home__slider--body3"],
       "props":{
         "maxWidth":true,
