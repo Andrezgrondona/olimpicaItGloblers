@@ -1,0 +1,105 @@
+:global(.vtex-store__template) {
+    --promotions-color: #ffed00;
+    --green-offers: #289e36;
+    --discounts: #7ac537;
+    --dynamic-texts: #843a8d;
+    --card-descriptions: #c47373;
+    --promotion-flags: #525252;
+  }
+
+/* menu hamburguesa header */
+  .logoLink--icon_hamb {
+    margin-top: 20px;
+  }
+
+  .logoImage--icon_login{
+    margin-top: 10px;
+  }
+  
+  .logoImage--icon_login{
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .logoImage--icon_listas_pedidos{
+    margin-top: 20px;
+  }
+
+
+ .flexRow--banner_inicio_home{
+  border-radius: 5px;
+ }
+/* Border radius a las imagenes */
+ .imageElement{
+  border-radius: 20px;
+ }
+
+ /* Logo desktop */
+ .logoImage--logo_olimpica{
+  height: 50px;
+  width: 5000px;
+ }
+ /* Logo mobile */
+ .logoImage--logo_olimpica_mobile{
+  width: 300px;
+  height: 80px;
+}
+
+/* notification bar home */
+.notificationBarContainer--notification_bar{
+  background-color: #000000;
+}
+
+/* search bar mobile */
+.searchBarContainer{
+  background-color: #e90026;
+  width: 100%;
+}
+
+/* imagen promo grid home (flex-layout.row#home__img-grid__section )*/
+.imageElement--promotion-image{
+  height: 500px;
+}
+
+@media (max-width: 688px) {
+  .imageElement--promotion-image{
+    height: 300px;
+  }
+}
+
+
+/* imagen promo desktop / home__slider--body2 */
+.imageElement--image_slider--body2{
+  margin-left: 80px;
+}
+@media (max-width: 420px) {
+  .imageElement--image_slider--body2{
+    margin-right: 80px;
+    margin-top: 10px;
+  }
+}
+
+/* footer */
+.imageElement--image_footer{
+  border-radius: initial;
+}
+
+/* size search bar desktop */
+.autoCompleteOuterContainer--Barra_busqueda_inteligente{
+  width: 600px;
+  margin-left: 60px;
+  
+}
+@media (max-width: 688px) {
+  .autoCompleteOuterContainer--Barra_busqueda_inteligente{
+    width: 500px; 
+    margin-right: 500px;
+  }
+}
+@media (max-width: 420px) {
+  .autoCompleteOuterContainer--Barra_busqueda_inteligente{
+    width: 320px; 
+  }
+}
+
+

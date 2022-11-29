@@ -1,0 +1,55 @@
+
+ .flexColChild--section__one--image{
+    width: 800px;
+} 
+
+.flexRowContent--home__section--one{
+    background-color: red;
+}
+
+.flexColChild--img_grid-four{
+    width: 90%;
+}
+/* responsive imagenes grid four */
+@media (max-width: 670px) {
+    .flexColChild--img_grid-four{
+        width: 80%;
+    }
+  }
+
+/* notification bar desktop */
+
+.flexRow--notification-bar{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+}
+
+@media (max-width: 670px) {
+    .flexRow--notification-bar{
+       display: none;
+    }
+  }
+
+ .flexRow--bar-info-one {
+    margin-left: 50px;
+ } 
+
+
+ /* footer */
+ .flexColChild--contaner_info-col-one{
+    background-color:none;      
+ }
+
+ /* ajustamos los menu-items del footer en desktop */
+ .flexCol--contaner_info-col-one {
+    height: 40%;
+ }
+
+ 
+ 
+ 
+
+
+
+
+

@@ -1,0 +1,65 @@
+{
+    "list-context.image-list#home-slider-random__products":{
+        "title":"container random products",
+        "children":["slider-layout#home_products-random"],
+        "props":{
+          "maxWidth":false,
+          "preload":true,
+          "images":[
+            {
+              "image":"assets/img/products random/1.png",
+              "description":"slide 1",
+              "width":"80%"
+            },
+            {
+                "image":"assets/img/products random/2.png",
+              "description":"slide 2",
+              "width":"80%"
+            },
+            {
+                "image":"assets/img/products random/3.png",
+              "description":"slide 3",
+              "width":"80%"
+            },
+            {
+                "image":"assets/img/products random/4.png",
+              "description":"slide 4",
+              "width":"80%"
+            },
+            {
+                "image":"assets/img/products random/5.png",
+              "description":"slide 5",
+              "width":"80%"
+            },
+            {
+                "image":"assets/img/products random/6.png",
+              "description":"slide 6",
+              "width":"70%"
+            },
+            {
+                "image":"assets/img/products random/7.png",
+              "description":"slide 7",
+              "width":"70%"
+            },
+            {
+                "image":"assets/img/products random/8.png",
+              "description":"slide 8",
+              "width":"70%"
+            }
+          ]
+        }
+      },
+      "slider-layout#home_products-random":{
+        "title":"images random",
+        "props":{
+          "itemsPerPage":{
+            "desktop":4,
+            "tablet":2,
+            "mobile":2
+          },
+          "infinite":true,
+          "blockClass":"home__slider",
+          "fullWidth":false
+        }
+      }
+}

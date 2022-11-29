@@ -1,0 +1,902 @@
+{
+  "footer": {
+    "title": "container footer",
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "title": "fotter desktop",
+    "children": [
+      // "flex-layout.row#footer__image",
+      //"flex-layout.row#footer__container",
+      "flex-layout.row#desktop_footer__container"
+    ],
+    "props": {
+      "blockClass": "background__footer-desktop"
+    }
+  },
+  "flex-layout.row#desktop_footer__container": {
+    "title": "container footer container",
+    "children": [
+      "flex-layout.col#desktop-footer__container--col-one",
+      "flex-layout.col#desktop-footer__container--col-two",
+      "flex-layout.col#desktop-footer__container--col-three",
+      "flex-layout.col#desktop-footer__container--col-four",
+      "flex-layout.col#desktop-footer__container--col-five",
+      "flex-layout.col#desktop-footer__container--col-six"
+    ],
+    "props": {
+      "horizontalAlign": "between"
+    }
+  },
+  /* .............columna # 1........................... */
+  "flex-layout.col#desktop-footer__container--col-one": {
+    "title": "col one desktop",
+    "children": [
+      "image#image_footer-desktop",
+      "rich-text#necesitas_ayuda",
+      "rich-text#barranquilla",
+      "rich-text#resto_del_pais",
+      "rich-text#siguenos",
+      "flex-layout.row#social_networks_desktop"
+    ],
+    "props": {
+      "blockClass": "columna_uno"
+    }
+  },
+    
+  "image#image_footer-desktop": {
+    "title": "image footer desktop",
+    "props": {
+      "blockClass": "image_footer",
+      "src": "assets/img/footer/logo-footer.jpeg",
+      "width": "100%"
+      
+    }
+  },
+  "rich-text#necesitas_ayuda": {
+    "title": "text necesitas ayuda",
+    "props": {
+      "blockClass":"txt_col_one-footer",
+      "horizontalAlign": "center",
+      "text": "¿Necesitas ayuda?"
+    }
+  },
+  "rich-text#barranquilla": {
+    "title": "text barranquilla",
+    "props": {
+      "blockClass":"txt_col_one-footer",
+      "horizontalAlign": "center",
+      "text": "Barranquilla: 371 01 23"
+    }
+  },
+  "rich-text#resto_del_pais": {
+    "title": "text resto del pais",
+    "props": {
+      "blockClass":"txt_col_one-footer",
+      "horizontalAlign": "center",
+      "text": "Resto del pais:01800510510"
+    }
+  },
+  "rich-text#siguenos": {
+    "title": "text siguenos",
+    "props": {
+      "blockClass":"txt_col_one-footer",
+      "horizontalAlign": "center",
+      "text": "SIGUENOS"
+    }
+  },
+  "flex-layout.row#social_networks_desktop": {
+    "title": "solcial networks",
+    "children": [
+      "social-networks"
+    ]
+  },
+  /* .............columna # 2........................... */
+  "flex-layout.col#desktop-footer__container--col-two": {
+    "title": "col two desktop",
+    "children": [
+      "menu#categorias",
+      "menu-item#Electrohogar",
+      "menu-item#tv_audio_video",
+      "menu-item#tecnologia_y_celulares",
+      "menu-item#hogar",
+      "menu-item#jugueteria"
+    ],
+    "props": {
+      "blockClass": "contaner_info-col-one",
+      "horizontalAlign": "left"
+    }
+  },
+  "menu#categorias": {
+    "title": "menu categorys",
+    "children": [
+      "menu-item#categorias"
+    ],
+    "props": {
+      "blockClass": "menu-categorys-footer",
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#categorias": {
+    "title": "menu item categorys",
+    "props": {
+      "blockClass": "txt_category-footer",
+      "id": "menu-categorias",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "categorias",
+        "text": "categorias"
+      }
+    }
+  },
+  "menu-item#Electrohogar": {
+    "title": "menu item electrohogar",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "Electrohogar",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "Electrohogar",
+        "text": "Electrohogar"
+      }
+    }
+  },
+  "menu-item#tv_audio_video": {
+    "title": "menu item tv audio video",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "tv audio video",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "tv audio video",
+        "text": "Tv audio video"
+      }
+    }
+  },
+  "menu-item#tecnologia_y_celulares": {
+    "title": "menu item tecnologia y celulares",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "tecnologia y celulares",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "tecnologia y celulares",
+        "text": "Tecnologia y celulares"
+      }
+    }
+  },
+  "menu-item#hogar": {
+    "title": "menu item hogar",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "hogar",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "hogar",
+        "text": "Hogar"
+      }
+    }
+  },
+  "menu-item#jugueteria": {
+    "title": "menu jugueteria",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "jugueteria",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "jugueteria",
+        "text": "Jugueteria"
+      }
+    }
+  },
+  /* .............columna # 3........................... */
+  "flex-layout.col#desktop-footer__container--col-three": {
+    "title": "col two desktop",
+    "children": [
+      "menu#contenido",
+      "menu-item#sabores_olimpica",
+      "menu-item#catalogos",
+      "menu-item#tarjeta_olimpica",
+      "menu-item#tarjeta_plata",
+      "menu-item#app_olimpica",
+      "menu-item#garantia_extendida"
+    ],
+    "props": {
+      "blockClass": "contaner_info-col-one",
+      "horizontalAlign": "left"
+    }
+  },
+  "menu#contenido": {
+    "title": "menu ccontenido",
+    "children": [
+      "menu-item#contenido"
+    ],
+    "props": {
+      "blockClass": "menu-contenido-footer",
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#contenido": {
+    "title": "menu item contenido",
+    "props": {
+      "blockClass": "txt_category-footer",
+      "id": "menu-contenido",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "contenido",
+        "text": "Contenido"
+      }
+    }
+  },
+  "menu-item#sabores_olimpica": {
+    "title": "sabores_olimpica",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "sabores_olimpicar",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "sabores_olimpicar",
+        "text": "Sabores olimpica"
+      }
+    }
+  },
+  "menu-item#catalogos": {
+    "title": "catalogos",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "catalogos",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "catalogos",
+        "text": "Catalogos"
+      }
+    }
+  },
+  "menu-item#tarjeta_olimpica": {
+    "title": "tarjeta_olimpica",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "tarjeta_olimpica",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "tarjeta_olimpica",
+        "text": "Tarjeta olimpica"
+      }
+    }
+  },
+  "menu-item#tarjeta_plata": {
+    "title": "tarjeta_plata",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "tarjeta_plata",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "tarjeta_plata",
+        "text": "Tarjeta plata"
+      }
+    }
+  },
+  "menu-item#app_olimpica": {
+    "title": "app_olimpica",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "app_olimpica",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "app_olimpica",
+        "text": "App olimpicaa"
+      }
+    }
+  },
+  "menu-item#garantia_extendida": {
+    "title": "garantia_extendida",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "garantia_extendida",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "garantia_extendida",
+        "text": "Garantia extendida"
+      }
+    }
+  },
+  /* .............columna # 4........................... */
+  "flex-layout.col#desktop-footer__container--col-four": {
+    "title": "col four desktop",
+    "children": [
+      "menu#nuestra_empresa",
+      "menu-item#nuestras_tiendas",
+      "menu-item#domicilios",
+      "menu-item#quienes_somos",
+      "menu-item#trabaja_con_nosotros",
+      "menu-item#noticias"
+    ],
+    "props": {
+      "blockClass": "contaner_info-col-one",
+      "horizontalAlign": "left"
+    }
+  },
+  "menu#nuestra_empresa": {
+    "title": "menu nuestra empresa",
+    "children": [
+      "menu-item#nuestra_empresa"
+    ],
+    "props": {
+      "blockClass": "menu-contenido-footer",
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#nuestra_empresa": {
+    "title": "menu item nuestra_empresa",
+    "props": {
+      "blockClass": "txt_category-footer",
+      "id": "menu-nuestra_empresa",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "nuestra_empresa",
+        "text": "Empresa"
+      }
+    }
+  },
+  "menu-item#nuestras_tiendas": {
+    "title": "nuestras_tiendas",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "nuestras_tiendas",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "nuestras_tiendas",
+        "text": "Nuestras tiendas"
+      }
+    }
+  },
+  "menu-item#domicilios": {
+    "title": "domicilios",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "domicilios",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "domicilios",
+        "text": "Domicilios"
+      }
+    }
+  },
+  "menu-item#quienes_somos": {
+    "title": "quienes_somos",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "quienes_somos",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "quienes_somos",
+        "text": "Quienes somos"
+      }
+    }
+  },
+  "menu-item#trabaja_con_nosotros": {
+    "title": "trabaja_con_nosotros",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "trabaja_con_nosotros",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "trabaja_con_nosotros",
+        "text": "Trabaja con nosotros"
+      }
+    }
+  },
+  "menu-item#noticias": {
+    "title": "noticias",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "noticias",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "noticias",
+        "text": "Noticias"
+      }
+    }
+  },
+  /* .............columna # 5........................... */
+  "flex-layout.col#desktop-footer__container--col-five": {
+    "title": "col five desktop",
+    "children": [
+      "menu#info_legal",
+      "menu-item#informacion_legal",
+      "menu-item#terminos y condiciones",
+      "menu-item#terminos_market_place",
+      "menu-item#politica_provacidad",
+      "menu-item#aviso_privacidad",
+      "menu-item#derecho_retracto",
+      "menu-item#reglamento_tarjeta_plata",
+      "menu-item#politica_revision_pago",
+      "menu-item#tdt",
+      "menu-item#todo_tdt",
+      "menu-item#lineas_atencion_marcas",
+      "menu-item#SIC",
+      "menu-item#comunicacion_clintes",
+      "menu-item#comunicacion_provedores",
+      "menu-item#promociones_vigentes"
+    ],
+    "props": {
+      "blockClass": "contaner_info-col-one",
+      "horizontalAlign": "left"
+    }
+  },
+  "menu#info_legal": {
+    "title": "menu nuestra empresa",
+    "children": [
+      "menu-item#info_legal"
+    ],
+    "props": {
+      "blockClass": "menu-contenido-footer",
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#info_legal": {
+    "title": "menu item info_legal",
+    "props": {
+      "blockClass": "txt_category-footer",
+      "id": "menu-info_legal",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "info_legal",
+        "text": "Info legal"
+      }
+    }
+  },
+  "menu-item#informacion_legal": {
+    "title": "menu item informacion_legal",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-informacion_legal",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "informacion_legal",
+        "text": "Informacion legal"
+      }
+    }
+  },
+  "menu-item#terminos y condiciones": {
+    "title": "menu item terminos_y_condiciones",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-terminos_y_condiciones",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "terminos_y_condiciones",
+        "text": "Terminos y condiciones"
+      }
+    }
+  },
+  "menu-item#terminos_market_place": {
+    "title": "menu item market_place",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-market_place",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "market_place",
+        "text": "Market place"
+      }
+    }
+  },
+  "menu-item#politica_provacidad": {
+    "title": "menu item politica_provacidad",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-politica_provacidad",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "politica_provacidad",
+        "text": "Politica privacidad"
+      }
+    }
+  },
+  "menu-item#aviso_privacidad": {
+    "title": "menu item aviso_privacidad",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-aviso_privacidad",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "aviso_privacidad",
+        "text": "Aviso privacidad"
+      }
+    }
+  },
+  "menu-item#derecho_retracto": {
+    "title": "menu item derecho_retracto",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-derecho_retracto",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "derecho_retracto",
+        "text": "Derecho retracto"
+      }
+    }
+  },
+  "menu-item#reglamento_tarjeta_plata": {
+    "title": "menu item reglamento_tarjeta_plata",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-reglamento_tarjeta_plata",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "reglamento_tarjeta_plata",
+        "text": "Reglamento tarjeta plata"
+      }
+    }
+  },
+  "menu-item#politica_revision_pago": {
+    "title": "politica_revision_pago",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-politica_revision_pago",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "politica_revision_pago",
+        "text": "Politica revision_pago"
+      }
+    }
+  },
+  "menu-item#tdt": {
+    "title": "tdt",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-tdt",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "tdt",
+        "text": "TDT"
+      }
+    }
+  },
+  "menu-item#todo_tdt": {
+    "title": "todo_tdt",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-todo_tdt",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "todo_tdt",
+        "text": "Todo tdt"
+      }
+    }
+  },
+  "menu-item#lineas_atencion_marcas": {
+    "title": "lineas_atencion_marcas",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-lineas_atencion_marcas",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "lineas_atencion_marcas",
+        "text": "Lineas atencion marcas"
+      }
+    }
+  },
+  "menu-item#SIC": {
+    "title": "SIC",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "menu-SIC",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "SIC",
+        "text": "Superindetendecia industria"
+      }
+    }
+  },
+  "menu-item#comunicacion_clintes": {
+    "title": "comunicacion_clintes",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "comunicacion_clintes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "comunicacion_clintes",
+        "text": "comunicacion clientes"
+      }
+    }
+  },
+  "menu-item#comunicacion_provedores": {
+    "title": "ccomunicacion_provedores",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "comunicacion_provedores",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "comunicacion_provedores",
+        "text": "Comunicacion provedores"
+      }
+    }
+  },
+  "menu-item#promociones_vigentes": {
+    "title": "promociones_vigentes",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "promociones_vigentes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "promociones_vigentes",
+        "text": "Promociones vigentes"
+      }
+    }
+  },
+  /* .............columna # 6.......................... */
+  "flex-layout.col#desktop-footer__container--col-six": {
+    "title": "col five desktop",
+    "children": [
+      "menu#servicio_cliente",
+      "menu-item#preguntas_frecuentes",
+      "menu-item#contactenos"
+    ],
+    "props": {
+      "blockClass": "contaner_info-col-one",
+      "horizontalAlign": "left"
+    }
+  },
+  "menu#servicio_cliente": {
+    "title": "menu servicio cliente",
+    "children": [
+      "menu-item#servicio_cliente"
+    ],
+    "props": {
+      "blockClass": "menu-contenido-footer",
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#servicio_cliente": {
+    "title": "menu item nservicio_cliente",
+    "props": {
+      "blockClass": "txt_category-footer",
+      "id": "menu-servicio_cliente",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "nuestra_empresa",
+        "text": "Servicio al cliente"
+      }
+    }
+  },
+  "menu-item#preguntas_frecuentes": {
+    "title": "preguntas_frecuentes",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "preguntas_frecuentes",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "preguntas_frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
+  "menu-item#contactenos": {
+    "title": "contactenos",
+    "props": {
+      "blockClass": "txt_menu-item",
+      "id": "contactenos",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrodomesticos",
+        "tagTitle": "contactenos",
+        "text": "Contactenos"
+      }
+    }
+  },
+  /* ................ejemplo bootcam........... */
+  "flex-layout.row#footer__image": {
+    "children": [
+      "image#logo_footer"
+    ]
+  },
+  "image#logo_footer": {
+    "props": {
+      "src": "assets/img/logo/logo_olimpica.png",
+      //"width":"80%",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#footer__container": {
+    "children": [
+      "flex-layout.col#footer__container--col-one",
+      "flex-layout.col#footer__container--col-two",
+      "flex-layout.col#footer__container--col-three"
+    ]
+  },
+  "flex-layout.col#footer__container--col-one": {
+    "children": [
+      "menu#policies"
+    ]
+  },
+  "flex-layout.col#footer__container--col-two": {
+    "children": [
+      "menu#policies"
+    ]
+  },
+  "flex-layout.col#footer__container--col-three": {
+    "children": [
+      "social-networks",
+      "accepted-payment-methods"
+    ]
+  },
+  /* ...........................metodos de pago ............................ */
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "mastercard",
+        "visa",
+        "diners club"
+      ]
+    }
+  },
+  /* ...........................redes socilaes............................ */
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "http//facebook.com/exito",
+          "name": "facebook"
+        },
+        {
+          "url": "http//twitter.com/exito",
+          "name": "twitter"
+        },
+        {
+          "url": "http//youtube.com/exito",
+          "name": "youtube"
+        }
+      ]
+    }
+  },
+  /* .............footer mobile.......... */
+  "footer-layout.mobile": {
+    "children": [
+      "disclosure-layout-group#footer__menu--group "
+    ]
+  },
+  "disclosure-layout-group#footer__menu--group ": {
+    "children": [
+      "disclosure-layout#policies" /*,
+      "disclosure-layout#about-us" ,
+      "disclosure-layout#departments" */
+    ]
+  },
+  "disclosure-layout#policies": {
+    "children": [
+      "disclosure-trigger#policies",
+      "disclosure-content#policies"
+    ]
+  },
+  "disclosure-trigger#policies": {
+    "children": [
+      "rich-text#policies"
+    ]
+  },
+  "rich-text#policies": {
+    "props": {
+      "text": "politicas de la tienda "
+    }
+  },
+  "disclosure-content#policies": {
+    "children": [
+      "menu#policies"
+    ]
+  },
+  "menu#policies": {
+    "children": [
+      "menu-item#terms-and-conds",
+      "menu-item#privacy-policies",
+      "menu-item#Electrohogar",
+      "menu-item#hogar"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#terms-and-conds": {
+    "props": {
+      "id": "menu-terms-and-conds",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Terminos y condiciones",
+        "text": "Terminos y condiciones"
+      }
+    }
+  },
+  "menu-item#privacy-policies": {
+    "props": {
+      "id": "menu-privacy-policies",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "tagTitle": "Politicas de privacidad",
+        "text": "Politicas de privacidad"
+      }
+    }
+  }
+  /* .....................about-us........................ */
+}
