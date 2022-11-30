@@ -3,19 +3,3 @@
     src: url(assets/fonts/Montserrat-VariableFont_wght.ttf) ;
     font-weight: bold;
   }
-
-  @font-face {
-    font-family: 'Montserrathin';
-    src: url(assets/fonts/Montserrat-Thin.ttf) ;
-    font-weight:bolder
-  }
-  @font-face {
-    font-family: 'san francisco';
-    src: url(assets/fonts/san_francisco-webfont.woff) ;
-    font-weight:bolder
-  }
-  @font-face {
-    font-family: 'san francisco 2';
-    src: url(assets/fonts/san_francisco-webfont.woff2) ;
-    font-weight:bolder
-  }
