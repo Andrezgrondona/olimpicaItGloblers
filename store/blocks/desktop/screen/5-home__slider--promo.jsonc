@@ -1,6 +1,6 @@
 {
     "list-context.image-list#home__slider--promo":{
-        "title":"Lista de imagenes",
+        "title":"images list",
         "children":["slider-layout#home__slider--promo"],
         "props":{
           "maxWidth":true,
@@ -18,7 +18,7 @@
         }
       },
       "slider-layout#home__slider--promo":{
-        "title":"Slider con lista promociones",
+        "title":"Slider with promotion list",
         "props":{
           "itemsPerPage":{
             "desktop":1,

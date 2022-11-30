@@ -1,5 +1,6 @@
 {
     "flex-layout.row#home__cardShop":{
+      "title":"container cardshop",
         "children":[
           "flex-layout.col#card__one",
           "flex-layout.col#card__two",
@@ -7,11 +8,13 @@
           "flex-layout.col#card__four"
         ],
         "props":{
+          "width":"80",
           "blockClass":"grid_four-images",
           "horizontalAlign":"center"
         }
       },
       "flex-layout.col#card__one":{
+        "title":"cardshop image one",
         "children":[
           "image#one"
         ],
@@ -21,6 +24,7 @@
         }
       },
       "flex-layout.col#card__two":{
+        "title":"cardshop image two",
         "children":[
           "image#two"
         ],
@@ -30,6 +34,7 @@
         }
       },
       "flex-layout.col#card__three":{
+        "title":"cardshop image three",
         "children":[
           "image#three"
         ],
@@ -39,6 +44,7 @@
         }
       },
       "flex-layout.col#card__four":{
+        "title":"cardshop image four",
         "children":[
           "image#four"
         ],
@@ -48,24 +54,28 @@
         }
       },
       "image#one":{
+        "title":"image one",
         "props": {
           "src": "assets/img/grid4-img/1.png",
            "width":"100%"
         }
       },
       "image#two":{
+        "title":"image two",
         "props": {
           "src": "assets/img/grid4-img/2.png",
           "width":"100%"
         }
       },
       "image#three":{
+        "title":"image three",
         "props": {
           "src": "assets/img/grid4-img/3.png",
           "width":"100%"
         }
       },
       "image#four":{
+        "title":"image four",
         "props": {
           "src": "assets/img/grid4-img/4.png",
           "width":"100%"
