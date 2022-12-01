@@ -1,0 +1,112 @@
+{
+    /* .............footer mobile.......... */
+    "footer-layout.mobile": {
+        "children": [
+            "disclosure-layout-group#footer__menu--group "
+        ]
+    },
+    "disclosure-layout-group#footer__menu--group ": {
+        "children": [
+            "disclosure-layout#policies",
+            "disclosure-layout#contenido"
+        ]
+    },
+    "disclosure-layout#policies": {
+        "children": [
+            "disclosure-trigger#policies",
+            "disclosure-content#policies"
+        ]
+    },
+    "disclosure-trigger#policies": {
+        "children": [
+            "rich-text#policies"
+        ]
+    },
+    "rich-text#policies": {
+        "props": {
+            "text": "Categorias "
+        }
+    },
+    "disclosure-content#policies": {
+        "children": [
+            "menu#policies"
+        ]
+    },
+    "menu#policies": {
+        "children": [
+            "menu#categorias",
+            "menu-item#Electrohogar",
+            "menu-item#tv_audio_video",
+            "menu-item#tecnologia_y_celulares",
+            "menu-item#hogar",
+            "menu-item#jugueteria"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........................disclosure contenido................... */
+    "disclosure-layout#contenido":{
+        "children": [
+            "disclosure-trigger#contenido",
+            "disclosure-content#contenido"
+        ]
+    },
+    "disclosure-trigger#contenido": {
+        "children": [
+            "rich-text#contenido"
+        ]
+    },
+    "rich-text#contenido": {
+        "props": {
+            "text": "Contenido "
+        }
+    },
+    "disclosure-content#contenido": {
+        "children": [
+            "menu#contenido_footer"
+        ]
+    },
+    "menu#contenido_footer": {
+        "children": [
+           
+            "menu-item#sabores_olimpica",
+            "menu-item#catalogos",
+            "menu-item#tarjeta_olimpica",
+            "menu-item#tarjeta_plata",
+            "menu-item#app_olimpica",
+            "menu-item#garantia_extendida"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+  
+
+
+
+    "menu-item#terms-and-conds": {
+        "props": {
+            "id": "menu-terms-and-conds",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "Terminos y condiciones",
+                "text": "Terminos y condiciones"
+            }
+        }
+    },
+    "menu-item#privacy-policies": {
+        "props": {
+            "id": "menu-privacy-policies",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "Politicas de privacidad",
+                "text": "Politicas de privacidad"
+            }
+        }
+    }
+}

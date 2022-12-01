@@ -56,3 +56,43 @@
   width: 100%;
 }
 
+
+/* imagen colchon grid */
+.imageElement--promotion-image{
+  height: 490px;
+}
+
+/* border radius al search bar */
+:global(.vtex-input-prefix__group){
+  border-radius: 30px;
+ 
+}
+
+/* search bar desktop */
+.searchBarInnerContainer--Barra_busqueda_inteligente{
+  width: 600px;
+}
+
+@media (max-width: 688px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 500px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 355px;
+  }
+}
+
+/* imahen footer */
+.imageElement--image_footer{
+  border-radius: 0;
+}
+
+
+
+
+
+

@@ -2,7 +2,7 @@
     "flex-layout.row#home__section--button_info":{
       "title":"container buttons",
         "children":[
-            "link#metodo_de_envio",
+            "link#cuidad",
             "link#metodo_de_envio",
             "link#supermercado_button",
             "link#drogueria_button",
@@ -172,6 +172,32 @@
                 "props":{
                   "blockClass":"botonLinkeable_3",
                   "text":"Metodo de envio"
+                }
+              },
+               /* ...............escoge tu cuidad.............. */
+            "link#cuidad":{
+              "title":"button cuidad ",
+              "children":[
+                "icon#home_cuidad",
+                "rich-text#cuidad"
+              ],
+              "props": {
+                "blockClass":"botonLinkeable_cuidad",
+                  "href": "/electrodomesticos"
+                }
+            },
+            "icon#home_cuidad":{
+              "title":"icono cuidad",
+              "props":{
+                "id":"menu-location",
+                "size":20
+              }
+              },
+              "rich-text#cuidad":{
+                "title":"text cuidad",
+                "props":{
+                  "blockClass":"botonLinkeable_3",
+                  "text":"Ciudad"
                 }
               }
             }

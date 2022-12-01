@@ -20,7 +20,7 @@
             "maxItemsPerPage":1,
             "showPaginationDots":"never",
             "itemsPerPage": {
-             "desktop": 1,
+             "desktop": 4,
              "tablet": 1,
               "phone": 1
            },

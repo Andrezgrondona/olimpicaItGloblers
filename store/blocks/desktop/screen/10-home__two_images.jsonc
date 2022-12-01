@@ -6,6 +6,7 @@
             "flex-layout.col#image-desktop__two"
         ],
         "props":{
+            "marginTop":5,
             "width":"80% ",
             "horizontalAlign":"center"
         }
@@ -43,7 +44,7 @@
             "title":"image desktop two",
             "props": {
               "src": "assets/img/two-img/2.png",
-               "width":"100%",
+               "width":"95%",
                "horizontalAlign":"center"
             }
           }

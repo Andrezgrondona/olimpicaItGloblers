@@ -35,6 +35,11 @@
  } 
 
 
+ /* columnas desktop footer */
+ .flexCol--contaner_info-col-one {
+    height: 120px;
+ }
+
 
 
 

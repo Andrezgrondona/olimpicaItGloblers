@@ -3,3 +3,9 @@
     src: url(assets/fonts/Montserrat-VariableFont_wght.ttf) ;
     font-weight: bold;
   }
+
+  @font-face {
+    font-family: 'Montserrat-soft';
+    src: url(assets/fonts/Montserrat-Thin2.ttf) ;
+    
+  }

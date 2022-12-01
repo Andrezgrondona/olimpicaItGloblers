@@ -9,15 +9,48 @@
   "footer-layout.desktop": {
     "title": "fotter desktop",
     "children": [
-      // "flex-layout.row#footer__image",
-      //"flex-layout.row#footer__container",
-      "flex-layout.row#desktop_footer__container"
+      "flex-layout.row#desktop_footer__container_one",
+      "flex-layout.row#desktop_footer__container_two"
     ],
     "props": {
       "blockClass": "background__footer-desktop"
     }
   },
-  "flex-layout.row#desktop_footer__container": {
+  /* contenedor one */
+  "flex-layout.row#desktop_footer__container_one": {
+    "children":[
+      "flex-layout.col#section_footer_left",
+      "flex-layout.col#section_footer_right"
+    ],
+    "props": {
+      "horizontalAlign":"center"
+    }
+  },
+    "flex-layout.col#section_footer_left":{
+      "children":[
+        "rich-text#nuestro_boletin"
+      ],
+      "props": {
+        "horizontalAlign":"center"
+      }
+    },
+    "flex-layout.col#section_footer_right":{
+      "children":[
+        "form" 
+      ],
+      "props": {
+        "horizontalAlign":"center"
+      }
+    },
+    "rich-text#nuestro_boletin":{
+      "props":{
+        "blockClass":"text_boletin",
+        "horizontalAlign":"center",
+        "text":"Nuestro boletin de ofertas"
+      }
+    },
+  /* contenedor two */
+  "flex-layout.row#desktop_footer__container_two": {
     "title": "container footer container",
     "children": [
       "flex-layout.col#desktop-footer__container--col-one",
@@ -46,20 +79,18 @@
       "blockClass": "columna_uno"
     }
   },
-    
   "image#image_footer-desktop": {
     "title": "image footer desktop",
     "props": {
       "blockClass": "image_footer",
       "src": "assets/img/footer/logo-footer.jpeg",
       "width": "100%"
-      
     }
   },
   "rich-text#necesitas_ayuda": {
     "title": "text necesitas ayuda",
     "props": {
-      "blockClass":"txt_col_one-footer",
+      "blockClass": "txt_col_one-footer",
       "horizontalAlign": "center",
       "text": "¿Necesitas ayuda?"
     }
@@ -67,7 +98,7 @@
   "rich-text#barranquilla": {
     "title": "text barranquilla",
     "props": {
-      "blockClass":"txt_col_one-footer",
+      "blockClass": "txt_col_one-footer",
       "horizontalAlign": "center",
       "text": "Barranquilla: 371 01 23"
     }
@@ -75,7 +106,7 @@
   "rich-text#resto_del_pais": {
     "title": "text resto del pais",
     "props": {
-      "blockClass":"txt_col_one-footer",
+      "blockClass": "txt_col_one-footer",
       "horizontalAlign": "center",
       "text": "Resto del pais:01800510510"
     }
@@ -83,7 +114,7 @@
   "rich-text#siguenos": {
     "title": "text siguenos",
     "props": {
-      "blockClass":"txt_col_one-footer",
+      "blockClass": "txt_col_one-footer",
       "horizontalAlign": "center",
       "text": "SIGUENOS"
     }
@@ -799,104 +830,5 @@
       "social-networks",
       "accepted-payment-methods"
     ]
-  },
-  /* ...........................metodos de pago ............................ */
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": [
-        "mastercard",
-        "visa",
-        "diners club"
-      ]
-    }
-  },
-  /* ...........................redes socilaes............................ */
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "url": "http//facebook.com/exito",
-          "name": "facebook"
-        },
-        {
-          "url": "http//twitter.com/exito",
-          "name": "twitter"
-        },
-        {
-          "url": "http//youtube.com/exito",
-          "name": "youtube"
-        }
-      ]
-    }
-  },
-  /* .............footer mobile.......... */
-  "footer-layout.mobile": {
-    "children": [
-      "disclosure-layout-group#footer__menu--group "
-    ]
-  },
-  "disclosure-layout-group#footer__menu--group ": {
-    "children": [
-      "disclosure-layout#policies" /*,
-      "disclosure-layout#about-us" ,
-      "disclosure-layout#departments" */
-    ]
-  },
-  "disclosure-layout#policies": {
-    "children": [
-      "disclosure-trigger#policies",
-      "disclosure-content#policies"
-    ]
-  },
-  "disclosure-trigger#policies": {
-    "children": [
-      "rich-text#policies"
-    ]
-  },
-  "rich-text#policies": {
-    "props": {
-      "text": "politicas de la tienda "
-    }
-  },
-  "disclosure-content#policies": {
-    "children": [
-      "menu#policies"
-    ]
-  },
-  "menu#policies": {
-    "children": [
-      "menu-item#terms-and-conds",
-      "menu-item#privacy-policies",
-      "menu-item#Electrohogar",
-      "menu-item#hogar"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-  "menu-item#terms-and-conds": {
-    "props": {
-      "id": "menu-terms-and-conds",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "tagTitle": "Terminos y condiciones",
-        "text": "Terminos y condiciones"
-      }
-    }
-  },
-  "menu-item#privacy-policies": {
-    "props": {
-      "id": "menu-privacy-policies",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "tagTitle": "Politicas de privacidad",
-        "text": "Politicas de privacidad"
-      }
-    }
   }
-  /* .....................about-us........................ */
 }

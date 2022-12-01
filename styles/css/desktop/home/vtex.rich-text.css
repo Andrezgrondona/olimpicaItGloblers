@@ -56,21 +56,25 @@
     color: white;
 }
 
+
 .paragraph--text_carrito_desktop {
     color: white;
     margin-top: 4px;
-    font-size: 12px;
-    font-family: 'Montserrathin';
+    font-size: 13px;
+    font-family: 'Montserrat-soft';
     font-weight: bold;
-}
+} 
+/* .wrapper--text_carrito_desktop{
+    font-family: 'Montserrat-soft';
+}   */
 
 /* texto listas de pedidos */
 
 .paragraph--botonLinkeable_listas-pedidos {
-    font-style: normal;
+    
     margin-top: 4px;
-    font-size: 12px;
-    font-family: 'Montserrathin';
+    font-size: 10px;
+    font-family: 'Montserrat-soft';
     font-weight: bold;
 }
 
@@ -130,11 +134,16 @@
     }
 }
 
+.paragraph--botonLinkeable_listas-pedidos{
+    font-family: 'Montserrat-soft';
+    font-size: 12px;
+    font-weight: bold;
+}
 .wrapper--botonLinkeable_listas-pedidos {
     width: 100px;
     color: white;
     text-align: center;
-
+    margin-top: 1px;
 }
 
 .wrapper--botonLinkeable_mobile {
@@ -143,8 +152,6 @@
     margin-left: 30px;
     margin-top: 40px;
 }
-
-
 
 /* notification bar */
 
@@ -180,6 +187,10 @@
 
 /* footer */
 .paragraph--txt_col_one-footer{
+    color: rgb(193, 196, 198);
+}
+
+.paragraph--text_boletin{
     color: rgb(193, 196, 198);
 }
 
