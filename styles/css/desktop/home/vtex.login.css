@@ -1,12 +1,15 @@
 
-:global(.vtex-login-2-x-profile){
+ :global(.vtex-login-2-x-profile){
     font-size: 10px;
     font-family: 'Montserrat-soft';
     font-weight: bold;
   }
 
-
-
+  :global(.vtex-login-2-x-label){
+    font-size: 10px;
+    font-family: 'Montserrat-soft';
+    font-weight: bold;
+  }
 
 
 

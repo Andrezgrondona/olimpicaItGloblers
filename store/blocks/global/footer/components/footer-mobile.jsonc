@@ -8,7 +8,10 @@
     "disclosure-layout-group#footer__menu--group ": {
         "children": [
             "disclosure-layout#policies",
-            "disclosure-layout#contenido"
+            "disclosure-layout#contenido",
+            "disclosure-layout#nuestra_empresa_mobile",
+            "disclosure-layout#info_legal_mobile",
+            "disclosure-layout#servicio_cliente_mobile"
         ]
     },
     "disclosure-layout#policies": {
@@ -69,7 +72,6 @@
     },
     "menu#contenido_footer": {
         "children": [
-           
             "menu-item#sabores_olimpica",
             "menu-item#catalogos",
             "menu-item#tarjeta_olimpica",
@@ -81,6 +83,120 @@
             "orientation": "vertical"
         }
     },
+ /* ........................nuestra empresa................... */  
+
+ "disclosure-layout#nuestra_empresa_mobile":{
+    "children": [
+        "disclosure-trigger#nuestra_empresa_mobile",
+        "disclosure-content#nuestra_empresa_mobile"
+    ]
+},
+"disclosure-trigger#nuestra_empresa_mobile": {
+    "children": [
+        "rich-text#nuestra_empresa_mobile"
+    ]
+},
+"rich-text#nuestra_empresa_mobile": {
+    "props": {
+        "text": "Nuestra empresa "
+    }
+},
+"disclosure-content#nuestra_empresa_mobile": {
+    "children": [
+        "menu#nuestra_empresa_mobile"
+    ]
+},
+"menu#nuestra_empresa_mobile": {
+    "children": [
+        "menu-item#nuestras_tiendas",
+        "menu-item#domicilios",
+        "menu-item#quienes_somos",
+        "menu-item#trabaja_con_nosotros",
+        "menu-item#noticias"
+    ],
+    "props": {
+        "orientation": "vertical"
+    }
+},
+/* ........................informacion legal................... */  
+"disclosure-layout#info_legal_mobile":{
+    "children": [
+        "disclosure-trigger#info_legal_mobile",
+        "disclosure-content#info_legal_mobile"
+    ]
+},
+"disclosure-trigger#info_legal_mobile": {
+    "children": [
+        "rich-text#info_legal_mobile"
+    ]
+},
+"rich-text#info_legal_mobile": {
+    "props": {
+        "text": "Informacion legal "
+    }
+},
+"disclosure-content#info_legal_mobile": {
+    "children": [
+        "menu#info_legal_mobile"
+    ]
+},
+"menu#info_legal_mobile": {
+    "children": [
+        "menu-item#informacion_legal",
+      "menu-item#terminos y condiciones",
+      "menu-item#terminos_market_place",
+      "menu-item#politica_provacidad",
+      "menu-item#aviso_privacidad",
+      "menu-item#derecho_retracto",
+      "menu-item#reglamento_tarjeta_plata",
+      "menu-item#politica_revision_pago",
+      "menu-item#tdt",
+      "menu-item#todo_tdt",
+      "menu-item#lineas_atencion_marcas",
+      "menu-item#SIC",
+      "menu-item#comunicacion_clintes",
+      "menu-item#comunicacion_provedores",
+      "menu-item#promociones_vigentes"
+    ],
+    "props": {
+        "orientation": "vertical"
+    }
+},
+
+/* ........................servicio al cliente................... */  
+
+"disclosure-layout#servicio_cliente_mobile":{
+    "children": [
+        "disclosure-trigger#servicio_cliente_mobile",
+        "disclosure-content#servicio_cliente_mobile"
+    ]
+},
+"disclosure-trigger#servicio_cliente_mobile": {
+    "children": [
+        "rich-text#servicio_cliente_mobile"
+    ]
+},
+"rich-text#servicio_cliente_mobile": {
+    "props": {
+        "text": "Servicio al cliente"
+    }
+},
+"disclosure-content#servicio_cliente_mobile": {
+    "children": [
+        "menu#servicio_cliente_mobile"
+    ]
+},
+"menu#servicio_cliente_mobile": {
+    "children": [
+        "menu-item#preguntas_frecuentes",
+        "menu-item#contactenos"
+    ],
+    "props": {
+        "orientation": "vertical"
+    }
+},
+
+
   
 
 
