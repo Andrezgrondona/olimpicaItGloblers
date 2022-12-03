@@ -9,7 +9,7 @@
       //* 3 */"flex-layout.row#home__img-grid__section_one",
       /* 4 */"flex-layout.row#home__cardShop",
       "list-context.image-list#home-slider-random__products",
-      /* 5 */"list-context.image-list#home__slider--promo",
+      //* 5 */"list-context.image-list#home__slider--promo",
       /* 6 */"flex-layout.row#banner-imagenes2",
       /* 7 *///"list-context.image-list#home__slider--list",
       /* 8 */"rich-text#ofertas_imperdibles",
@@ -22,6 +22,7 @@
       /* 14 */"flex-layout.row#home__img-grid__section",
       "list-context.image-list#home-slider-random__products",
       /* 15 */"list-context.image-list#home__slider-servicios_para-ti"
+      
      ///* 16 */"search-result-layout.customQuery#home__search"
      ///* 17 */"list-context.image-list#home-slider-random__products"
       

@@ -1,0 +1,26 @@
+{
+    "newsletter-form": {
+      "title":"newslleter",
+      "children": [
+        "newsletter-input-email",
+        "newsletter-input-name",
+        "newsletter-submit"
+      ],
+      "props":{
+        "blockClass":"container_newsletter"
+      }
+    },
+    "newsletter-input-email":{
+      "props":{
+        "blockClass":"input-email",
+        "placeholderText":"Ingrese su direccion de correo electronico"
+      }
+    },
+    "newsletter-input-name":{
+      "props":{
+        
+        "blockClass":"input-name",
+        "placeholderText":"Introduzca su nombre"
+      }
+    }
+  }

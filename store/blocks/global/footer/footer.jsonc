@@ -13,6 +13,7 @@
       "flex-layout.row#desktop_footer__container_two"
     ],
     "props": {
+      "width":"100%",
       "blockClass": "background__footer-desktop"
     }
   },
@@ -36,10 +37,19 @@
     },
     "flex-layout.col#section_footer_right":{
       "children":[
-        "rich-text#nuestro_boletin"
+        "newsletter-form",
+        "rich-text#info_terms--one"
       ],
       "props": {
         "horizontalAlign":"center"
+      }
+    },
+    "rich-text#info_terms--one":{
+      "title":"info_terms--one",
+      "props":{
+        "blockClass":"info_terms--one",
+        "horizontalAlign":"center",
+        "text":"Al suscribirse acepta recibir comunicación de ofertas, lanzamientos y promociones de Olímpica."
       }
     },
     "rich-text#nuestro_boletin":{
@@ -61,7 +71,8 @@
       "flex-layout.col#desktop-footer__container--col-six"
     ],
     "props": {
-      "horizontalAlign": "between"
+      "blockClass":"footer_container-desktop"
+,      "horizontalAlign": "between"
     }
   },
   /* .............columna # 1........................... */

@@ -1,0 +1,30 @@
+.paragraph--info_terms--one{
+    color: white;
+    text-align: center;
+}
+
+.paragraph--text_boletin{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.wrapper--text_boletin{
+    margin-top: 70px;
+}
+
+/* textos info mobile tablet footer  */
+.wrapper--text_mobile-footer{
+    width: 350px;
+}
+.paragraph--text_mobile-footer{
+    text-align: center;
+    color: white;
+}
+
+.paragraph--siguenos_footer-mobile{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat-soft';
+}

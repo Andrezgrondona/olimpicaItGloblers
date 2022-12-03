@@ -53,7 +53,7 @@
 /* search bar mobile */
 .searchBarContainer{
   background-color: #e90026;
-  width: 100%;
+ /*  width: 100%; */
 }
 
 
@@ -80,9 +80,15 @@
   }
 }
 
-@media (max-width: 460px) {
+
+@media (max-width: 280px) {
   .searchBarInnerContainer--Barra_busqueda_inteligente{
-    width: 355px;
+    width: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 200px;
   }
 }
 
