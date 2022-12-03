@@ -324,28 +324,28 @@
     ],
     "styles": {
       "heading-1": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "700",
         "fontSize": "3rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-2": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "700",
         "fontSize": "2.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-3": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "700",
         "fontSize": "1.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-4": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "normal",
         "fontSize": "1.5rem",
         "textTransform": "initial",
@@ -359,7 +359,7 @@
         "letterSpacing": "0"
       },
       "heading-6": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "normal",
         "fontSize": "1.25rem",
         "textTransform": "initial",
@@ -373,20 +373,20 @@
         "letterSpacing": "0"
       },
       "small": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontSize": "0.875rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "mini": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "normal",
         "fontSize": "0.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "500",
         "fontSize": "1rem",
         "textTransform": "uppercase",
@@ -400,7 +400,7 @@
         "letterSpacing": "0"
       },
       "action--large": {
-        "fontFamily": "Montserrat, Montserrathin",
+        "fontFamily": "Montserrat, 'Montserrat-soft'",
         "fontWeight": "500",
         "fontSize": "1.25rem",
         "textTransform": "uppercase",

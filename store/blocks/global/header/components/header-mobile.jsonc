@@ -3,7 +3,8 @@
     "title":"container header mobile",
          "children":[
           "header-row#mobile__container-header",
-          "search-bar#header__search" 
+          "flex-layout.row#header__search-mobile"
+         
            ],
            "props":{
             "blockClass":"container_search_bar--mobile"
@@ -143,8 +144,18 @@
       "flex-layout.row#minicart__footer":{
         "title":"minicart footer",
         "children":["minicart-summary", "minicart-checkout-button"]
-      } 
-      
+      } ,
+
+      /* search bar  */
+      "flex-layout.row#header__search-mobile":{
+        "children":[
+          "search-bar#header__search" 
+  
+        ],
+        "props":{
+          "colSizing":"auto"
+        }
+      }
       
     
 }

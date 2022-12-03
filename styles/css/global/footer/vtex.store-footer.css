@@ -1,7 +1,20 @@
 .footerLayout--background__footer-desktop{
-    background-color: #5598bb;
-}
-/* 
-color del bg
   background-color: #30393e;
+}
+
+/* 
+color bn
+ background-color: #30393e;
 */
+
+/* footer tablet y mobile */
+.footerLayout{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+
+  background-color: #30393e;
+}

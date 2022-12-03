@@ -1,0 +1,657 @@
+{
+    /* .............footer mobile.......... */
+    "footer-layout.mobile": {
+        "title": "footer layout mobile",
+        "children": [
+            "flex-layout.row#container_info--footer"
+            //"disclosure-layout-group#footer__menu--group "
+        ],
+        "props": {
+            "blockclass": "form_footer--form"
+        }
+    },
+    "flex-layout.row#container_info--footer": {
+        "children": [
+            "flex-layout.col#container_info--footer"
+        ]
+    },
+    "flex-layout.col#container_info--footer": {
+        "children": [
+            "rich-text#nuestro_boletin",
+            "flex-layout.row#newsletter-form_footer-mobile",
+            "rich-text#info_terms--one",
+            "flex-layout.row#image_logo_footer--mobile",
+            "flex-layout.row#container_necesitas_ayuda-mobile",
+            "flex-layout.row#barranquila_text",
+            "flex-layout.row#resto_del_pais_text",
+            "flex-layout.row#social_networks_desktop-mobile",
+            "flex-layout.row#menu#websites_footer--mobile"
+            //"vtex.menu@2.x:menu#websites"
+        ],
+        "props": {
+            "horizontalAlign": "center"
+        }
+    },
+    /* .....newslletter form.................. */
+    "flex-layout.row#newsletter-form_footer-mobile": {
+        "children": [
+            "newsletter-form"
+        ]
+    },
+    /* .....imagen logo mobile y tablet ....... */
+    "flex-layout.row#image_logo_footer--mobile": {
+        "title": "image_logo_footer--mobile",
+        "children": [
+            "image#image_footer-mobile"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "width": 90
+        }
+    },
+    "image#image_footer-mobile": {
+        "title": "image footer desktop",
+        "props": {
+            "blockClass": "image_footer",
+            "src": "assets/img/footer/logo-footer.jpeg",
+            "width": "70%"
+        }
+    },
+    /* ......textos mobile y desktop............ */
+    /* necesitas ayuda? */
+    "flex-layout.row#container_necesitas_ayuda-mobile": {
+        "children": [
+            "rich-text#necesitas_ayuda-mobile"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "width": 90
+        }
+    },
+    "rich-text#necesitas_ayuda-mobile": {
+        "title": "necesitas_ayuda-mobile",
+        "props": {
+            "text": "¿Necesitas ayuda?",
+            "blockClass": "text_mobile-footer"
+        }
+    },
+    /* Barranquilla*/
+    "flex-layout.row#barranquila_text": {
+        "children": [
+            "rich-text#barranquila_text"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "width": 90
+        }
+    },
+    "rich-text#barranquila_text": {
+        "title": "barranquila_text",
+        "props": {
+            "text": "Barranquilla: 371 01 23",
+            "blockClass": "text_mobile-footer"
+        }
+    },
+    /* Resto del pais*/
+    "flex-layout.row#resto_del_pais_text": {
+        "children": [
+            "rich-text#resto_del_pais_text"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "width": 90
+        }
+    },
+    "rich-text#resto_del_pais_text": {
+        "title": "resto_del_pais_text",
+        "props": {
+            "text": "Resto del pais: 018000 510 510",
+            "blockClass": "text_mobile-footer"
+        }
+    },
+    /* social networs */
+    "flex-layout.row#social_networks_desktop-mobile": {
+        "title": "social_networks_desktop-mobile",
+        "children": [
+            "flex-layout.col#social_networks_desktop-mobile"
+        ]
+    },
+    "flex-layout.col#social_networks_desktop-mobile": {
+        "children": [
+            "rich-text#siguenos_footer-mobile",
+            "social-networks"
+        ]
+    },
+    "rich-text#siguenos_footer-mobile": {
+        "props": {
+            "blockClass": "siguenos_footer-mobile",
+            "text": "Siguenos"
+        }
+    },
+    /* ..........menu mobile footer........ */
+    "flex-layout.row#menu#websites_footer--mobile":{
+        "children":[
+            "flex-layout.col#menu#websites_footer--mobile"
+        ]
+    },
+    "flex-layout.col#menu#websites_footer--mobile":{
+        "children":[
+            "vtex.menu@2.x:menu#websites"
+        ]
+    },
+    "vtex.menu@2.x:menu#websites": {
+        "title": "menu#websites",
+        "children": [
+            "menu-item#shop",
+            "menu-item#shop_contenido",
+            "menu-item#shop_empresa",
+            "menu-item#shop_info_legal",
+            "menu-item#shop_serv_cliente"
+        ],
+        "props": {
+            "blockclass": "menu_footer-mobile",
+            "orientation": "vertical",
+            "highlight": true
+        }
+    },
+    
+    /* ........menu categorias.......... */
+    "menu-item#shop": {
+        "title": "shop",
+        "props": {
+            "iconPosition":"right",
+            "onMountBehavior": "closed",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Categorias"
+            },
+            "iconProps": {
+                "onMountBehavior": "closed",
+                "id": "arrow-down",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#shop"
+        ] // Defining a submenu
+    },
+    "vtex.menu@2.x:submenu#shop": {
+        "title": "submenu shop",
+        "children": [
+            "vtex.menu@2.x:menu#submenushop"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenushop": {
+        "title": "items submenu",
+        "children": [
+            "menu-item#Electrohogar",
+            "menu-item#tv_audio_video",
+            "menu-item#tecnologia_y_celulares",
+            "menu-item#hogar",
+            "menu-item#jugueteria"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........menu contenido.......... */
+    "menu-item#shop_contenido": {
+        "title": "contenido",
+        "props": {
+            "iconPosition":"right",
+            "onMountBehavior": "closed",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Contenido"
+            },
+            "iconProps": {
+                "onMountBehavior": "closed",
+                "id": "arrow-down",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": false
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#shop_contenido"
+        ] // Defining a submenu
+    },
+    "vtex.menu@2.x:submenu#shop_contenido": {
+        "title": "submenu shop_contenido",
+        "children": [
+            "vtex.menu@2.x:menu#submenushop_contenido"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenushop_contenido": {
+        "title": "items submenu_contenido",
+        "children": [
+            "menu-item#sabores_olimpica",
+            "menu-item#catalogos",
+            "menu-item#tarjeta_olimpica",
+            "menu-item#tarjeta_plata",
+            "menu-item#app_olimpica",
+            "menu-item#garantia_extendida"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........menu empresa.......... */
+    "menu-item#shop_empresa": {
+        "title": "contenido",
+        "props": {
+            "iconPosition":"right",
+            "onMountBehavior": "closed",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Empresa"
+            },
+            "iconProps": {
+                "onMountBehavior": "closed",
+                "id": "arrow-down",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": false
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#shop_empresa"
+        ] // Defining a submenu
+    },
+    "vtex.menu@2.x:submenu#shop_empresa": {
+        "title": "submenu shop_empresa",
+        "children": [
+            "vtex.menu@2.x:menu#submenushop_empresa"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenushop_empresa": {
+        "title": "items submenu_empresa",
+        "children": [
+            "menu-item#nuestras_tiendas",
+            "menu-item#domicilios",
+            "menu-item#quienes_somos",
+            "menu-item#trabaja_con_nosotros",
+            "menu-item#noticias"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........menu info lega.......... */
+    "menu-item#shop_info_legal": {
+        "title": "Infomracion legal",
+        "props": {
+            "iconPosition":"right",
+            "onMountBehavior": "closed",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Informacion legal"
+            },
+            "iconProps": {
+                "onMountBehavior": "closed",
+                "id": "arrow-down",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": false
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#shop_info_legal"
+        ] // Defining a submenu
+    },
+    "vtex.menu@2.x:submenu#shop_info_legal": {
+        "title": "submenu shop_info_legal",
+        "children": [
+            "vtex.menu@2.x:menu#submenushop_info_legal"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenushop_info_legal": {
+        "title": "items submenu_info_legal",
+        "children": [
+            "menu-item#terminos y condiciones",
+            "menu-item#terminos_market_place",
+            "menu-item#politica_provacidad",
+            "menu-item#aviso_privacidad",
+            "menu-item#derecho_retracto",
+            "menu-item#reglamento_tarjeta_plata",
+            "menu-item#politica_revision_pago",
+            "menu-item#tdt",
+            "menu-item#todo_tdt",
+            "menu-item#lineas_atencion_marcas",
+            "menu-item#SIC",
+            "menu-item#comunicacion_clintes",
+            "menu-item#comunicacion_provedores",
+            "menu-item#promociones_vigentes"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+     /* ........menu servicio al cliente.......... */
+     "menu-item#shop_serv_cliente": {
+        "title": "Servicio  al cliente",
+        "props": {
+            "iconPosition":"right",
+            "onMountBehavior": "closed",
+            "id": "menu-item-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Shop",
+                "text": "Servicio al cliente"
+            },
+            "iconProps": {
+                "onMountBehavior": "closed",
+                "id": "arrow-down",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": false
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#shop_serv_cliente"
+        ] // Defining a submenu
+    },
+    "vtex.menu@2.x:submenu#shop_serv_cliente": {
+        "title": "submenu shop_serv_cliente",
+        "children": [
+            "vtex.menu@2.x:menu#submenushop_serv_cliente"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenushop_serv_cliente": {
+        "title": "items submenu_serv_cliente",
+        "children": [
+            "menu-item#preguntas_frecuentes",
+            "menu-item#contactenos"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+
+
+
+
+
+
+
+
+    /* .............disclosure mobile.......... */
+    "disclosure-layout-group#footer__menu--group ": {
+        "title": "footer__menu--group ",
+        "children": [
+            "disclosure-layout#policies",
+            "disclosure-layout#contenido",
+            "disclosure-layout#nuestra_empresa_mobile",
+            "disclosure-layout#info_legal_mobile",
+            "disclosure-layout#servicio_cliente_mobile"
+        ]
+    },
+    "disclosure-layout#policies": {
+        "title": "footer__policies",
+        "children": [
+            "disclosure-trigger#policies",
+            "disclosure-content#policies"
+        ]
+    },
+    "disclosure-trigger#policies": {
+        "title": "trigger policies ",
+        "children": [
+            "rich-text#policies"
+        ]
+    },
+    "rich-text#policies": {
+        "title": "text policies",
+        "props": {
+            "text": "Categorias "
+        }
+    },
+    "disclosure-content#policies": {
+        "title": "disclousure policies ",
+        "children": [
+            "menu#policies"
+        ]
+    },
+    "menu#policies": {
+        "title": "policies polcies ",
+        "children": [
+            "menu#categorias",
+            "menu-item#Electrohogar",
+            "menu-item#tv_audio_video",
+            "menu-item#tecnologia_y_celulares",
+            "menu-item#hogar",
+            "menu-item#jugueteria"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........................disclosure contenido................... */
+    "disclosure-layout#contenido": {
+        "title": "disclousure contenido",
+        "children": [
+            "disclosure-trigger#contenido",
+            "disclosure-content#contenido"
+        ]
+    },
+    "disclosure-trigger#contenido": {
+        "title": "contenido container text ",
+        "children": [
+            "rich-text#contenido"
+        ]
+    },
+    "rich-text#contenido": {
+        "title": "text contenido",
+        "props": {
+            "text": "Contenido "
+        }
+    },
+    "disclosure-content#contenido": {
+        "title": "menu contenido",
+        "children": [
+            "menu#contenido_footer"
+        ]
+    },
+    "menu#contenido_footer": {
+        "title": "items contenido",
+        "children": [
+            "menu-item#sabores_olimpica",
+            "menu-item#catalogos",
+            "menu-item#tarjeta_olimpica",
+            "menu-item#tarjeta_plata",
+            "menu-item#app_olimpica",
+            "menu-item#garantia_extendida"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........................nuestra empresa................... */
+    "disclosure-layout#nuestra_empresa_mobile": {
+        "title": "nuestra_empresa_mobile",
+        "children": [
+            "disclosure-trigger#nuestra_empresa_mobile",
+            "disclosure-content#nuestra_empresa_mobile"
+        ]
+    },
+    "disclosure-trigger#nuestra_empresa_mobile": {
+        "title": "trigger nuestra empresa",
+        "children": [
+            "rich-text#nuestra_empresa_mobile"
+        ]
+    },
+    "rich-text#nuestra_empresa_mobile": {
+        "title": "container text",
+        "props": {
+            "text": "Nuestra empresa "
+        }
+    },
+    "disclosure-content#nuestra_empresa_mobile": {
+        "title": "container menu nuestra empresa",
+        "children": [
+            "menu#nuestra_empresa_mobile"
+        ]
+    },
+    "menu#nuestra_empresa_mobile": {
+        "title": "item menu nuestra empresa",
+        "children": [
+            "menu-item#nuestras_tiendas",
+            "menu-item#domicilios",
+            "menu-item#quienes_somos",
+            "menu-item#trabaja_con_nosotros",
+            "menu-item#noticias"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........................informacion legal................... */
+    "disclosure-layout#info_legal_mobile": {
+        "title": "info_legal_mobile",
+        "children": [
+            "disclosure-trigger#info_legal_mobile",
+            "disclosure-content#info_legal_mobile"
+        ]
+    },
+    "disclosure-trigger#info_legal_mobile": {
+        "title": "trigger info_legal_mobile",
+        "children": [
+            "rich-text#info_legal_mobile"
+        ]
+    },
+    "rich-text#info_legal_mobile": {
+        "title": "text info_legal_mobile",
+        "props": {
+            "text": "Informacion legal "
+        }
+    },
+    "disclosure-content#info_legal_mobile": {
+        "title": "menu info_legal_mobile",
+        "children": [
+            "menu#info_legal_mobile"
+        ]
+    },
+    "menu#info_legal_mobile": {
+        "title": "menu item info_legal_mobile",
+        "children": [
+            "menu-item#informacion_legal",
+            "menu-item#terminos y condiciones",
+            "menu-item#terminos_market_place",
+            "menu-item#politica_provacidad",
+            "menu-item#aviso_privacidad",
+            "menu-item#derecho_retracto",
+            "menu-item#reglamento_tarjeta_plata",
+            "menu-item#politica_revision_pago",
+            "menu-item#tdt",
+            "menu-item#todo_tdt",
+            "menu-item#lineas_atencion_marcas",
+            "menu-item#SIC",
+            "menu-item#comunicacion_clintes",
+            "menu-item#comunicacion_provedores",
+            "menu-item#promociones_vigentes"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    /* ........................servicio al cliente................... */
+    "disclosure-layout#servicio_cliente_mobile": {
+        "title": "servicio_cliente_mobile",
+        "children": [
+            "disclosure-trigger#servicio_cliente_mobile",
+            "disclosure-content#servicio_cliente_mobile"
+        ]
+    },
+    "disclosure-trigger#servicio_cliente_mobile": {
+        "title": "trigger servicio_cliente_mobile",
+        "children": [
+            "rich-text#servicio_cliente_mobile"
+        ]
+    },
+    "rich-text#servicio_cliente_mobile": {
+        "title": "text servicio_cliente_mobile",
+        "props": {
+            "text": "Servicio al cliente"
+        }
+    },
+    "disclosure-content#servicio_cliente_mobile": {
+        "title": "disclosure servicio_cliente_mobile",
+        "children": [
+            "menu#servicio_cliente_mobile"
+        ]
+    },
+    "menu#servicio_cliente_mobile": {
+        "title": "menu servicio_cliente_mobile",
+        "children": [
+            "menu-item#preguntas_frecuentes",
+            "menu-item#contactenos"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#terms-and-conds": {
+        "title": "menu item servicio_cliente_mobile",
+        "props": {
+            "id": "menu-terms-and-conds",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "Terminos y condiciones",
+                "text": "Terminos y condiciones"
+            }
+        }
+    },
+    "menu-item#privacy-policies": {
+        "props": {
+            "id": "menu-privacy-policies",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "tagTitle": "Politicas de privacidad",
+                "text": "Politicas de privacidad"
+            }
+        }
+    }
+}

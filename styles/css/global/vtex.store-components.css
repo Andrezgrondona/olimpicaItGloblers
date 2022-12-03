@@ -53,29 +53,52 @@
 /* search bar mobile */
 .searchBarContainer{
   background-color: #e90026;
-  width: 100%;
+ /*  width: 100%; */
 }
 
-/* imagen promo grid home (flex-layout.row#home__img-grid__section )*/
+
+/* imagen colchon grid */
 .imageElement--promotion-image{
-  height: 500px;
+  height: 490px;
+}
+
+/* border radius al search bar */
+:global(.vtex-input-prefix__group){
+  border-radius: 30px;
+ 
+}
+
+/* search bar desktop */
+.searchBarInnerContainer--Barra_busqueda_inteligente{
+  width: 600px;
 }
 
 @media (max-width: 688px) {
-  .imageElement--promotion-image{
-    height: 300px;
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 500px;
+    margin-left: 30px;
   }
 }
 
 
-/* imagen promo desktop / home__slider--body2 */
-.imageElement--image_slider--body2{
-  margin-left: 80px;
-}
-@media (max-width: 420px) {
-  .imageElement--image_slider--body2{
-    margin-right: 80px;
-    margin-top: 10px;
+@media (max-width: 280px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 150px;
   }
 }
+@media (max-width: 400px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente{
+    width: 200px;
+  }
+}
+
+/* imahen footer */
+.imageElement--image_footer{
+  border-radius: 0;
+}
+
+
+
+
+
 

@@ -1,4 +1,31 @@
 .styledLinkContent--txt_category-footer{
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 15px;
+}
+
+/* textos informacion footer */
+.styledLinkContent--txt_menu-item{
+    color: rgb(203, 196, 196);
+    font-size: 12px;  
+}
+
+.styledLinkContent{
+    width: 400px;
+    color: white;
+}
+
+
+/* conteneror informacion all col footer desktop */
+.styledLinkContent--txt_category-footer{
+    width: 100px;
+}
+
+.styledLinkContent--txt_menu-item{
+    width: 100px;
+}
+
+
+/* background sub items */
+.submenuWrapper--isOpen{
+    background-color: #30393e;
 }

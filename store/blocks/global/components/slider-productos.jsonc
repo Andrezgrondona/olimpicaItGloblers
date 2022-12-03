@@ -20,7 +20,7 @@
             "maxItemsPerPage":1,
             "showPaginationDots":"never",
             "itemsPerPage": {
-             "desktop": 1,
+             "desktop": 3,
              "tablet": 1,
               "phone": 1
            },
@@ -28,6 +28,6 @@
            "showNavigationArrows": "desktopOnly",
             "blockClass": "carousel"
           },
-          "children": ["search-result-layout.customQuery#home__search"]
+          "children": ["shelf.relatedProducts"]
       }
   }

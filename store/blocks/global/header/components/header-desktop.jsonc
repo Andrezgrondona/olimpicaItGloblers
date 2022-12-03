@@ -171,8 +171,9 @@
         "title":"header seacrh",
         "blocks": ["autocomplete-result-list.v2"],
         "props":{
+          "displayMode":"search-button",
           "placeholder":"¿Que estas buscando hoy?",
-          "blockClass":"Barra_busqueda_inteligente",
+          //"blockClass":"Barra_busqueda_inteligente",
           "openAutocompleteOnFocus": true}
       },
       /* ............................MINICART carrito vacio ................................................. */

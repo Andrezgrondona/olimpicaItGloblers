@@ -1,0 +1,31 @@
+{
+    /* ...........................redes socilaes............................ */
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "http//facebook.com/exito",
+          "name": "facebook"
+        },
+        {
+          "url": "http//twitter.com/exito",
+          "name": "twitter"
+        },
+        {
+          "url": "http//youtube.com/exito",
+          "name": "youtube"
+        }
+      ]
+    }
+  },
+  /* ...........................metodos de pago ............................ */
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "mastercard",
+        "visa",
+        "diners club"
+      ]
+    }
+  }
+}
