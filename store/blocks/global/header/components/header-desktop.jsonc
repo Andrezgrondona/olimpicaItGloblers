@@ -173,7 +173,7 @@
         "props":{
           "displayMode":"search-button",
           "placeholder":"¿Que estas buscando hoy?",
-          "blockClass":"Barra_busqueda_inteligente",
+          //"blockClass":"Barra_busqueda_inteligente",
           "openAutocompleteOnFocus": true}
       },
       /* ............................MINICART carrito vacio ................................................. */

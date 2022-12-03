@@ -6,3 +6,15 @@
 color bn
  background-color: #30393e;
 */
+
+/* footer tablet y mobile */
+.footerLayout{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+
+  background-color: #30393e;
+}

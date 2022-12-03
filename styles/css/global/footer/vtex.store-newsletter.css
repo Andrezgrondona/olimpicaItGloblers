@@ -1,0 +1,14 @@
+.newsletterForm--container_newsletter{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+.emailInputContainer--input-email{
+    margin-bottom: 7px;
+}
+
+.formSubmitContainer{
+    margin-left: 160px;
+    margin-top: 10px;
+}
