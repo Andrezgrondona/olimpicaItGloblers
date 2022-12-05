@@ -1,0 +1,45 @@
+/* textos quienes somos */
+.paragraph--botonLinkeable_quienes-somos {
+    color: rgb(251, 251, 251);
+    border-radius: 20px;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    border-color: black;
+    font-family: 'Montserrat-soft';
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.paragraph--text_info-two_nosotros {
+    font-size: 10px;
+    font-family: 'Montserrat-soft';
+    font-weight: bold;
+}
+
+/* trabaja con nosotros */
+.paragraph--botonLinkeable_trabaja_con_nosotros {
+    color: rgb(10, 0, 0);
+    border-radius: 20px;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    border-color: black;
+    font-family: 'Montserrat-soft';
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* gestion ambiental */
+
+.paragraph--botonLinkeable_gestion_ambiental {
+    color: rgb(10, 0, 0);
+    border-radius: 20px;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    border-color: black;
+    font-family: 'Montserrat-soft';
+    font-weight: bold;
+    margin-left: 10px;
+}

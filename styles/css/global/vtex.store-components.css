@@ -98,6 +98,29 @@
 }
 
 
+/* imagen acerca de nosotros */
+.imageElement--image_acerca-de-nosotros{
+  box-shadow: 0 3px 5px rgb(0 0 0 / 11%);
+    border: 1px solid hsla(0,0%,43.9%,.19);
+    border-radius: 23px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+
+/* botones */
+:global(.vtex-button){
+  background-color: #e90026;
+  border-color: #e90026;
+  border-radius: 20px;
+}
+
+:global(.vtex-button__label){
+  background-color: none;
+  
+ 
+}
+
 
 
 

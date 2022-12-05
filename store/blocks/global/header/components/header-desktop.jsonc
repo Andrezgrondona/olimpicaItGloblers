@@ -10,6 +10,7 @@
           "flex-layout.row#icon_login"
         ],
         "props": {
+          "sticky":true,
           "horizontalAlign":"between",
           "blockClass": "desktop__container-header"
         }
@@ -64,7 +65,10 @@
         "title":"icon login",
         "children":[
           "flex-layout.col#login"
-        ]
+        ],
+        "props":{
+          "blockClass":"container-login__desktop"
+        }
       },
       "flex-layout.col#login":{
         "title":"login user",
