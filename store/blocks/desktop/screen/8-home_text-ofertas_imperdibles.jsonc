@@ -1,4 +1,10 @@
 {
+  "flex-layout.row#home_ofertas_imperdibles":{
+    "title":"container text lanzamientos de la semana",
+    "children":[
+      "rich-text#ofertas_imperdibles"
+    ]
+  },
     "rich-text#ofertas_imperdibles": {
       "title":"text ofertas imperdibles",
         "props": {
@@ -9,3 +15,4 @@
         }
       }
 }
+

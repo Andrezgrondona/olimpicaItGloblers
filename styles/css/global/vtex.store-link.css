@@ -1,0 +1,74 @@
+/* botones link pagina quienes somos */
+
+.childrenContainer--botonLinkeable_quienes-somos{
+    background-color:#005ca9;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    height: 30px;
+    border-radius: 20px;
+    width: 190px;
+   }
+
+   .link--botonLinkeable_quienes-somos{
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgb(84, 101, 188);
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* trabaja con nosotros */
+.childrenContainer--botonLinkeable_trabaja_con_nosotros{
+   border: 1px solid #36474f;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    height: 30px;
+    border-radius: 20px;
+    width: 190px;
+   }
+
+   .link--botonLinkeable_trabaja_con_nosotros{
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+   
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Gestion ambiental */
+.childrenContainer--botonLinkeable_gestion_ambiental{
+    border: 1px solid #36474f;
+     display:flex;
+     flex-direction:row;
+     flex-wrap:nowrap;
+     justify-content:center;
+     align-items:center;
+     align-content:center;
+     height: 30px;
+     border-radius: 20px;
+     width: 190px;
+    }
+ 
+    .link--botonLinkeable_gestion_ambiental{
+     color: black;
+     border-radius: 20px;
+     margin: auto;
+    
+     font-size: 25px;
+     text-decoration: none;
+     margin-top: 10px;
+     margin-left: 10px;
+ }

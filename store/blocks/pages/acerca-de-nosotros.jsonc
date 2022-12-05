@@ -1,0 +1,233 @@
+{
+    "store.custom#acerca-de-nosotros": {
+        "blocks": [
+            "flex-layout.row#image_acerca-de-nosotros",
+            "flex-layout.row#container_info-nosotros"
+        ]
+    },
+    "flex-layout.row#image_acerca-de-nosotros": {
+        "children": [
+            "image#image_acerca-de-nosotros"
+        ],
+        "props": {
+            "marginTop":5,
+            "horizontalAlign": "center"
+        }
+    },
+    "image#image_acerca-de-nosotros": {
+        "props": {
+            "src": "assets/img/nosotros/1.png"
+        }
+    },
+    "flex-layout.row#container_info-nosotros": {
+        "children": [
+            "flex-layout.col#info_nosotros_column-left",
+            "flex-layout.col#info_nosotros_column-right"
+        ],
+        "props": {
+            "marginTop":5,
+            "blockclass": "container_info-nosotros",
+            "horizontalAlign": "around"
+        }
+    },
+    "flex-layout.col#info_nosotros_column-left": {
+        "children": [
+            "flex-layout.row#container_info-nosotros-cont_one"
+        ],
+        "props":{
+            "marginLeft":8,
+            "width":"70%"
+        }
+    },
+    "flex-layout.col#info_nosotros_column-right": {
+        "children": [
+            "flex-layout.row#container_info-nosotros-cont_two"
+        ],
+        "props":{
+            "width":"30%"
+        }
+    },
+    "flex-layout.row#container_info-nosotros-cont_one": {
+        "children": [
+            "flex-layout.col#container_info-nosotros-col-one",
+            "flex-layout.col#container_info-nosotros-col-two"
+        ],
+        "props": {
+            "blockClass": "nosotros-col-one",
+            "horizontalAlign": "center"
+        }
+    },
+    /* ...................Botones.................... */
+    "flex-layout.col#container_info-nosotros-col-one": {
+        "children": [
+            "link#boton_quienes-somos",
+            "link#boton_trabaja_con_nosotros",
+            "link#boton_gestion_ambiental"
+        ],
+        "props": {
+            "horizontalAlign": "center"
+        }
+    },
+    
+     /* ............Quienes somos............ */
+     "link#boton_quienes-somos": {
+        "title": "boton quienes somos",
+        "children": [
+            "icon#home_quienes-somos",
+            "rich-text#_quienes-somos"
+            
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_quienes-somos",
+            "href": "/"
+        }
+    },
+    "icon#home_quienes-somos": {
+        "title": "people",
+        "props": {
+            "id": "people",
+            "size": 17
+        }
+    },
+    "rich-text#_quienes-somos": {
+        "title": "quienes somos",
+        "props": {
+            "blockClass": "botonLinkeable_quienes-somos",
+            "text": "Quienes somos"
+        }
+    },
+    /* ............Trabaja con nosotros............ */
+    "link#boton_trabaja_con_nosotros": {
+        "title": "trabaja_con_nosotros",
+        "children": [
+            "icon#home_trabaja_con_nosotros",
+            "rich-text#_trabaja_con_nosotros"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_trabaja_con_nosotros",
+            "href": "/"
+        }
+    },
+    "icon#home_trabaja_con_nosotros": {
+        "title": "trabaja con nosotros",
+        "props": {
+            "id": "case",
+            "size": 17
+        }
+    },
+    "rich-text#_trabaja_con_nosotros": {
+        "title": "quienes somos",
+        "props": {
+            "blockClass": "botonLinkeable_trabaja_con_nosotros",
+            "text": "Trabaja con nosotros"
+        }
+    },
+     /* ............ gestion ambiental............ */
+     "link#boton_gestion_ambiental": {
+        "title": "trabaja_gestion_ambiental",
+        "children": [
+            "icon#home_trabaja_gestion_ambiental",
+            "rich-text#_trabaja_gestion_ambiental"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_gestion_ambiental",
+            "href": "/"
+        }
+    },
+    "icon#home_trabaja_gestion_ambiental": {
+        "title": "gestion ambiental ",
+        "props": {
+            "id": "hand",
+            "size": 17
+        }
+    },
+    "rich-text#_trabaja_gestion_ambiental": {
+        "title": "quienes somos",
+        "props": {
+            "blockClass": "botonLinkeable_gestion_ambiental",
+            "text": "Gestion ambiental"
+        }
+    },
+    /* ................texto info....................... */
+    "flex-layout.col#container_info-nosotros-col-two": {
+        "children": [
+            "rich-text#text_info-one_nosotros",
+            "rich-text#text_info-two_nosotros"
+        ],
+        "props": {
+            "blockClass": "nosotros-col-two",
+            "horizontalAlign": "center"
+        }
+    },
+    "rich-text#text_info-one_nosotros": {
+        "props": {
+            "blockClass": "text_info-one_nosotros",
+            "text": "Una marca orgullosa de ser colombiana",
+            "horizontalAlign": "center"
+        }
+    },
+    "rich-text#text_info-two_nosotros": {
+        "props": {
+            "blockClass": "text_info-two_nosotros",
+            "text": "Olímpica es la cadena de retail más grande de Colombia con capital 100% nacional. Somos reconocidos como una compañía líder en la comercialización de productos de consumo masivo de óptima calidad, a través de una cadena privada de establecimientos que incluyen Supertiendas, Superalmacenes, Superdroguerías y Droguerías.\n Además de comercializar un amplio portafolio de productos marcas privadas, Olímpica cuenta con marcas propias disponibles en las categorías de supermercado, textil, electrodomésticos, electromenores, tecnología y hogar.",
+            "horizontalAlign": "center"
+        }
+    },
+    "rich-text#pruebacolnatne": {
+        "props": {
+            "horizontalAlign": "center",
+            "text": "hola mundo"
+        }
+    },
+    /* contenedor 2 */
+    "flex-layout.row#container_info-nosotros-cont_two": {
+        "children": [
+            "flex-layout.col#container_info-nosotros-cont_two"
+        ]
+    },
+    "flex-layout.col#container_info-nosotros-cont_two": {
+        "children": [
+            "flex-layout.row#container_info-nosotros-images"
+        ],
+        "props": {
+            "horizontalAlign": "center"
+        }
+    },
+    "flex-layout.row#container_info-nosotros-images": {
+        "children": [
+            "flex-layout.col#container_info-nosotros-images"
+        ]
+    },
+    "flex-layout.col#container_info-nosotros-images": {
+        "children": [
+            "image#image_acerca-de-nosotros_one",
+            "image#image_acerca-de-nosotros_two",
+            "image#image_acerca-de-nosotros_three",
+            "image#image_acerca-de-nosotros_four"
+        ]
+    },
+    "image#image_acerca-de-nosotros_one": {
+        "props": {
+            "blockClass":"image_acerca-de-nosotros",
+            "src": "assets/img/nosotros/2.png"
+        }
+    },
+    "image#image_acerca-de-nosotros_two": {
+        "props": {
+            "blockClass":"image_acerca-de-nosotros",
+            "src": "assets/img/nosotros/3.png"
+        }
+    },
+    "image#image_acerca-de-nosotros_three": {
+        "props": {
+            "blockClass":"image_acerca-de-nosotros",
+            "src": "assets/img/nosotros/4.png"
+        }
+    },
+    "image#image_acerca-de-nosotros_four": {
+        "props": {
+            "blockClass":"image_acerca-de-nosotros",
+            "src": "assets/img/nosotros/5.png"
+        }
+    }
+}
