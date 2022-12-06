@@ -12,3 +12,11 @@
 .flexRowContent--container-login__desktop{
     margin-bottom: 7px;
 }
+
+
+/* search bar container */
+.flexRow--header_container-responsive{
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+}
