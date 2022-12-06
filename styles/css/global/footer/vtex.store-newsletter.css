@@ -1,14 +1,19 @@
-.newsletterForm--container_newsletter{
+.newsletterForm--container_newsletter {
     margin-top: 20px;
     margin-bottom: 5px;
     width: 500px;
 }
 
-.emailInputContainer--input-email{
+.emailInputContainer--input-email {
     margin-bottom: 7px;
 }
 
-.formSubmitContainer{
-    margin-left: 160px;
+.formSubmitContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
     margin-top: 10px;
 }
