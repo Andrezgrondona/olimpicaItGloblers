@@ -3,6 +3,7 @@
   "search-result-layout.customQuery#home__search":{
     "title":"container custom query",
     "props":{
+      "blockclass":"products-search",
       "querySchema":{
         "skusFilter":"FIRST_AVAILABLE",
         "simulationBehavior":"skip"
@@ -17,7 +18,10 @@
       "title":"search desktop",
       "children":[
         "rich-text#ofertas_imperdibles"
-      ]
+      ],
+      "props":{
+        "blockclass":"productos-desktop"
+      }
     },
     "search-result-layout.desktop#home__search--mobile":{
       "title":"search mobile",
@@ -40,7 +44,51 @@
     "search-content#home_results--search":{
       "blocks":["gallery", "not-found"]
     },
-    "gallery":{
-      "blocks":["product-summary.shelf"]
+    "gallery": {
+      "props": {
+        "layouts": [
+          {
+            "name": "two",
+            "component": "OneOrTwoLineSummary",
+            "itemsPerRow": {
+              "(min-width:1008px)":4,
+              "(min-width:623px) and (max-width:1007px)":2,
+              "(max-width:622px)":2
+            }
+          },
+          {
+            "name": "many",
+            "component": "ManyByLineSummary",
+            "itemsPerRow": {
+              "desktop": 5,
+              "mobile": 2
+            }
+          },
+          {
+            "name": "whole",
+            "component": "OneOrTwoLineSummary",
+            "itemsPerRow": {
+              "desktop": 1,
+              "mobile": 2
+            }
+          },
+          {
+            "name": "mobile",
+            "component": "OneOrTwoLineSummary",
+            "itemsPerRow": {
+              "mobile": 2
+            }
+          }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf",
+        "ManyByLineSummary": "product-summary.shelf"
+      }
     }
 }
+
+/* 
+"gallery":{
+  "blocks"["product-summary.shelft]
+}
+
+*/

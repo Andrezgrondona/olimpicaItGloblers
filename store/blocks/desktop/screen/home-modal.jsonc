@@ -3,22 +3,22 @@
         "children":[
           "rich-text#home__modal--trigger",
           "modal-layout#home__modal--layout"
-        ]
+        ],
+        "props":{
+          "blockclass":"container-modal__filtrar"
+        }
       },
       "rich-text#home__modal--trigger":{
         "props":{
-          "text":"Terminos y& Condiciones"
+          "blockclass":"text_filtrar",
+          "text":"Filtrar",
+          "textPosition":"CENTER"
         }
       },
       "modal-layout#home__modal--layout":{
         "children":[
-          "rich-text#home__modal--content"
+          "filter-navigator.v3"
         ]
-      },
-      "rich-text#home__modal--content":{
-        "props":{
-          "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet congue mi. Duis in maximus massa. Curabitur ante arcu, fringilla eget venenatis ac, venenatis ut est. Aenean in leo id ex bibendum luctus. Suspendisse iaculis augue a velit varius, eu placerat nisl hendrerit. Sed efficitur fermentum magna nec lobortis. Mauris sit amet est id neque molestie auctor. Integer luctus diam leo, vitae mollis lorem egestas sit amet."
-        }
       },
 
   /* ..................................SEGUNDO EJEMPLLO DE MODALTRIGGER 1.09 ....................................................... */
