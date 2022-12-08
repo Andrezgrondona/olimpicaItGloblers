@@ -1,4 +1,22 @@
+/* 
 {
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}
+ */
+
+
+{}
+
+
+
+
+/*  {
     "store.search#deparment":{
         "blocks": ["search-result-layout#department"]
       },
@@ -29,4 +47,4 @@
           "text":"# mobile search department"
         }
       }
-}
+} */
