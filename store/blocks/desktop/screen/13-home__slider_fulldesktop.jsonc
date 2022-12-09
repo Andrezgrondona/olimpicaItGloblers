@@ -2,6 +2,10 @@
     "flex-layout.row#home__slider_fulldesktop":{
         "children":[
             "list-context.product-list#demo1"
-        ]
+        ],
+        "props":{
+            
+            "horizontalAlign":"center"
+        }
     }
 }

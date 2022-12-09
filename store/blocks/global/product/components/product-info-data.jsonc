@@ -15,24 +15,28 @@
         "product-images#product__info--image":{
             "title":"images",
             "props":{
+                "blockClass":"PDP__image",
                "zoomMode":"open-modal"
             }
         },
         "flex-layout.col#product__info--data":{
             "title":"Produc info data ",
             "children":[
-                "share",
+                //"share",
                 "vtex.store-components:product-name",
                 "vtex.store-components:product-brand",
                 "product-price",
                 "product-quantity",
-                "product-description",
+                //"product-description",
                 "buy-button",
                 
                 //"shipping-simulator", (simulador de envio )
                 //"product-details", (informacion todos los detalles de envio e info )
                 "rich-text#product__promo_info"
-            ]
+            ],
+            "props":{
+                "blockClass":"info--data_PDP"
+            }
         },
         "rich-text#product__promo_info":{
             "title":"texto adicional del producto"

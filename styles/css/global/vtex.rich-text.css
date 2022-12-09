@@ -43,3 +43,9 @@
     font-weight: bold;
     margin-left: 10px;
 }
+
+.paragraph--text_info__footer{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
