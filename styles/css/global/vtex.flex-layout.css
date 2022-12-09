@@ -1,22 +1,40 @@
 /* pagina acerca de nosotros */
-
-.flexRowContent--nosotros-col-one{
+.flexRowContent--nosotros-col-one {
     box-shadow: 0 3px 5px rgb(0 0 0 / 11%);
-    border: 1px solid hsla(0,0%,43.9%,.19);
+    border: 1px solid hsla(0, 0%, 43.9%, .19);
     border-radius: 23px;
     padding: 20px;
     margin-right: 10px;
 }
 
 /* login container desktop */
-.flexRowContent--container-login__desktop{
+.flexRowContent--container-login__desktop {
     margin-bottom: 7px;
 }
 
-
 /* search bar container */
-.flexRow--header_container-responsive{
+.flexRow--header_container-responsive {
     padding-left: 0rem;
     padding-right: 0rem;
+}
 
+/* pdp elementos info */
+.flexColChild--info--data_PDP {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.flexCol--info--data_PDP {
+    margin-top: 20px;
+    height: 500px;
+}
+
+/* minicart contanier */
+
+.flexRow--container_minicart-products {
+    height: 100px;
 }

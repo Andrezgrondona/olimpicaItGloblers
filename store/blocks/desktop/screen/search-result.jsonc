@@ -12,6 +12,7 @@
         ]
     },
     "search-result-layout.desktop#department": {
+        "title":"department",
         "children": [
             "flex-layout.row#deparment__breadcrumb",
             "flex-layout.row#container__products--desktop"
@@ -22,12 +23,14 @@
         }
     },
     "flex-layout.row#container__products--desktop": {
+        "title":"products--desktop",
         "children": [
             "flex-layout.col#container__products--desktop-col_one",
             "flex-layout.col#container__products--desktop-col_two"
         ]
     },
     "flex-layout.col#container__products--desktop-col_one": {
+        "title":"desktop-col_one",
         "children": [
             "search-title.v2",
             "filter-navigator.v3"
@@ -44,16 +47,19 @@
         }
     },
     "flex-layout.col#container__products--desktop-col_two": {
+        "title":"products--desktop-col_two",
         "children": [
             "flex-layout.row#filters_desktop",
             //"flex-layout.row#productos"
             "search-content#product_desktop"
         ],
         "props": {
+            "blockclass":"products--desktop-col_two",
             "width": "80%"
         }
     },
     "flex-layout.row#filters_desktop": {
+        "title":"filters_desktop",
         "children": [
             "gallery-layout-switcher",
             "total-products.v2",
@@ -65,21 +71,25 @@
         }
     },
     "flex-layout.row#productos": {
+        "title":"products",
         "children": [
             "search-content#home_results--search"
         ]
     },
     "flex-layout.row#deparment__breadcrumb": {
+        "title":"__breadcrumb",
         "children": [
             "flex-layout.col#deparment__breadcrumb"
         ]
     },
     "flex-layout.col#deparment__breadcrumb": {
+        "title":"deparment__breadcrumb",
         "children": [
             "breadcrumb.search"
         ]
     },
     "rich-text#desktop-response-department": {
+        "title":"response-department",
         "props": {
             "text": "#mobile products"
         }
@@ -91,12 +101,14 @@
         ]
     },
     "search-content#product_desktop": {
+        "title": "product_desktop",
         "blocks": [
             "gallery",
             "not-found"
         ]
     },
     "gallery-layout-switcher": {
+        "title": "gallery-layout-switcher",
         "children": [
             "rich-text#vistas",
             "gallery-layout-option#two",
@@ -105,12 +117,15 @@
         ]
     },
     "rich-text#vistas": {
+        "title": "vistasr",
         "props": {
             "text": "Vistas"
         }
     },
     "gallery-layout-option#whole": {
+        "title": "whole",
         "props": {
+            "blockclass":"container_whole",
             "name": "whole"
         },
         "children": [
@@ -118,6 +133,7 @@
         ]
     },
     "gallery-layout-option#two": {
+        "title": "two",
         "props": {
             "name": "two"
         },
@@ -126,6 +142,7 @@
         ]
     },
     "gallery-layout-option#many": {
+        "title": "many",
         "props": {
             "name": "many"
         },
@@ -133,8 +150,10 @@
             "icon-inline-grid"
         ]
     },
+    
     /* ......................MOBILE........................... */
     "search-result-layout.mobile#department": {
+        "title": "department",
         "children": [
             "flex-layout.row#home__section--button_info",
             "modal-trigger#home__modal--children",
@@ -143,6 +162,7 @@
         ]
     },
     "flex-layout.row#container__title-mobile": {
+        "title": "title-mobile",
         "children": [
             "flex-layout.col#container__title-mobile_col_one",
             "flex-layout.col#container__title-mobile_col_two"
@@ -153,6 +173,7 @@
         }
     },
     "flex-layout.col#container__title-mobile_col_one": {
+        "title": "title-mobile_col_one",
         "children": [
             "search-title.v2"
         ],
@@ -162,6 +183,7 @@
         }
     },
     "flex-layout.col#container__title-mobile_col_two": {
+        "title": "title-mobile_col_two",
         "children": [
             "gallery-layout-option#two"
         ],
@@ -171,27 +193,32 @@
         }
     },
     "flex-layout.row#container__products--mobile": {
+        "title": "products--mobile",
         "children": [
             "flex-layout.col#container__products--mobile"
         ]
     },
     "flex-layout.col#container__products--mobile": {
+        "title": "pproducts--mobile",
         "children": [
             "search-content#product_mobile"
         ]
     },
     "search-content#product_mobile": {
+        "title": "pproducts--mobile",
         "blocks": [
             "gallery",
             "not-found"
         ]
     },
     "gallery-layout-switcher#mobile": {
+        "title": "mobile",
         "children": [
             "gallery-layout-option#mobile"
         ]
     },
     "gallery-layout-option#mobile": {
+        "title": "pproducts--mobile-layout",
         "props": {
             "name": "mobile"
         },
@@ -200,239 +227,3 @@
         ]
     }
 }
-/*  "gallery-layout-switcher":{
-        "children":[
-          "gallery-layout-option#grid__two-columns",
-          "gallery-layout-option#grid__one-column"
-        ]
-      },
-      "gallery-layout-option#grid__two-columns":{
-        "props":{
-          "name":"grid-two-columns",
-          "blockclass":"grid__selector--two-columns"
-        }
-      },
-      "gallery-layout-option#grid__one-column":{
-        "props":{
-          "name":"grid-one-column",
-          "blockclass":"grid__selector--one-column"
-        }
-      },
-      "search-content#phone":{
-        "blocks": [
-          "gallery",
-          "not-found"
-        ]
-      } */
-/* .................... */
-/* "flex-layout.row#searchinfo": {
-        "children": [ "flex-layout.row#orderByAndSwitcher"]
-      },
-      "flex-layout.row#orderByAndSwitcher": {
-        "children": ["order-by.v2", "gallery-layout-switcher"],
-        "props": {
-          "horizontalAlign": "right",
-          "preventHorizontalStretch": true,
-          "blockClass": "orderByAndSwitcher",
-          "colGap": 3
-        }
-      },
-      "flex-layout.col#switcherMobile": {
-        "children": ["gallery-layout-switcher"],
-        "props": {
-          "verticalAlign": "middle"
-        }
-      }
-  
-  }     
-/* ......................................................................... */
-/* {
-        "search-result-layout.desktop": {
-            "title": "search result desktop",
-            "children": [
-                //"flex-layout.row#search__breadcrumb",
-               // "flex-layout.row#desktop__search--title",
-                "flex-layout.row#desktop__result",
-                "flex-layout.row#desktop__result--search-info"
-            ],
-            "props": {
-                "pagination": "infinite-scroll",
-                "defaultGalleryLayout": "grid"
-            }
-        },
-        "flex-layout.row#search__breadcrumb": {
-            "title": "search breadcrumb",
-            "children": [
-                "breadcrumb.search"
-            ],
-            "props": {
-                "preserveLayoutOnMobile": true,
-                "fullWidth": true
-            }
-        },
-        "flex-layout.row#desktop__search--title": {
-            "title": "search title",
-            "children": [
-                "search-title.v2"
-            ]
-        },
-        "flex-layout.row#desktop__result": {
-            "title": "search result",
-            "children": [
-                "flex-layout.col#desktop__result--filter",
-                "flex-layout.col#desktop__result--content"
-            ],
-            "props": {
-                "preventHorizontalStretch": true,
-                "fullWidth": true
-            }
-        },
-        "flex-layout.col#desktop__result--filter": {
-            "title": "search result filter",
-            "children": [
-                "filter-navigator.v3"
-            ],
-            "props": {
-                "width": "20%",
-                "blockClass": "filter-column"
-            }
-        },
-        "flex-layout.col#desktop__result--content": {
-            "title": "search result content",
-            "children": [
-                "flex-layout.row#desktop__result--search-info",
-                "flex-layout.row#desktop__result--products"
-            ],
-            "props": {
-                "width": "grow",
-                "preventVerticalStretch": true
-            }
-        },
-        "flex-layout.row#desktop__result--search-info": {
-            "title": "search result info",
-            "children": [
-                "flex-layout.row#desktop__result--order-by",
-                "flex-layout.col#desktop__result--product-count-switcher"
-            ],
-            "props": {
-                "horizontalAlign": "between",
-                "colSizing": "auto"
-            }
-        },
-        "flex-layout.row#desktop__result--order-by": {
-            "title": "search result order by",
-            "children": [
-                "order-by.v2"
-            ],
-            "props": {
-                "horizontalAlign": "between",
-                "preventHorizontalStretch": true,
-                "blockClass": "desktop-order-by"
-            }
-        },
-        "flex-layout.col#desktop__result--product-count-switcher": {
-            "title": "search product count",
-            "children": [
-                "flex-layout.row#desktop__result--product-count"
-            ],
-            "props": {
-                "blockClass": "desktop-product-count"
-            }
-        },
-        "flex-layout.row#desktop__result--product-count": {
-            "children": [
-                "total-products.v2",
-                "gallery-layout-switcher"
-            ]
-        },
-        "flex-layout.row#desktop__result--products": {
-            "title": "search result products",
-            "children": [
-                "search-content"
-            ]
-        },
-        "search-content": {
-            "title": "search content",
-            "blocks": [
-                "gallery",
-                "not-found"
-            ]
-        },
-        "gallery": {
-          "props": {
-            "layouts": [
-              {
-                "name": "grid",
-                "component": "GridSummary",
-                "itemsPerRow": {
-                  "(min-width:1008px)":4,
-                  "(min-width:623px) and (max-width:1007px)":3,
-                  "(max-width:622px)":1
-                }
-              },
-              {
-                "name": "list",
-                "component": "ListSummary",
-                "itemsPerRow": 1
-              }
-            ],
-           // "ListSummary": "product-summary.shelf#listLayout",
-            "GridSummary": "product-summary.shelf"
-          }
-        },
-        "gallery-layout-switcher": {
-            "children": [
-                "gallery-layout-option#grid",
-                "gallery-layout-option#list",
-                "gallery-layout-option#grid__one-column"
-            ]
-        },
-        "gallery-layout-option#grid__one-column":{
-          "props":{
-            "name":"grid-one-column",
-            "blockclass":"grid__selector--one-column"
-          }
-        },
-        "gallery-layout-option#grid": {
-            "props": {
-                "name": "grid"
-            },
-            "children": [
-                "icon-grid",
-                "responsive-layout.desktop#textOptionGrid"
-            ]
-        },
-        "gallery-layout-option#list": {
-            "props": {
-                "name": "list"
-            },
-            "children": [
-                "icon-inline-grid",
-                "responsive-layout.desktop#textOptionList"
-            ]
-        },
-        "responsive-layout.desktop#textOptionGrid": {
-            "children": [
-                "rich-text#option-grid"
-            ]
-        },
-        "responsive-layout.desktop#textOptionList": {
-            "children": [
-                "rich-text#option-list"
-            ]
-        },
-        "rich-text#option-grid": {
-            "props": {
-                "text": "Grid",
-                "textColor": "c-auto",
-                "blockClass": "layout-option"
-            }
-        },
-        "rich-text#option-list": {
-            "props": {
-                "text": "List",
-                "textColor": "c-auto",
-                "blockClass": "layout-option"
-            }
-        }
-    }  */

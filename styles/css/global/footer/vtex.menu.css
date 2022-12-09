@@ -29,3 +29,7 @@
 .submenuWrapper--isOpen{
     background-color: #30393e;
 }
+
+.styledLinkContent--container__menu-item__footer{
+    width: 200px;
+}

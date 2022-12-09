@@ -10,7 +10,8 @@
     "title": "fotter desktop",
     "children": [
       "flex-layout.row#desktop_footer__container_one",
-      "flex-layout.row#desktop_footer__container_two"
+      "flex-layout.row#desktop_footer__container_two",
+      "flex-layout.row#desktop_footer__container_info-final"
     ],
     "props": {
       "width":"100%",
@@ -806,40 +807,58 @@
       }
     }
   },
-  /* ................ejemplo bootcam........... */
-  "flex-layout.row#footer__image": {
-    "children": [
-      "image#logo_footer"
+  /* .................Info Final............. */
+  "flex-layout.row#desktop_footer__container_info-final":{
+    "children":[
+      "flex-layout.col#desktop_footer__container_info-final"
     ]
   },
-  "image#logo_footer": {
-    "props": {
-      "src": "assets/img/logo/logo_olimpica.png",
-      //"width":"80%",
-      "horizontalAlign": "center"
+  "flex-layout.col#desktop_footer__container_info-final":{
+    "children":[
+      "rich-text#text_info__final-Desktop",
+      "flex-layout.row#logo-footer_cols"
+    ],
+    "props":{
+      "horizontalAlign":"center"
     }
   },
-  "flex-layout.row#footer__container": {
-    "children": [
-      "flex-layout.col#footer__container--col-one",
-      "flex-layout.col#footer__container--col-two",
-      "flex-layout.col#footer__container--col-three"
+  "rich-text#text_info__final-Desktop":{
+    "props":{
+      "blockClass":"text_info__final-Desktop",
+      "text":"COMPRA SEGURA\n\nCopyright o Actualización 2021 OLÍMPICA S.A.. Derechos reservados.\n\nSupertiendas y Drogería Olímpica S.A. - Nit 890.107.487 - Dirección de notificación: Calle 53 No. 46-192 local 3-01\nTeléfono: 31770100 - Correo: servicioalcliente@olimpica.com.co"
+    }
+  },
+  "flex-layout.row#logo-footer_cols":{
+    "children":[
+      "flex-layout.col#logo-footer_col-left",
+      "flex-layout.col#logo-footer_col-right"
     ]
   },
-  "flex-layout.col#footer__container--col-one": {
-    "children": [
-      "menu#policies"
+  "flex-layout.col#logo-footer_col-left":{
+    "children":[
+      "image#logo-footer_col-left"
     ]
   },
-  "flex-layout.col#footer__container--col-two": {
-    "children": [
-      "menu#policies"
+  "flex-layout.col#logo-footer_col-right":{
+    "children":[
+      "image#logo-footer_col-right"
     ]
   },
-  "flex-layout.col#footer__container--col-three": {
-    "children": [
-      "social-networks",
-      "accepted-payment-methods"
-    ]
+  "image#logo-footer_col-left": {
+    "title":"image logo footer",
+    "props": {
+        "blockClass": "logos_footer",
+        "src": "assets/img/footer/sonovista.png"
+       
+    }
+},
+"image#logo-footer_col-right": {
+  "title":"image logo footer",
+  "props": {
+      "blockClass": "logos_footer",
+      "src": "assets/img/footer/vtex.png"
+     
   }
+}
+  
 }

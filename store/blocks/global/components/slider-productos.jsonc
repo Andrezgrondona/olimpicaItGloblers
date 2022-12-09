@@ -1,32 +1,42 @@
 {
     "list-context.product-list#demo1": {
       "title":"container slider productos backoffice",
-        "blocks": ["product-summary.shelf#demo1"],
-        "children": ["slider-layout#demo-products"]
+        "blocks": [
+          "product-summary.shelf#demo1"
+        ],
+        "children": [
+          "slider-layout#demo-products"
+        ],
+        "props":{
+            "horizontalAlign":"center"
+        }
       },
         "product-summary.shelf#demo1": {
           "title":"product-summary",
          "children": [
+          "product-summary-image",
           "product-summary-name",
           //"product-summary-description",
-          "product-summary-image",
           "product-summary-price",
-          //"product-summary-sku-selector",
           "product-summary-buy-button"
+       
+          //"product-summary-sku-selector",
         ]
       },
        "slider-layout#demo-products": {
           "props": {
+            "horizontalAlign":"center",
+            "blockClass": "carousel",
             "maxItemsPerPage":1,
             "showPaginationDots":"never",
             "itemsPerPage": {
-             "desktop": 3,
-             "tablet": 1,
-              "phone": 1
+             "desktop": 4,
+             "tablet": 2,
+              "phone": 2
            },
-            "infinite": true,
-           "showNavigationArrows": "desktopOnly",
-            "blockClass": "carousel"
+            "infinite": true
+           //"showNavigationArrows": "desktopOnly"
+            
           },
           "children": ["shelf.relatedProducts"]
       }
