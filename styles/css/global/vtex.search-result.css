@@ -22,11 +22,12 @@
     align-items: center;
     align-content: center;
     height: 500px;
+  
 
 }
 
 .galleryItem--whole {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     height: 200px;
 }
@@ -71,6 +72,10 @@
     font-size: 30px;
 }
 
+
+:global(.vtex-search-result-3-x-galleryItem){
+    border-color: rgb(124, 124, 135);
+  }
 
 
   

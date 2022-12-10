@@ -1,0 +1,46 @@
+/* minicart info */
+.removeButtonContainer{
+    display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:flex-end;
+  align-content:flex-end;
+}
+
+.productName {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat-soft';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat-soft';
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.currencyInteger{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat-soft';
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.quantitySelector{
+    width: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+}
+.quantitySelectorContainer{
+    height: 100px;
+}
+
+
+

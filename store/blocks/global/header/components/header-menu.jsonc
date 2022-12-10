@@ -3,13 +3,17 @@
     "title":"header mobile menu",
       "children":[
         "menu#header__menu"
-      ]
+      ],
+      "props":{
+        "blockclass":"drawer__container"
+      }
     }, 
     "menu#header__menu":{
       "title":"header menu",
       "children":[
         "menu-item#department__one",
-        "menu-item#department__two"
+        "menu-item#department__two",
+        "menu-item#department__four"
       ],
       "props":{
         "orientation":"vertical"
@@ -178,6 +182,23 @@
           "text":"Refrigeracion"
         }
       }
+    },
+
+    /* submenu four */
+    "menu-item#department__four":{
+      "title":"menu item department two",
+      "props":{
+        "id":"department-one",
+        "type":"custom",
+        "itemProps":{
+           "type":"external",
+           "href":"https://www.google.com/",
+           "noFollow":true,
+           "tagTitle":"bing title",
+           "text":"Tecnologia"
+        }
+      },
+      "blocks":["submenu.accordion#department__two"]
     },
     // ........texto de prueba........ 
     "rich-text#test":{

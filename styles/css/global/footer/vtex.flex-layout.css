@@ -4,3 +4,26 @@
 }
 
 
+.flexRowContent--container__info--cols-footer {
+    width: 900px;
+}
+
+
+
+.flexCol--contaner-tablet__info-footer{
+    display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+}
+
+.flexCol--container__websites{
+    display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+}

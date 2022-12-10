@@ -1,4 +1,11 @@
 {
+    /* 
+    @media (max-width: 400px) {
+  .searchBarInnerContainer--Barra_busqueda_inteligente {
+    width: 200px;
+  }
+}
+    */
     /* .............footer mobile.......... */
     "footer-layout.mobile": {
         "title": "footer layout mobile",
@@ -17,19 +24,125 @@
     },
     "flex-layout.col#container_info--footer": {
         "children": [
-            "rich-text#nuestro_boletin",
-            "flex-layout.row#newsletter-form_footer-mobile",
+            "flex-layout.row#contanier__info-tablet-section",
+            
             "rich-text#info_terms--one",
-            "flex-layout.row#image_logo_footer--mobile",
-            "flex-layout.row#container_necesitas_ayuda-mobile",
-            "flex-layout.row#barranquila_text",
-            "flex-layout.row#resto_del_pais_text",
-            "flex-layout.row#social_networks_desktop-mobile",
-            "flex-layout.row#menu#websites_footer--mobile"
+            "flex-layout.col#contanier__info-tablet-section-one",
+            "flex-layout.col#contanier__info-tablet-section-two",
+            "flex-layout.row#contanier__info-tablet-section-three",
+            "flex-layout.row#contanier__info-tablet-section-four"
             //"vtex.menu@2.x:menu#websites"
         ],
         "props": {
-            "horizontalAlign": "center"
+            //"horizontalAlign": "center"
+        }
+    },
+    /* .......container tablet................ */
+    "flex-layout.row#contanier__info-tablet-section":{
+        "children":[
+            "rich-text#nuestro_boletin",
+            "flex-layout.row#newsletter-form_footer-mobile"
+        ],
+        "props":{
+            "blockClass":"info-tablet-section"
+        }
+        
+    },
+    "flex-layout.row#contanier__info-tablet-section-four": {
+        "children": [
+            "flex-layout.col#contanier__logo-footer_vtex",
+            "flex-layout.col#contanier__logo-footer_sonovista"
+        ],
+        "props":{
+            "horizontalAlign":"center",
+            "blockClass":"contanier__info-tablet-section-four"
+        }
+    },
+    "flex-layout.col#contanier__logo-footer_vtex": {
+        "children": [
+            "rich-text#compra_segura",
+            "image#logo-footer_vtex"
+        ],
+        "props":{
+            "horizontalAlign":"center"
+        }
+    },
+    "flex-layout.col#contanier__logo-footer_sonovista": {
+        "children": [
+            "rich-text#compra_segura",
+            "image#logo-footer_sonovista"
+        ],
+        "props":{
+            "horizontalAlign":"center"
+        }
+    },
+    "rich-text#compra_segura": {
+        "props": {
+            "blockClass": "compra_segura",
+            "text": "COMPRA SEGURA"
+        }
+    },
+    "image#logo-footer_vtex": {
+        "title": "image logo footer mobile",
+        "props": {
+            "blockClass": "logos_footer",
+            "src": "assets/img/footer/vtex.png"
+        }
+    },
+    "image#logo-footer_sonovista": {
+        "title": "image logo footer mobile",
+        "props": {
+            "blockClass": "logos_footer",
+            "src": "assets/img/footer/sonovista.png"
+        }
+    },
+    "flex-layout.row#contanier__info-tablet-section-three": {
+        "children": [
+            "flex-layout.col#columna_izquierda",
+            "flex-layout.col#columna_derecha"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "contaner-tablet__info-footer"
+        }
+    },
+    "flex-layout.col#columna_izquierda": {
+        "children": [
+            "flex-layout.col#menu#websites_footer--mobile"
+        ],
+        "props": {
+            "width": "50%"
+        }
+    },
+    "flex-layout.col#columna_derecha": {
+        "children": [
+            "rich-text#home__text_info__footer"
+        ],
+        "props": {
+            "width": "50%"
+        }
+    },
+    "rich-text#home__text_info__footer": {
+        "props": {
+            "blockClass": "text_info__footer",
+            "text": "Copyright o Actualización 2020 OLÍMPICA S.A. Derechos Reservados.\n\nSupertiendas y Droguerías Olímpica S.A. - Nit: 890.107.487 - Dirección de Notificación: Calle 53 No. 46 - 192 Local 3-01 Teléfono: 3170100 - Correo: servicioalcliente@olimpica.com.co"
+        }
+    },
+    "flex-layout.col#contanier__info-tablet-section-two": {
+        "children": [
+            "flex-layout.row#social_networks_desktop-mobile"
+        ]
+    },
+    "flex-layout.col#contanier__info-tablet-section-one": {
+        "children": [
+            "flex-layout.row#image_logo_footer--mobile",
+            "flex-layout.row#container_necesitas_ayuda-mobile",
+            "flex-layout.row#barranquila_text",
+            "flex-layout.row#resto_del_pais_text"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "contanier_footer--tablet"
         }
     },
     /* .....newslletter form.................. */
@@ -129,15 +242,18 @@
         }
     },
     /* ..........menu mobile footer........ */
-    "flex-layout.row#menu#websites_footer--mobile":{
-        "children":[
+    "flex-layout.row#menu#websites_footer--mobile": {
+        "children": [
             "flex-layout.col#menu#websites_footer--mobile"
         ]
     },
-    "flex-layout.col#menu#websites_footer--mobile":{
-        "children":[
+    "flex-layout.col#menu#websites_footer--mobile": {
+        "children": [
             "vtex.menu@2.x:menu#websites"
-        ]
+        ],
+        "props": {
+            "blockClass": "container__websites"
+        }
     },
     "vtex.menu@2.x:menu#websites": {
         "title": "menu#websites",
@@ -154,12 +270,12 @@
             "highlight": true
         }
     },
-    
     /* ........menu categorias.......... */
     "menu-item#shop": {
         "title": "shop",
         "props": {
-            "iconPosition":"right",
+            "blockClass": "container__menu-item__footer",
+            "iconPosition": "right",
             "onMountBehavior": "closed",
             "id": "menu-item-shop",
             "type": "custom",
@@ -208,7 +324,8 @@
     "menu-item#shop_contenido": {
         "title": "contenido",
         "props": {
-            "iconPosition":"right",
+            "blockClass": "container__menu-item__footer",
+            "iconPosition": "right",
             "onMountBehavior": "closed",
             "id": "menu-item-shop",
             "type": "custom",
@@ -258,7 +375,8 @@
     "menu-item#shop_empresa": {
         "title": "contenido",
         "props": {
-            "iconPosition":"right",
+            "blockClass": "container__menu-item__footer",
+            "iconPosition": "right",
             "onMountBehavior": "closed",
             "id": "menu-item-shop",
             "type": "custom",
@@ -307,7 +425,8 @@
     "menu-item#shop_info_legal": {
         "title": "Infomracion legal",
         "props": {
-            "iconPosition":"right",
+            "blockClass": "container__menu-item__footer",
+            "iconPosition": "right",
             "onMountBehavior": "closed",
             "id": "menu-item-shop",
             "type": "custom",
@@ -361,11 +480,12 @@
             "orientation": "vertical"
         }
     },
-     /* ........menu servicio al cliente.......... */
-     "menu-item#shop_serv_cliente": {
+    /* ........menu servicio al cliente.......... */
+    "menu-item#shop_serv_cliente": {
         "title": "Servicio  al cliente",
         "props": {
-            "iconPosition":"right",
+            "blockClass": "container__menu-item__footer",
+            "iconPosition": "right",
             "onMountBehavior": "closed",
             "id": "menu-item-shop",
             "type": "custom",
@@ -407,14 +527,6 @@
             "orientation": "vertical"
         }
     },
-
-
-
-
-
-
-
-
     /* .............disclosure mobile.......... */
     "disclosure-layout-group#footer__menu--group ": {
         "title": "footer__menu--group ",
