@@ -4,7 +4,7 @@
             "list-context.product-list#demo1"
         ],
         "props":{
-            
+            "blockClass":"slider-products__carrusel",
             "horizontalAlign":"center"
         }
     }
