@@ -125,9 +125,9 @@
 }
 
 
-.vtex-store-components-3-x-container{
+.vtex-store-components-3-x-container {
   padding-left: 0rem;
-    padding-right: 0rem;
+  padding-right: 0rem;
 }
 
 
@@ -145,16 +145,22 @@
   color: #000000;
 }
 
+.price_sellingPriceContainer {
+  height: 0px;
+}
 
-/* .buyButtonContainer:global(.vtex-button) {
-  background-color: #2c2c2c;
-  border-radius: 14px;
-  border: 1px solid #2c2c2c;
-  color: #fff;
-  cursor: pointer;
-  height: 46px;
-  margin-left: 20px;
-  min-width: 116px;
-  outline: none;
-  padding: 15px;
-} */
+.installmentsPrice {
+  height: 40px;
+}
+
+.interestRatePrice {
+  color: #000000;
+}
+
+.price_installment {
+  color: #000000;
+}
+
+
+
+
