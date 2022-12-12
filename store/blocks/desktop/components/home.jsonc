@@ -2,7 +2,7 @@
 {
   "store.home":{
     "blocks":[
-   //"whatsapp-button",
+   "whatsapp-button",
       /* 1 */"flex-layout.row#home__section--button_info",
       /* 2 */"flex-layout.row#banner",
       "flex-layout.row#home__two_images",

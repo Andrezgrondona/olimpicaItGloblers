@@ -1,19 +1,22 @@
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "blocks": [
+      "order-placed"
+    ]
   },
-
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
-
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "login-content#default"
+    ]
   },
-
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
@@ -21,7 +24,6 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "product-summary.shelf": {
     "children": [
       "product-summary-add-to-list-button",
@@ -29,12 +31,64 @@
       "product-summary-name",
       "product-summary-price",
       "add-to-cart-button"
-      
-     
-     // "product-identifier.summary",
+      // "product-identifier.summary",
       // "product-rating-inline",
       //"product-summary-space",
-      
+    ],
+    "props": {
+      "blockclass": "container-summary"
+    }
+  },
+  "product-summary.shelf#list": {
+    "children": [
+      "product-summary-image",
+      /* "product-summary-name",
+      "product-summary-price", */
+      "add-to-cart-button"
+      // "product-identifier.summary",
+      // "product-rating-inline",
+      //"product-summary-space",
+    ],
+    "props": {
+      "blockclass": "container-summary-list"
+    }
+  },
+/* .............................................................................. */
+  "product-summary.shelf#listLayout": {
+    "props": {
+      "blockClass": "listLayout"
+    },
+    "children": [
+      "responsive-layout.desktop#productSummaryList"
     ]
+  },
+  "responsive-layout.desktop#productSummaryList": {
+    "children": [
+      "flex-layout.row#summaryListDesktop"
+    ],
+    "props":{
+      "blockClass":"contenedor-list"
+    }
+  },
+  "flex-layout.row#summaryListDesktop": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "add-to-cart-button"
+    
+    ],
+    "props":{
+      //"horizontalAlign":"between",
+      //"preventHorizontalStretch":false,
+     // "fullWidth": false,
+     // "colSizing": "auto",
+      "blockClass": "summaryListDesktop"
+    }
   }
+
+
+
+
+
+ 
 }

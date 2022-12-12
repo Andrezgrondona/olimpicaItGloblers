@@ -2,3 +2,21 @@
     width: 120px;
     height: 140px;
 }
+
+.nameContainer{
+    display: grid;
+    place-items: center;
+}
+
+/* products list----gallery-layout-switcher */
+/* .containerNormal {
+    border:solid 1px ;
+    max-width: 700px;
+} */
+
+
+.container--listLayout{
+    max-width: none !important;
+}
+
+
