@@ -44,5 +44,15 @@
     width: 300px;
 }
 
+/* centra el boton del list grid */
+.stretchChildrenWidth {
+    display:flex;
+  flex-direction:row-reverse;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+}
+
 
 

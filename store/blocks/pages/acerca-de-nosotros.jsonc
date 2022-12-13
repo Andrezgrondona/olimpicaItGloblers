@@ -1,11 +1,13 @@
 {
     "store.custom#acerca-de-nosotros": {
+        "title":"container acerca de nosotros",
         "blocks": [
             "flex-layout.row#image_acerca-de-nosotros",
             "flex-layout.row#container_info-nosotros"
         ]
     },
     "flex-layout.row#image_acerca-de-nosotros": {
+        "title":"image_acerca-de-nosotros",
         "children": [
             "image#image_acerca-de-nosotros"
         ],
@@ -15,11 +17,13 @@
         }
     },
     "image#image_acerca-de-nosotros": {
+        "title":"image_acerca-de-nosotros",
         "props": {
             "src": "assets/img/nosotros/1.png"
         }
     },
     "flex-layout.row#container_info-nosotros": {
+        "title":"container_info-nosotros",
         "children": [
             "flex-layout.col#info_nosotros_column-left",
             "flex-layout.col#info_nosotros_column-right"
@@ -31,6 +35,7 @@
         }
     },
     "flex-layout.col#info_nosotros_column-left": {
+        "title":"info_nosotros_column-left",
         "children": [
             "flex-layout.row#container_info-nosotros-cont_one"
         ],
@@ -40,6 +45,7 @@
         }
     },
     "flex-layout.col#info_nosotros_column-right": {
+        "title":"info_nosotros_column-right",
         "children": [
             "flex-layout.row#container_info-nosotros-cont_two"
         ],
@@ -48,6 +54,7 @@
         }
     },
     "flex-layout.row#container_info-nosotros-cont_one": {
+        "title":"info-nosotros-cont_one",
         "children": [
             "flex-layout.col#container_info-nosotros-col-one",
             "flex-layout.col#container_info-nosotros-col-two"
@@ -59,6 +66,7 @@
     },
     /* ...................Botones.................... */
     "flex-layout.col#container_info-nosotros-col-one": {
+        "title":"container_info-nosotros-col-one",
         "children": [
             "link#boton_quienes-somos",
             "link#boton_trabaja_con_nosotros",
@@ -116,7 +124,7 @@
         }
     },
     "rich-text#_trabaja_con_nosotros": {
-        "title": "quienes somos",
+        "title": "trabaja_con_nosotros",
         "props": {
             "blockClass": "botonLinkeable_trabaja_con_nosotros",
             "text": "Trabaja con nosotros"
@@ -142,7 +150,7 @@
         }
     },
     "rich-text#_trabaja_gestion_ambiental": {
-        "title": "quienes somos",
+        "title": "qtrabaja_gestion_ambiental",
         "props": {
             "blockClass": "botonLinkeable_gestion_ambiental",
             "text": "Gestion ambiental"
@@ -150,6 +158,7 @@
     },
     /* ................texto info....................... */
     "flex-layout.col#container_info-nosotros-col-two": {
+        "title": "qinfo-nosotros-col-two",
         "children": [
             "rich-text#text_info-one_nosotros",
             "rich-text#text_info-two_nosotros"
@@ -160,6 +169,7 @@
         }
     },
     "rich-text#text_info-one_nosotros": {
+        "title": "info-one_nosotros",
         "props": {
             "blockClass": "text_info-one_nosotros",
             "text": "Una marca orgullosa de ser colombiana",
@@ -167,6 +177,7 @@
         }
     },
     "rich-text#text_info-two_nosotros": {
+        "title": "text_info-two_nosotros",
         "props": {
             "blockClass": "text_info-two_nosotros",
             "text": "Olímpica es la cadena de retail más grande de Colombia con capital 100% nacional. Somos reconocidos como una compañía líder en la comercialización de productos de consumo masivo de óptima calidad, a través de una cadena privada de establecimientos que incluyen Supertiendas, Superalmacenes, Superdroguerías y Droguerías.\n Además de comercializar un amplio portafolio de productos marcas privadas, Olímpica cuenta con marcas propias disponibles en las categorías de supermercado, textil, electrodomésticos, electromenores, tecnología y hogar.",
@@ -174,6 +185,7 @@
         }
     },
     "rich-text#pruebacolnatne": {
+        "title": "pruebacolnatner",
         "props": {
             "horizontalAlign": "center",
             "text": "hola mundo"
@@ -181,11 +193,13 @@
     },
     /* contenedor 2 */
     "flex-layout.row#container_info-nosotros-cont_two": {
+        "title": "container_info-nosotros-cont_two",
         "children": [
             "flex-layout.col#container_info-nosotros-cont_two"
         ]
     },
     "flex-layout.col#container_info-nosotros-cont_two": {
+        "title": "info-nosotros-cont_two",
         "children": [
             "flex-layout.row#container_info-nosotros-images"
         ],
@@ -194,11 +208,13 @@
         }
     },
     "flex-layout.row#container_info-nosotros-images": {
+        "title": "info-nosotros-images",
         "children": [
             "flex-layout.col#container_info-nosotros-images"
         ]
     },
     "flex-layout.col#container_info-nosotros-images": {
+        "title": "container-nosotros-images",
         "children": [
             "image#image_acerca-de-nosotros_one",
             "image#image_acerca-de-nosotros_two",
@@ -207,24 +223,28 @@
         ]
     },
     "image#image_acerca-de-nosotros_one": {
+        "title": "acerca-de-nosotros_one",
         "props": {
             "blockClass":"image_acerca-de-nosotros",
             "src": "assets/img/nosotros/2.png"
         }
     },
     "image#image_acerca-de-nosotros_two": {
+        "title": "acerca-de-nosotros_two",
         "props": {
             "blockClass":"image_acerca-de-nosotros",
             "src": "assets/img/nosotros/3.png"
         }
     },
     "image#image_acerca-de-nosotros_three": {
+        "title": "image_acerca-de-nosotros_thre",
         "props": {
             "blockClass":"image_acerca-de-nosotros",
             "src": "assets/img/nosotros/4.png"
         }
     },
     "image#image_acerca-de-nosotros_four": {
+        "title": "image_acerca-de-nosotros_four",
         "props": {
             "blockClass":"image_acerca-de-nosotros",
             "src": "assets/img/nosotros/5.png"
