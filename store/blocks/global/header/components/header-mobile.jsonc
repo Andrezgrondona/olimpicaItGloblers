@@ -152,7 +152,7 @@
         "quantity-selector#minicart":{
           "title":"quiantity selector minicart",
           "props":{
-            "mode":"stepper"
+            "mode":"dropdown"
           }
         },
       "flex-layout.row#minicart__footer":{
