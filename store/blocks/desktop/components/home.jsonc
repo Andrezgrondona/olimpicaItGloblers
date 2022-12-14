@@ -2,10 +2,12 @@
 {
   "store.home":{
     "blocks":[
-   "whatsapp-button",
+      "whatsapp-button",
       /* 1 */"flex-layout.row#home__section--button_info",
+      //"bullets-diagramation",
       /* 2 */"flex-layout.row#banner",
       "flex-layout.row#home__two_images",
+      "flex-layout.row#list-context.bullet-group",
       "flex-layout.row#banner-imagenes2",
       //* 3 */"flex-layout.row#home__img-grid__section_one",
       /* 4 */"flex-layout.row#home__cardShop",
@@ -38,12 +40,81 @@
        // "modal-trigger#home__modal--children",
         //"modal-trigger#home__modal--event"
     ]
+
+  /* ..............componente Boton de Whatsapp................ */
   }  ,
   "whatsapp-button":{
     "props":{
       "logo":"assets/img/whatsapp-logo.png",
-      "phone":"111 111",
+      "phone":"30173475423",
       "message":"txt de prueba vtex"
     }
+  },
+/* ..............componente List context................ */
+"flex-layout.row#list-context.bullet-group":{
+  "children":[
+    "list-context.bullet-group"
+  ]
+},
+  "list-context.bullet-group":{
+    "title":"imagen group bullet",
+    "children":["slider-layout#bullet-group"],
+    "props":{
+      "bullets":[
+        {
+          "image":"assets/img/context/1.jpeg",
+          "titleBullet":"Computadores",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image":"assets/img/context/2.jpeg",
+          "titleBullet":"Verduras",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image":"assets/img/context/1.jpeg",
+          "titleBullet":"Computadores",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image":"assets/img/context/2.jpeg",
+          "titleBullet":"Verduras",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image":"assets/img/context/1.jpeg",
+          "titleBullet":"Computadores",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image":"assets/img/context/2.jpeg",
+          "titleBullet":"Verduras",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#bullet-group":{
+    "props":{
+      "itemsPerPage":{
+        "desktop":5,
+        "tablet":5,
+        "mobile":5
+    },
+    "infinite":true
   }
+   
+}
 }
