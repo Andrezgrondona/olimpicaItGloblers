@@ -23,7 +23,7 @@
         "flex-layout.col#home__slider_products"  :{
             "title":"home slider products ",
             "children":[
-                "list-context.product-list#demo1"
+                "list-context.image-list#home-slider-random__products"
             ],
             "props":{
              

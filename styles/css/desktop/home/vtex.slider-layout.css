@@ -50,3 +50,13 @@
     align-items: center;
     align-content: center;
 }
+
+/* botones slide productos back-office */
+.slide--carousel :global(.vtex-button) {
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+    border-radius: 0px;
+    height: 30px;
+    width: 180px;
+  
+  } 

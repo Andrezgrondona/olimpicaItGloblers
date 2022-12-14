@@ -100,31 +100,31 @@
     margin-bottom: 20px;
 }
 
-.galleryItem--grid{
+.galleryItem--grid {
     max-width: 40%;
 }
 
-  
-/* botones list grid */
-/* .galleryItem--normal :global(.vtex-button) {
-    background-color: #2c2c2c;
-    border-radius: 14px;
-    border: 1px solid #2c2c2c;
-    color: rgb(117, 28, 28);
-    cursor: pointer;
+
+.galleryItem--normal :global(.vtex-button) {
+    background-color: #b8b8b8;
+    border-color: #b8b8b8;
+    border-radius: 0px;
     height: 46px;
-    margin-left: 20px;
+
+}
+
+
+.galleryItem--grid_two {
+    max-width: 320px !important;
    
-    outline: none;
-    padding: 15px;
-  }  */
+}
 
-
-
-  .galleryItem--normal :global(.vtex-button) {
-    background-color: #e90026;
-    border-color: #e90026;
-    border-radius: 20px;
-    height: 46px;
-  
-  } 
+.gallery--grid_two{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}

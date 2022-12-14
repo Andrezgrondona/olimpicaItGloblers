@@ -113,12 +113,11 @@
             "blockclass": "FORMA"
         }
     },
+    /* ......................Gallery switcher........................... */
     "gallery-layout-switcher": {
         "children": [
-            /*
-            * For accessibility purposes, it is fundamental to define the layout options following the same ordering used to declare them in step 2.
-            */
             "gallery-layout-option#grid",
+            "gallery-layout-option#grid_two",
             "gallery-layout-option#list"
         ],
         "props": {
@@ -126,14 +125,24 @@
             "name": "grid"
         }
     },
+    "gallery-layout-option#grid_two": {
+        "props": {
+            "blockClass": "Container--grid-two",
+            "name": "grid_two"
+        },
+        "children": [
+            "icon-single-grid"
+            //"responsive-layout.desktop#textOptionGrid"
+        ]
+    },
     "gallery-layout-option#grid": {
         "props": {
             "blockClass": "Container--grid",
             "name": "grid"
         },
         "children": [
-            "icon-grid",
-            "responsive-layout.desktop#textOptionGrid"
+            "icon-grid"
+            //"responsive-layout.desktop#textOptionGrid"
         ]
     },
     "gallery-layout-option#list": {
@@ -178,8 +187,17 @@
                     "component": "GridSummary",
                     "itemsPerRow": {
                         "(min-width:1008px)": 4,
-                        "(min-width:623px) and (max-width:1007px)": 3,
-                        "(max-width:622px)": 2
+                        "(min-width:623px) and (max-width:1007px)": 2,
+                        "(max-width:622px)": 1
+                    }
+                },
+                {
+                    "name": "grid_two",
+                    "component": "GridSummary",
+                    "itemsPerRow": {
+                        "(min-width:1008px)": 3,
+                        "(min-width:623px) and (max-width:1007px)": 2,
+                        "(max-width:622px)": 1
                     }
                 },
                 {
@@ -226,7 +244,8 @@
     "flex-layout.col#container__title-mobile_col_two": {
         "title": "title-mobile_col_two",
         "children": [
-            "gallery-layout-option#grid"
+            "gallery-layout-switcher"
+            //"gallery-layout-option#grid"
         ],
         "props": {
             "blockclass": "container__title-mobile_gallery",
@@ -256,7 +275,9 @@
     "gallery-layout-switcher#mobile": {
         "title": "mobile",
         "children": [
-            "gallery-layout-option#mobile"
+            //"gallery-layout-switcher"
+            //"gallery-layout-option#mobile"
+            "gallery-layout-switcher#mobile2"
         ]
     },
     "gallery-layout-option#mobile": {
@@ -267,5 +288,15 @@
         "children": [
             "icon-grid"
         ]
+    },
+    "gallery-layout-switcher#mobile2": {
+        "children": [
+            "gallery-layout-option#grid",
+            "gallery-layout-option#grid_two"
+        ],
+        "props": {
+            "blockClass": "Container--grid-list-2",
+            "name": "grid"
+        }
     }
 }
