@@ -262,6 +262,28 @@
     height: 20px;
    }
 
+   /* seguir comprando modal add to cart */
+   .link--botonLinkeable_comprando{
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgb(66, 211, 37);
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    width: 420px;
+    text-align: center;
+    display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  margin-bottom: 20px;
+  
+}
+
 
 
 
