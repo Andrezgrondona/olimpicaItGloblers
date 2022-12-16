@@ -28,16 +28,68 @@
                 "product-price",
                 "product-quantity",
                 //"product-description",
-                "buy-button",
-                
+                //"buy-button",
+                "add-to-cart-button",
                 //"shipping-simulator", (simulador de envio )
                 //"product-details", (informacion todos los detalles de envio e info )
-                "rich-text#product__promo_info"
+                "rich-text#product__promo_info",
+                //(add-to-cart-info es el componente custom )
+                "modal-trigger#add-to-card-info"
+                //"add-to-cart-info"
             ],
             "props":{
                 "blockClass":"info--data_PDP"
             }
         },
+        "modal-trigger#add-to-card-info":{
+            "children":[
+                "modal-layout#add-to-cart-info"
+            ],
+            "props":{
+                "customPixelEventName": "addToCart"
+            }
+        },
+        "modal-layout#add-to-cart-info":{
+            "title":"container add to cart",
+            "children":[
+                "modal-header#add-to-cart-info",
+                "add-to-cart-info",
+                "link#seguir_comprando"
+            ],
+            "props":{
+                
+                "blockClass":"info_ad-to-cart"
+            }
+        },
+        "modal-header#add-to-cart-info":{
+            "props":{
+                "showCloseButton":true,
+                "iconCloseSize":24
+            }
+        },
+
+        /* link boton seguir comprando */
+        "link#seguir_comprando": {
+            "title":"button supermercado",
+              "children":[
+                "rich-text#_comprando"
+              ],
+              "props": {
+              "blockClass":"botonLinkeable_comprando",
+                "href": "/"
+              }
+            },
+           
+           "rich-text#_comprando":{
+            "title":"text market",
+            "props":{
+              "blockClass":"botonLinkeable",
+              "text":"Seguir comprando"
+            }
+           },
+
+
+
         "rich-text#product__promo_info":{
             "title":"texto adicional del producto"
         }
