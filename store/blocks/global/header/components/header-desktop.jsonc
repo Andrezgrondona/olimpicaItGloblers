@@ -5,6 +5,7 @@
         "children":[
           "flex-layout.row#text-header__desktop__olimpica",
           "search-bar#header__search",
+          //"department-search",
          "link#category_home--listas-pedidos",
          "flex-layout.row#icon_cart",
           "flex-layout.row#icon_login"
