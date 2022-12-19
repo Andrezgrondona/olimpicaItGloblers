@@ -3,6 +3,17 @@
     background-color: #e90026;
     border-radius: 20px;
     margin-bottom: 20px;
+    height: 30px;
+    display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  margin-top: 10px;
+  
   
  
 }
+
+
