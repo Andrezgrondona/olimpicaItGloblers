@@ -153,6 +153,14 @@
     margin-top: 40px;
 }
 
+/* boton responsive sku */
+@media (max-width: 688px) {
+    .paragraph{
+        color: rgb(215, 215, 215);
+        font-size: 9px;
+    }
+}
+
 /* notification bar */
 
 .paragraph--Barra-Notificaciones {

@@ -1,0 +1,23 @@
+{
+    "modal-trigger#home__modal-sku":{
+        "children":[
+          "rich-text#home__modal-sku",
+          "modal-layout#input-sku"
+        ],
+        "props":{
+          "blockclass":"container__modal-sku"
+        }
+      },
+      "rich-text#home__modal-sku":{
+        "props":{
+          "blockclass":"text_modal-sku",
+          "text":"Compra SKU",
+          "textPosition":"CENTER"
+        }
+      },
+      "modal-layout#input-sku":{
+        "children":[
+            "quick-order"
+        ]
+      }
+}

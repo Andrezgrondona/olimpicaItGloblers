@@ -8,9 +8,11 @@
             "link#drogueria_button",
             "link#electrodomesticos_button",
             "link#catalogos_button" ,
-            "link#nuestras_tiendas_button" 
+            "link#nuestras_tiendas_button",
+            "modal-trigger#home__modal-sku"
         ],
         "props":{
+          "blockClass":"container_Buttons",
             "horizontalAlign":"around"/* ,
             "colSizing":"auto",
             "preserveLayoutOnMobile" : true */
