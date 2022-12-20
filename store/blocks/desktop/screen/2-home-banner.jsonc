@@ -1,6 +1,6 @@
 {
     "flex-layout.row#banner": {
-        "title":"container banner home",
+        "title": "container banner home",
         "children": [
             "image#banner_inicio_home"
         ],
@@ -12,10 +12,9 @@
         }
     },
     "image#banner_inicio_home": {
-        "title":"image banner",
+        "title": "image banner",
         "props": {
             "src": "assets/img/banner_principal/banner_principal.png",
-            //"maxHeight": 100,
             "width": "97%",
             "height": "50"
         }

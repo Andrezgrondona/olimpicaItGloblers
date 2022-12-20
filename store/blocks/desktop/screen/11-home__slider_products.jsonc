@@ -1,42 +1,39 @@
 {
-    "flex-layout.row#home__slider_products":{
-        "title":"Container home slider productos",
-        "children":[
+    "flex-layout.row#home__slider_products": {
+        "title": "Container home slider productos",
+        "children": [
             "flex-layout.col#home__image_products",
-            "flex-layout.col#home__slider_products"   
+            "flex-layout.col#home__slider_products"
         ],
-        "props":{
-            "width":"40%",
-            "horizontalAlign":"center",
-            "paddingTop":5  
+        "props": {
+            "width": "40%",
+            "horizontalAlign": "center",
+            "paddingTop": 5
         }
     },
-        "flex-layout.col#home__image_products":{
-            "title":"image products",
-            "children":[
-                "image#promo__image"
-            ],
-        "props":{
-            "horizontalAlign":"center"
-        }
-        },
-        "flex-layout.col#home__slider_products"  :{
-            "title":"home slider products ",
-            "children":[
-                "list-context.image-list#home-slider-random__products"
-            ],
-            "props":{
-             
-                "blockClass":"slider-products"
-            }
-
-        } ,
-        "image#promo__image":{
-            "title":"home promo image",
+    "flex-layout.col#home__image_products": {
+        "title": "image products",
+        "children": [
+            "image#promo__image"
+        ],
         "props": {
-          "src": "assets/img/img-slider/1.png",
-           "width":"100%"
-         
+            "horizontalAlign": "center"
         }
-      }
+    },
+    "flex-layout.col#home__slider_products": {
+        "title": "home slider products ",
+        "children": [
+            "list-context.image-list#home-slider-random__products"
+        ],
+        "props": {
+            "blockClass": "slider-products"
+        }
+    },
+    "image#promo__image": {
+        "title": "home promo image",
+        "props": {
+            "src": "assets/img/img-slider/1.png",
+            "width": "100%"
+        }
+    }
 }

@@ -1,64 +1,65 @@
 {
-    "flex-layout.row#banner-imagenes2":{
-      "title":"container two images",
-        "children":[
-          "image#PROMO",
-          "flex-layout.row#banner_two_images"   
-        ],
-        "props":{
-            "blockClass":"banner-imagenes",
-            "marginTop":5,
-            "marginBottom":4,
-            "colSizing":"auto",
-            "horizontalAlign":"around",
-            "fullWidth":false
-        }
-    },
-    "flex-layout.row#banner_two_images" :{
-      "title":"banner two images",
-      "children":[
-        "list-context.image-list#home__slider--body3"
-      ],
-      "props":{
-        "width":"90%"
-      }
-    },
-  
-    "image#PROMO":{
-        "props": {
-            "src": "assets/img/home-slider-body3/1.png",
-         "width":"85%"
-      }
-    },
-    "list-context.image-list#home__slider--body3":{
-      "title":"image list image",
-      "children":["slider-layout#home__slider--body3"],
-      "props":{
-        "maxWidth":true,
-        "preload":true,
-        "images":[
-          {
-            "image":"assets/img/home-slider-body3/a.png",
-            "description":"slide 1"
-          },
-          {
-              "image":"assets/img/home-slider-body3/b.png",
-            "description":"slide 2"
-          }
-        ]
-      }
-    },
-    "slider-layout#home__slider--body3":{
-      "title":"Slider con lista promociones",
-      "props":{
-        "itemsPerPage":{
-          "desktop":1,
-          "tablet":1,
-          "mobile":1
+  "flex-layout.row#banner-imagenes2": {
+    "title": "container two images",
+    "children": [
+      "image#PROMO",
+      "flex-layout.row#banner_two_images"
+    ],
+    "props": {
+      "blockClass": "banner-imagenes",
+      "marginTop": 5,
+      "marginBottom": 4,
+      "colSizing": "auto",
+      "horizontalAlign": "around",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.row#banner_two_images": {
+    "title": "banner two images",
+    "children": [
+      "list-context.image-list#home__slider--body3"
+    ],
+    "props": {
+      "width": "90%"
+    }
+  },
+  "image#PROMO": {
+    "props": {
+      "src": "assets/img/home-slider-body3/1.png",
+      "width": "85%"
+    }
+  },
+  "list-context.image-list#home__slider--body3": {
+    "title": "image list image",
+    "children": [
+      "slider-layout#home__slider--body3"
+    ],
+    "props": {
+      "maxWidth": true,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/home-slider-body3/a.png",
+          "description": "slide 1"
         },
-        "infinite":true,
-        "blockClass":"home__slider_promo",
-        "fullWidth":false
-      }
-    }       
+        {
+          "image": "assets/img/home-slider-body3/b.png",
+          "description": "slide 2"
+        }
+      ]
+    }
+  },
+  "slider-layout#home__slider--body3": {
+    "title": "Slider con lista promociones",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "infinite": true,
+      "blockClass": "home__slider_promo",
+      "fullWidth": false
+    }
+  }
 }

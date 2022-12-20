@@ -1,0 +1,94 @@
+{
+  /* .................Department Search...................... */
+  "flex-layout.row#container__component-department-search": {
+    "title": "container_component-department-search",
+    "children": [
+      "flex-layout.col#container__component-department-search-col_one",
+      "flex-layout.col#container__component-department-search-col_two",
+      "flex-layout.col#container__component-department-search-col_three",
+      "flex-layout.col#container__component-department-search-col_four"
+    ],
+    "props": {
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#container__component-department-search-col_one": {
+    "title": "col_one_component-department-search",
+    "children": [
+      "rich-text#text__component-department-search",
+      "image#promo__one",
+      "department-search"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#promo__one": {
+    "title": "image banner",
+    "props": {
+      "src": "assets/img/ofertas/1.png"
+      //"maxHeight": 100,
+    }
+  },
+  "flex-layout.col#container__component-department-search-col_two": {
+    "title": "col_two_component-department-search",
+    "children": [
+      "rich-text#text__component-department-search",
+      "image#promo__two",
+      "department-search"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#promo__two": {
+    "title": "image banner",
+    "props": {
+      "src": "assets/img/ofertas/2.png"
+      //"maxHeight": 100,
+    }
+  },
+  "flex-layout.col#container__component-department-search-col_three": {
+    "title": "col_three_component-department-search",
+    "children": [
+      "rich-text#text__component-department-search",
+      "image#promo__three",
+      "department-search"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#promo__three": {
+    "title": "image banner",
+    "props": {
+      "src": "assets/img/ofertas/3.png"
+      //"maxHeight": 100,
+    }
+  },
+  "flex-layout.col#container__component-department-search-col_four": {
+    "title": "col_four_component-department-search",
+    "children": [
+      "rich-text#text__component-department-search",
+      "image#promo__four",
+      "department-search"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#promo__four": {
+    "title": "image banner",
+    "props": {
+      "src": "assets/img/ofertas/4.png"
+      //"maxHeight": 100,
+    }
+  },
+  "rich-text#text__component-department-search": {
+    "title": "txt_component-department-search",
+    "props": {
+      "blockclass": "text__component-department-search",
+      "text": "Ofertas Imperdibles!"
+    }
+  }
+}
