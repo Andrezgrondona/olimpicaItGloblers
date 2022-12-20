@@ -154,14 +154,18 @@
 }
 
 /* boton responsive sku */
-@media (max-width: 688px) {
+/* @media (max-width: 688px) {
     .paragraph{
         color: rgb(215, 215, 215);
         font-size: 9px;
     }
-}
+} */
 
 /* notification bar */
+
+.paragraphtext_modal-sku{
+    color: pink;
+}
 
 .paragraph--Barra-Notificaciones {
     width: 200px;

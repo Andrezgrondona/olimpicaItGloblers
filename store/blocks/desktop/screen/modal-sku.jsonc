@@ -1,5 +1,6 @@
 {
     "modal-trigger#home__modal-sku":{
+      "title":"modal",
         "children":[
           "rich-text#home__modal-sku",
           "modal-layout#input-sku"
@@ -9,6 +10,7 @@
         }
       },
       "rich-text#home__modal-sku":{
+        "title":"modal sku",
         "props":{
           "blockclass":"text_modal-sku",
           "text":"Compra SKU",
@@ -16,6 +18,7 @@
         }
       },
       "modal-layout#input-sku":{
+        "title":"info modal",
         "children":[
             "quick-order"
         ]

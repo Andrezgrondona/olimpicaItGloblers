@@ -1,51 +1,50 @@
 {
-    "flex-layout.row#home__two_images":{
-        "title":"container home section two",
-        "children":[
+    "flex-layout.row#home__two_images": {
+        "title": "container home section two",
+        "children": [
             "flex-layout.col#image-desktop__one",
             "flex-layout.col#image-desktop__two"
         ],
-        "props":{
-            "marginTop":5,
-            "width":"80% ",
-            "horizontalAlign":"center"
+        "props": {
+            "marginTop": 5,
+            "width": "80% ",
+            "horizontalAlign": "center"
         }
     },
-        "flex-layout.col#image-desktop__one":{
-            "title":"image desktop one",
-            "children":[
-                "image#desktop__one"
-            ],
-            "props":{
-                //"width":"30%",
-                "horizontalAlign":"center"
-            }
-            
-        },
-        "flex-layout.col#image-desktop__two":{
-            "title":"image desktop two",
-            "children":[
-                "image#desktop__two"
-            ],
-            "props":{
-                //"width":"70%",
-                "horizontalAlign":"center"
-            }
-        },
-        "image#desktop__one":{
-            "title":"image desktop one",
-            "props": {
-              "src": "assets/img/two-img/1.png",
-               "width":"100%",
-               "horizontalAlign":"center"
-            }
-          },
-          "image#desktop__two":{
-            "title":"image desktop two",
-            "props": {
-              "src": "assets/img/two-img/2.png",
-               "width":"95%",
-               "horizontalAlign":"center"
-            }
-          }
+    "flex-layout.col#image-desktop__one": {
+        "title": "image desktop one",
+        "children": [
+            "image#desktop__one"
+        ],
+        "props": {
+            //"width":"30%",
+            "horizontalAlign": "center"
+        }
+    },
+    "flex-layout.col#image-desktop__two": {
+        "title": "image desktop two",
+        "children": [
+            "image#desktop__two"
+        ],
+        "props": {
+            //"width":"70%",
+            "horizontalAlign": "center"
+        }
+    },
+    "image#desktop__one": {
+        "title": "image desktop one",
+        "props": {
+            "src": "assets/img/two-img/1.png",
+            "width": "100%",
+            "horizontalAlign": "center"
+        }
+    },
+    "image#desktop__two": {
+        "title": "image desktop two",
+        "props": {
+            "src": "assets/img/two-img/2.png",
+            "width": "95%",
+            "horizontalAlign": "center"
+        }
+    }
 }

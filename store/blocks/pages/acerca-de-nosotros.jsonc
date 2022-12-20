@@ -1,60 +1,60 @@
 {
     "store.custom#acerca-de-nosotros": {
-        "title":"container acerca de nosotros",
+        "title": "container acerca de nosotros",
         "blocks": [
             "flex-layout.row#image_acerca-de-nosotros",
             "flex-layout.row#container_info-nosotros"
         ]
     },
     "flex-layout.row#image_acerca-de-nosotros": {
-        "title":"image_acerca-de-nosotros",
+        "title": "image_acerca-de-nosotros",
         "children": [
             "image#image_acerca-de-nosotros"
         ],
         "props": {
-            "marginTop":5,
+            "marginTop": 5,
             "horizontalAlign": "center"
         }
     },
     "image#image_acerca-de-nosotros": {
-        "title":"image_acerca-de-nosotros",
+        "title": "image_acerca-de-nosotros",
         "props": {
             "src": "assets/img/nosotros/1.png"
         }
     },
     "flex-layout.row#container_info-nosotros": {
-        "title":"container_info-nosotros",
+        "title": "container_info-nosotros",
         "children": [
             "flex-layout.col#info_nosotros_column-left",
             "flex-layout.col#info_nosotros_column-right"
         ],
         "props": {
-            "marginTop":5,
+            "marginTop": 5,
             "blockclass": "container_info-nosotros",
             "horizontalAlign": "around"
         }
     },
     "flex-layout.col#info_nosotros_column-left": {
-        "title":"info_nosotros_column-left",
+        "title": "info_nosotros_column-left",
         "children": [
             "flex-layout.row#container_info-nosotros-cont_one"
         ],
-        "props":{
-            "marginLeft":8,
-            "width":"70%"
+        "props": {
+            "marginLeft": 8,
+            "width": "70%"
         }
     },
     "flex-layout.col#info_nosotros_column-right": {
-        "title":"info_nosotros_column-right",
+        "title": "info_nosotros_column-right",
         "children": [
             "flex-layout.row#container_info-nosotros-cont_two"
         ],
-        "props":{
-            "width":"30%"
+        "props": {
+            "width": "30%"
         }
     },
     "flex-layout.row#container_info-nosotros-cont_one": {
-        "title":"info-nosotros-cont_one",
+        "title": "info-nosotros-cont_one",
         "children": [
             "flex-layout.col#container_info-nosotros-col-one",
             "flex-layout.col#container_info-nosotros-col-two"
@@ -66,7 +66,7 @@
     },
     /* ...................Botones.................... */
     "flex-layout.col#container_info-nosotros-col-one": {
-        "title":"container_info-nosotros-col-one",
+        "title": "container_info-nosotros-col-one",
         "children": [
             "link#boton_quienes-somos",
             "link#boton_trabaja_con_nosotros",
@@ -76,14 +76,12 @@
             "horizontalAlign": "center"
         }
     },
-    
-     /* ............Quienes somos............ */
-     "link#boton_quienes-somos": {
+    /* ............Quienes somos............ */
+    "link#boton_quienes-somos": {
         "title": "boton quienes somos",
         "children": [
             "icon#home_quienes-somos",
             "rich-text#_quienes-somos"
-            
         ],
         "props": {
             "blockClass": "botonLinkeable_quienes-somos",
@@ -130,8 +128,8 @@
             "text": "Trabaja con nosotros"
         }
     },
-     /* ............ gestion ambiental............ */
-     "link#boton_gestion_ambiental": {
+    /* ............ gestion ambiental............ */
+    "link#boton_gestion_ambiental": {
         "title": "trabaja_gestion_ambiental",
         "children": [
             "icon#home_trabaja_gestion_ambiental",
@@ -225,28 +223,28 @@
     "image#image_acerca-de-nosotros_one": {
         "title": "acerca-de-nosotros_one",
         "props": {
-            "blockClass":"image_acerca-de-nosotros",
+            "blockClass": "image_acerca-de-nosotros",
             "src": "assets/img/nosotros/2.png"
         }
     },
     "image#image_acerca-de-nosotros_two": {
         "title": "acerca-de-nosotros_two",
         "props": {
-            "blockClass":"image_acerca-de-nosotros",
+            "blockClass": "image_acerca-de-nosotros",
             "src": "assets/img/nosotros/3.png"
         }
     },
     "image#image_acerca-de-nosotros_three": {
         "title": "image_acerca-de-nosotros_thre",
         "props": {
-            "blockClass":"image_acerca-de-nosotros",
+            "blockClass": "image_acerca-de-nosotros",
             "src": "assets/img/nosotros/4.png"
         }
     },
     "image#image_acerca-de-nosotros_four": {
         "title": "image_acerca-de-nosotros_four",
         "props": {
-            "blockClass":"image_acerca-de-nosotros",
+            "blockClass": "image_acerca-de-nosotros",
             "src": "assets/img/nosotros/5.png"
         }
     }

@@ -1,209 +1,215 @@
 {
-    "flex-layout.row#home__section--button_info":{
-      "title":"container buttons",
-        "children":[
-            "link#cuidad",
-            "link#metodo_de_envio",
-            "link#supermercado_button",
-            "link#drogueria_button",
-            "link#electrodomesticos_button",
-            "link#catalogos_button" ,
-            "link#nuestras_tiendas_button",
-            "modal-trigger#home__modal-sku"
-        ],
-        "props":{
-          "blockClass":"container_Buttons",
-            "horizontalAlign":"around"/* ,
+  "flex-layout.row#home__section--button_info": {
+    "title": "container buttons",
+    "children": [
+      "link#cuidad",
+      "link#metodo_de_envio",
+      "link#supermercado_button",
+      "link#drogueria_button",
+      "link#electrodomesticos_button",
+      "link#catalogos_button",
+      "link#nuestras_tiendas_button",
+      "flex-layout.row#container__modal-sku"
+      //"modal-trigger#home__modal-sku"
+    ],
+    "props": {
+      "blockClass": "container_Buttons",
+      "horizontalAlign": "around" /* ,
             "colSizing":"auto",
             "preserveLayoutOnMobile" : true */
-        }
-    },
-    
-     /* ............supermercado............ */
-    "link#supermercado_button": {
-      "title":"button supermercado",
-        "children":[
-          "icon#home_icon-market",
-          "rich-text#market"
-        ],
-        "props": {
-        "blockClass":"botonLinkeable_supermercado",
-          "href": "/electrodomesticos"
-        }
-      },
-      "icon#home_icon-market":{
-        "title":"icono market",
-        "props":{
-          "id":"menu-market",
-          "size":20
-        }
-     },
-     "rich-text#market":{
-      "title":"text market",
-      "props":{
-        "blockClass":"botonLinkeable",
-        "text":"Supermercado"
-      }
-     },
-     /* ............Drogueria............ */
-     "link#drogueria_button":{
-      "title":"drogueria button",
-      "children":[
-        "icon#home_icon-medicine",
-        "rich-text#medicine"
-      ],
-      "props": {
-        "blockClass":"botonLinkeable_medicine",
-          "href": "/electrodomesticos"
-        }
-     },
-     "icon#home_icon-medicine":{
-      "title":"icon medicine",
-      "props":{
-        "id":"menu-medicine",
-        "size":17
-      }
-      },
-      "rich-text#medicine":{
-        "title":"text drogueria",
-        "props":{
-          "blockClass":"botonLinkeable",
-          "text":"Drogueria"
-        }
-      },
-      /* ............Electrodomesticos............ */
-      "link#electrodomesticos_button":{
-        "title":"button electrodomestios",
-        "children":[
-          "icon#home_tvicon",
-          "rich-text#tv-icon"
-        ],
-        "props": {
-          "blockClass":"botonLinkeable_tvicon",
-            "href": "/electrodomesticos"
-          }
-      },
-      "icon#home_tvicon":{
-        "title":"icon electrodomesticos",
-        "props":{
-          "id":"menu-tvicon",
-          "size":25
-        }
-        },
-        "rich-text#tv-icon":{
-          "title":"text electrodomesticos",
-          "props":{
-            "blockClass":"botonLinkeable",
-            "text":"Electrodomesticos"
-          }
-        },
-        /* ............Catalogos............ */
-        "link#catalogos_button":{
-          "title":"button catalogo",
-          "children":[
-            "icon#home_catalogo-icon",
-            "rich-text#tv-catalogo-icon"
-          ],
-          "props": {
-            "blockClass":"botonLinkeable_catalogo-icon",
-              "href": "/electrodomesticos"
-            }
-        },
-        "icon#home_catalogo-icon":{
-          "title":"icon catalogo",
-          "props":{
-            "id":"catalogo-icon",
-            "size":20
-          }
-          },
-          "rich-text#tv-catalogo-icon":{
-            "title":"text catalogo",
-            "props":{
-              "blockClass":"botonLinkeable_2",
-              "text":"Catalogo"
-            }
-          },
-
-          /* ...............Nuestras Tiendas.............. */
-          "link#nuestras_tiendas_button":{
-            "title":"button nuestras tiendas ",
-            "children":[
-              "icon#home_nuestras-tiendas",
-              "rich-text#nuestras-tiendas"
-            ],
-            "props": {
-              "blockClass":"botonLinkeable_nuestras-tiendas",
-                "href": "/electrodomesticos"
-              }
-          },
-          "icon#home_nuestras-tiendas":{
-            "title":"icon nuestras tiendas",
-            "props":{
-              "id":"menu-location",
-              "size":20
-            }
-            },
-            "rich-text#nuestras-tiendas":{
-              "title":"text nuestras tiendas",
-              "props":{
-                "blockClass":"botonLinkeable_2",
-                "text":"Nuestras tiendas"
-              }
-            },
-            /* ...............Metodo de envio.............. */
-            "link#metodo_de_envio":{
-              "title":"button metodo de envio ",
-              "children":[
-                "icon#home_metodo_de_envio",
-                "rich-text#metodo_de_envio"
-              ],
-              "props": {
-                "blockClass":"botonLinkeable_metodo_de_envio",
-                  "href": "/electrodomesticos"
-                }
-            },
-            "icon#home_metodo_de_envio":{
-              "title":"icono metodo de envio",
-              "props":{
-                "id":"menu-building",
-                "size":20
-              }
-              },
-              "rich-text#metodo_de_envio":{
-                "title":"text metodo de envio",
-                "props":{
-                  "blockClass":"botonLinkeable_3",
-                  "text":"Metodo de envio"
-                }
-              },
-               /* ...............escoge tu cuidad.............. */
-            "link#cuidad":{
-              "title":"button cuidad ",
-              "children":[
-                "icon#home_cuidad",
-                "rich-text#cuidad"
-              ],
-              "props": {
-                "blockClass":"botonLinkeable_cuidad",
-                  "href": "/electrodomesticos"
-                }
-            },
-            "icon#home_cuidad":{
-              "title":"icono cuidad",
-              "props":{
-                "id":"menu-location",
-                "size":20
-              }
-              },
-              "rich-text#cuidad":{
-                "title":"text cuidad",
-                "props":{
-                  "blockClass":"botonLinkeable_3",
-                  "text":"Ciudad"
-                }
-              }
-            }
-          
-
-
-
+    }
+  },
+  /* ..............modal sku.............. */
+  "flex-layout.row#container__modal-sku": {
+    "title": "container_modal",
+    "children": [
+      "modal-trigger#home__modal-sku"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "container-modal__sku"
+    }
+  },
+  /* ............supermercado............ */
+  "link#supermercado_button": {
+    "title": "button supermercado",
+    "children": [
+      "icon#home_icon-market",
+      "rich-text#market"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_supermercado",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_icon-market": {
+    "title": "icono market",
+    "props": {
+      "id": "menu-market",
+      "size": 20
+    }
+  },
+  "rich-text#market": {
+    "title": "text market",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "Supermercado"
+    }
+  },
+  /* ............Drogueria............ */
+  "link#drogueria_button": {
+    "title": "drogueria button",
+    "children": [
+      "icon#home_icon-medicine",
+      "rich-text#medicine"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_medicine",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_icon-medicine": {
+    "title": "icon medicine",
+    "props": {
+      "id": "menu-medicine",
+      "size": 17
+    }
+  },
+  "rich-text#medicine": {
+    "title": "text drogueria",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "Drogueria"
+    }
+  },
+  /* ............Electrodomesticos............ */
+  "link#electrodomesticos_button": {
+    "title": "button electrodomestios",
+    "children": [
+      "icon#home_tvicon",
+      "rich-text#tv-icon"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_tvicon",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_tvicon": {
+    "title": "icon electrodomesticos",
+    "props": {
+      "id": "menu-tvicon",
+      "size": 25
+    }
+  },
+  "rich-text#tv-icon": {
+    "title": "text electrodomesticos",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "Electrodomesticos"
+    }
+  },
+  /* ............Catalogos............ */
+  "link#catalogos_button": {
+    "title": "button catalogo",
+    "children": [
+      "icon#home_catalogo-icon",
+      "rich-text#tv-catalogo-icon"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_catalogo-icon",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_catalogo-icon": {
+    "title": "icon catalogo",
+    "props": {
+      "id": "catalogo-icon",
+      "size": 20
+    }
+  },
+  "rich-text#tv-catalogo-icon": {
+    "title": "text catalogo",
+    "props": {
+      "blockClass": "botonLinkeable_2",
+      "text": "Catalogo"
+    }
+  },
+  /* ...............Nuestras Tiendas.............. */
+  "link#nuestras_tiendas_button": {
+    "title": "button nuestras tiendas ",
+    "children": [
+      "icon#home_nuestras-tiendas",
+      "rich-text#nuestras-tiendas"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_nuestras-tiendas",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_nuestras-tiendas": {
+    "title": "icon nuestras tiendas",
+    "props": {
+      "id": "menu-location",
+      "size": 20
+    }
+  },
+  "rich-text#nuestras-tiendas": {
+    "title": "text nuestras tiendas",
+    "props": {
+      "blockClass": "botonLinkeable_2",
+      "text": "Nuestras tiendas"
+    }
+  },
+  /* ...............Metodo de envio.............. */
+  "link#metodo_de_envio": {
+    "title": "button metodo de envio ",
+    "children": [
+      "icon#home_metodo_de_envio",
+      "rich-text#metodo_de_envio"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_metodo_de_envio",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_metodo_de_envio": {
+    "title": "icono metodo de envio",
+    "props": {
+      "id": "menu-building",
+      "size": 20
+    }
+  },
+  "rich-text#metodo_de_envio": {
+    "title": "text metodo de envio",
+    "props": {
+      "blockClass": "botonLinkeable_3",
+      "text": "Metodo de envio"
+    }
+  },
+  /* ...............escoge tu cuidad.............. */
+  "link#cuidad": {
+    "title": "button cuidad ",
+    "children": [
+      "icon#home_cuidad",
+      "rich-text#cuidad"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_cuidad",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_cuidad": {
+    "title": "icono cuidad",
+    "props": {
+      "id": "menu-location",
+      "size": 20
+    }
+  },
+  "rich-text#cuidad": {
+    "title": "text cuidad",
+    "props": {
+      "blockClass": "botonLinkeable_3",
+      "text": "Ciudad"
+    }
+  }
+}

@@ -1,191 +1,180 @@
 {
-  "header-layout.mobile":{
-    "title":"container header mobile",
-         "children":[
-          "header-row#mobile__container-header",
-          "flex-layout.row#header__search-mobile"
-         
-           ],
-           "props":{
-            "blockClass":"container_search_bar--mobile"
-           } 
-      },
-      /* .................Header Mobile................... */
-      "header-row#mobile__container-header":{
-        "title":"header mobile__container",
-        "children":[
-          "drawer#header__mobile--menu",
-          "logo#header__top--logo_mobile",
-          //"flex-layout.row#icon_login_mobile",
-          "flex-layout.row#login__mobile",
-          "flex-layout.row#icon_cart"
-        ],
-        "props":{
-          "blockClass":"headerMobile",
-          //"width":70,
-          "horizontalAlign":"between"
-        }
-      },
-      "flex-layout.row#login__mobile":{
-        "title":"login mobile",
-        "children":[
-          "flex-layout.col#login__mobile"
-        ],
-        "props":{
-          "horizontalAlign":"center"
-        }
-      },
-      "flex-layout.col#login__mobile":{
-        "title":"section login mobile ",
-        "children":[
-          "icon#home_mobile",
-         "login"
-        ],
-        "props":{
-          "horizontalAlign":"center"
-        }
-      },
-      "icon#home_mobile":{
-        "title":"icon mobile",
-        "props":{
-          "id":"hpa-profile",
-          "size":30
-        }
-     },
-      
-       /* ............Link Categorias del header mobile............ */
-          "link#categorias_header-mobile": {
-            "title":"link categorias mobile",
-            "children":[
-              "icon#home_bars-mobile",
-              "rich-text#categorias_header-mobile"
-            ],
-            "props": {
-            "blockClass":"botonLinkeable_categorias_header-mobile",
-              "href": "login"
-            }
-          },
-          "icon#home_bars-mobile":{
-            "title":"icon bars",
-            "props":{
-              "id":"menu-burger",
-              "size":20
-            }
-          },
-          "rich-text#categorias_header-mobile":{
-            "title":"text categorias header",
-          "props":{
-            "blockClass":"botonLinkeable",
-            "text":"Categorias"
-          }
-          },
-    /* ............Link Categorias del header mobile............ */
-      
-      "logo#header__top--logo_mobile":{
-        "title":"logo mobile",
-        "props":{
-          "blockClass":"logo_olimpica_mobile",
-          "url":"assets/img/logo/logo_olimpica.png",
-          "href":"/"
-        }
-      },
-     
-      /* vitrina de producto para el minicart (product-list) - Dia 9 min.12 */
-      "minicart-product-list":{
-        "title":"minicar product list",
-        "blocks":["product-list#minicart"]
-      },
-      "product-list#minicart":{
-        "title":"producto summary minicart",
-        "blocks":[
-          "product-list-content-mobile"
-        ]
-      },
-      "product-list-content-mobile":{
-        "title":"list content mobile",
-        "children":[
-          "flex-layout.row#minicart__row--mobile",
-          "flex-layout.row#minicart__row--quantity"
-        ]
-      },
-      "flex-layout.row#minicart__row--quantity":{
-        "children":[
-         
-          "quantity-selector#minicart"
-         
-        ]
-      },
-      "flex-layout.row#minicart__row--mobile":{
-        "title":"minicart mobile",
-        "children":[
-          "flex-layout.col#minicart_col--image",
-          "flex-layout.col#minicart_col--info",
-          "flex-layout.col#minicart_col--remove"
-        ],
-        "props":{
-          "blockClass":"container_minicart-products"
-        }
-      },
-        "flex-layout.col#minicart_col--image":{
-          "title":"minicart col image",
-          "children":[
-            "product-list-image"
-          ]
-        },
-        "flex-layout.col#minicart_col--info":{
-          "title":"minicart col info ",
-          "children":[
-            "vtex.product-list@0.x:product-name",
-            //"quantity-selector#minicart",
-            "price"
-          ],
-          "props":{
-            "horizontalAlign":"between"
-          }
-        },
-        "flex-layout.col#minicart_col--remove":{
-          "title":"minicar col remove",
-          "children":[
-            "remove-button" 
-          ]
-        },
-        "quantity-selector#minicart":{
-          "title":"quiantity selector minicart",
-          "props":{
-            "mode":"dropdown"
-          }
-        },
-      "flex-layout.row#minicart__footer":{
-        "title":"minicart footer",
-        "children":[
-          "flex-layout.col#minicart__footer"
-           
-          ],
-        "props":{
-          "blockClass":"minicart-footer",
-          "sticky":true
-        }
-      } ,
-      "flex-layout.col#minicart__footer":{
-        "children":[
-          "minicart-summary",
-          "minicart-checkout-button"
-        ]
-
-      },
-
-      /* search bar  */
-      "flex-layout.row#header__search-mobile":{
-        "children":[
-          "search-bar#header__search" 
-  
-        ],
-        "props":{
-          "fullWidth":true,
-          "blockClass":"header_container-responsive"
-          
-        }
-      }
-      
-    
+  "header-layout.mobile": {
+    "title": "container header mobile",
+    "children": [
+      "header-row#mobile__container-header",
+      "flex-layout.row#header__search-mobile"
+    ],
+    "props": {
+      "blockClass": "container_search_bar--mobile"
+    }
+  },
+  /* .................Header Mobile................... */
+  "header-row#mobile__container-header": {
+    "title": "header mobile__container",
+    "children": [
+      "drawer#header__mobile--menu",
+      "logo#header__top--logo_mobile",
+      //"flex-layout.row#icon_login_mobile",
+      "flex-layout.row#login__mobile",
+      "flex-layout.row#icon_cart"
+    ],
+    "props": {
+      "blockClass": "headerMobile",
+      //"width":70,
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.row#login__mobile": {
+    "title": "login mobile",
+    "children": [
+      "flex-layout.col#login__mobile"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#login__mobile": {
+    "title": "section login mobile ",
+    "children": [
+      "icon#home_mobile",
+      "login"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "icon#home_mobile": {
+    "title": "icon mobile",
+    "props": {
+      "id": "hpa-profile",
+      "size": 30
+    }
+  },
+  /* ............Link Categorias del header mobile............ */
+  "link#categorias_header-mobile": {
+    "title": "link categorias mobile",
+    "children": [
+      "icon#home_bars-mobile",
+      "rich-text#categorias_header-mobile"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_categorias_header-mobile",
+      "href": "login"
+    }
+  },
+  "icon#home_bars-mobile": {
+    "title": "icon bars",
+    "props": {
+      "id": "menu-burger",
+      "size": 20
+    }
+  },
+  "rich-text#categorias_header-mobile": {
+    "title": "text categorias header",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "Categorias"
+    }
+  },
+  /* ............Link Categorias del header mobile............ */
+  "logo#header__top--logo_mobile": {
+    "title": "logo mobile",
+    "props": {
+      "blockClass": "logo_olimpica_mobile",
+      "url": "assets/img/logo/logo_olimpica.png",
+      "href": "/"
+    }
+  },
+  /* vitrina de producto para el minicart (product-list) - Dia 9 min.12 */
+  "minicart-product-list": {
+    "title": "minicar product list",
+    "blocks": [
+      "product-list#minicart"
+    ]
+  },
+  "product-list#minicart": {
+    "title": "producto summary minicart",
+    "blocks": [
+      "product-list-content-mobile"
+    ]
+  },
+  "product-list-content-mobile": {
+    "title": "list content mobile",
+    "children": [
+      "flex-layout.row#minicart__row--mobile",
+      "flex-layout.row#minicart__row--quantity"
+    ]
+  },
+  "flex-layout.row#minicart__row--quantity": {
+    "children": [
+      "quantity-selector#minicart"
+    ]
+  },
+  "flex-layout.row#minicart__row--mobile": {
+    "title": "minicart mobile",
+    "children": [
+      "flex-layout.col#minicart_col--image",
+      "flex-layout.col#minicart_col--info",
+      "flex-layout.col#minicart_col--remove"
+    ],
+    "props": {
+      "blockClass": "container_minicart-products"
+    }
+  },
+  "flex-layout.col#minicart_col--image": {
+    "title": "minicart col image",
+    "children": [
+      "product-list-image"
+    ]
+  },
+  "flex-layout.col#minicart_col--info": {
+    "title": "minicart col info ",
+    "children": [
+      "vtex.product-list@0.x:product-name",
+      //"quantity-selector#minicart",
+      "price"
+    ],
+    "props": {
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#minicart_col--remove": {
+    "title": "minicar col remove",
+    "children": [
+      "remove-button"
+    ]
+  },
+  "quantity-selector#minicart": {
+    "title": "quiantity selector minicart",
+    "props": {
+      "mode": "dropdown"
+    }
+  },
+  "flex-layout.row#minicart__footer": {
+    "title": "minicart footer",
+    "children": [
+      "flex-layout.col#minicart__footer"
+    ],
+    "props": {
+      "blockClass": "minicart-footer",
+      "sticky": true
+    }
+  },
+  "flex-layout.col#minicart__footer": {
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
+  },
+  /* search bar  */
+  "flex-layout.row#header__search-mobile": {
+    "children": [
+      "search-bar#header__search"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "header_container-responsive"
+    }
+  }
 }

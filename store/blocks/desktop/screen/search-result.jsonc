@@ -115,6 +115,7 @@
     },
     /* ......................Gallery switcher........................... */
     "gallery-layout-switcher": {
+        "title":"switcher",
         "children": [
             "gallery-layout-option#grid",
             "gallery-layout-option#grid_two",
@@ -126,6 +127,7 @@
         }
     },
     "gallery-layout-option#grid_two": {
+        "title":"switchergrid two",
         "props": {
             "blockClass": "Container--grid-two",
             "name": "grid_two"
@@ -136,6 +138,7 @@
         ]
     },
     "gallery-layout-option#grid": {
+        "title":"grid",
         "props": {
             "blockClass": "Container--grid",
             "name": "grid"
@@ -146,26 +149,30 @@
         ]
     },
     "gallery-layout-option#list": {
+        "title":"switcher list",
         "props": {
             "name": "list",
             "blockClass": "Container--list"
         },
         "children": [
-            "icon-inline-grid",
-            "responsive-layout.desktop#textOptionList"
+            "icon-inline-grid"
+            //"responsive-layout.desktop#textOptionList"
         ]
     },
     "responsive-layout.desktop#textOptionGrid": {
+        "title":"option grid",
         "children": [
             "rich-text#option-grid"
         ]
     },
     "responsive-layout.desktop#textOptionList": {
+        "title":"option grid",
         "children": [
             "rich-text#option-list"
         ]
     },
     "rich-text#option-grid": {
+        "title":"txt grid",
         "props": {
             "text": "Grid",
             "textColor": "c-auto",
@@ -173,6 +180,7 @@
         }
     },
     "rich-text#option-list": {
+        "title":"txt grid",
         "props": {
             "text": "List",
             "textColor": "c-auto",
@@ -290,6 +298,7 @@
         ]
     },
     "gallery-layout-switcher#mobile2": {
+        "title": "pproducts--mobile-layout2",
         "children": [
             "gallery-layout-option#grid",
             "gallery-layout-option#grid_two"

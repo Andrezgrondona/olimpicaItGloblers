@@ -1,51 +1,57 @@
 {
-    "modal-trigger#home__modal--children":{
-        "children":[
-          "rich-text#home__modal--trigger",
-          "modal-layout#home__modal--layout"
-        ],
-        "props":{
-          "blockclass":"container-modal__filtrar"
-        }
-      },
-      "rich-text#home__modal--trigger":{
-        "props":{
-          "blockclass":"text_filtrar",
-          "text":"Filtrar",
-          "textPosition":"CENTER"
-        }
-      },
-      "modal-layout#home__modal--layout":{
-        "children":[
-          "filter-navigator.v3"
-        ]
-      },
-
-  /* ..................................SEGUNDO EJEMPLLO DE MODALTRIGGER 1.09 ....................................................... */
-  /* carga un modal al inicio de la pagina del home */
-  "modal-trigger#home__modal--event":{
-    "children":[
-      "modal-layout#home__modal--event"
+  "modal-trigger#home__modal--children": {
+    "title": "container modal",
+    "children": [
+      "rich-text#home__modal--trigger",
+      "modal-layout#home__modal--layout"
     ],
-    "props":{
-      "trigger":"event",
-      "customPixelEventName":"pageView"
+    "props": {
+      "blockclass": "container-modal__filtrar"
     }
   },
-  "modal-layout#home__modal--event":{
-    "children":[
+  "rich-text#home__modal--trigger": {
+    "title": "text modal",
+    "props": {
+      "blockclass": "text_filtrar",
+      "text": "Filtrar",
+      "textPosition": "CENTER"
+    }
+  },
+  "modal-layout#home__modal--layout": {
+    "title": "home modal layout",
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  /* ..................................SEGUNDO EJEMPLLO DE MODALTRIGGER 1.09 ....................................................... */
+  /* carga un modal al inicio de la pagina del home */
+  "modal-trigger#home__modal--event": {
+    "title": "modal event",
+    "children": [
+      "modal-layout#home__modal--event"
+    ],
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    }
+  },
+  "modal-layout#home__modal--event": {
+    "title": "container modal event",
+    "children": [
       "modal-header#home__modal--event",
       "rich-text#home__modal--event--content"
     ]
   },
-  "rich-text#home__modal--event--content":{
-    "props":{
-      "text":"Bienvenidoss a la Olimpica"
+  "rich-text#home__modal--event--content": {
+    "title": "text event",
+    "props": {
+      "text": "Bienvenidoss a la Olimpica"
     }
   },
-  "modal-header#home__modal--event":{
-    "props":{
-      "showCloseButton":true
+  "modal-header#home__modal--event": {
+    "title": "props modal event",
+    "props": {
+      "showCloseButton": true
     }
   }
 }
