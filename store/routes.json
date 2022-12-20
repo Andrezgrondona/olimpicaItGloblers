@@ -1,5 +1,9 @@
 {
     "store.custom#acerca-de-nosotros":{
         "path":"/acerca-nosotros"
+    },
+    "store.custom#terminosycondiciones":{
+        "path":"/terminos"
     }
+
 }
