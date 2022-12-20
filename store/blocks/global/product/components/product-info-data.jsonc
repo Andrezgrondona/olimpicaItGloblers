@@ -1,96 +1,92 @@
 {
-    "flex-layout.row#product__info":{
-        "title":"info PDP",
-        "children":[
-          "flex-layout.col#product__info--image",
-          "flex-layout.col#product__info--data"
+    "flex-layout.row#product__info": {
+        "title": "info PDP",
+        "children": [
+            "flex-layout.col#product__info--image",
+            "flex-layout.col#product__info--data"
         ]
-      },
-        "flex-layout.col#product__info--image":{
-            "title":"product images",
-            "children":[
-                "product-images#product__info--image"
-            ]
-        },
-        "product-images#product__info--image":{
-            "title":"images",
-            "props":{
-                "blockClass":"PDP__image",
-               "zoomMode":"open-modal"
-            }
-        },
-        "flex-layout.col#product__info--data":{
-            "title":"Produc info data ",
-            "children":[
-                //"share",
-                "vtex.store-components:product-name",
-                "vtex.store-components:product-brand",
-                "product-price",
-                "product-quantity",
-                //"product-description",
-                //"buy-button",
-                "add-to-cart-button",
-                //"shipping-simulator", (simulador de envio )
-                //"product-details", (informacion todos los detalles de envio e info )
-                "rich-text#product__promo_info",
-                //(add-to-cart-info es el componente custom )
-                "modal-trigger#add-to-card-info"
-                //"add-to-cart-info"
-            ],
-            "props":{
-                "blockClass":"info--data_PDP"
-            }
-        },
-        "modal-trigger#add-to-card-info":{
-            "children":[
-                "modal-layout#add-to-cart-info"
-            ],
-            "props":{
-                "customPixelEventName": "addToCart"
-            }
-        },
-        "modal-layout#add-to-cart-info":{
-            "title":"container add to cart",
-            "children":[
-                "modal-header#add-to-cart-info",
-                "add-to-cart-info",
-                "link#seguir_comprando"
-            ],
-            "props":{
-                
-                "blockClass":"info_ad-to-cart"
-            }
-        },
-        "modal-header#add-to-cart-info":{
-            "props":{
-                "showCloseButton":true,
-                "iconCloseSize":24
-            }
-        },
-
-        /* link boton seguir comprando */
-        "link#seguir_comprando": {
-            "title":"button supermercado",
-              "children":[
-                "rich-text#_comprando"
-              ],
-              "props": {
-              "blockClass":"botonLinkeable_comprando",
-                "href": "/"
-              }
-            },
-           
-           "rich-text#_comprando":{
-            "title":"text market",
-            "props":{
-              "blockClass":"botonLinkeable",
-              "text":"Seguir comprando"
-            }
-           },
-
-
-
-        "rich-text#product__promo_info":{
-            "title":"texto adicional del producto"
+    },
+    "flex-layout.col#product__info--image": {
+        "title": "product images",
+        "children": [
+            "product-images#product__info--image"
+        ]
+    },
+    "product-images#product__info--image": {
+        "title": "images",
+        "props": {
+            "blockClass": "PDP__image",
+            "zoomMode": "open-modal"
         }
+    },
+    "flex-layout.col#product__info--data": {
+        "title": "Produc info data ",
+        "children": [
+            //"share",
+            "vtex.store-components:product-name",
+            "vtex.store-components:product-brand",
+            "product-price",
+            "product-quantity",
+            "add-to-cart-button",
+            "rich-text#product__promo_info",
+            "modal-trigger#add-to-card-info"
+            //(add-to-cart-info es el componente custom )
+            //"add-to-cart-info"
+            //"product-description",
+            //"buy-button",
+            //"shipping-simulator", (simulador de envio )
+            //"product-details", (informacion todos los detalles de envio e info )
+        ],
+        "props": {
+            "blockClass": "info--data_PDP"
+        }
+    },
+    "modal-trigger#add-to-card-info": {
+        "title": "add card info ",
+        "children": [
+            "modal-layout#add-to-cart-info"
+        ],
+        "props": {
+            "customPixelEventName": "addToCart"
+        }
+    },
+    "modal-layout#add-to-cart-info": {
+        "title": "container add to cart",
+        "children": [
+            "modal-header#add-to-cart-info",
+            "add-to-cart-info",
+            "link#seguir_comprando"
+        ],
+        "props": {
+            "blockClass": "info_ad-to-cart"
+        }
+    },
+    "modal-header#add-to-cart-info": {
+        "title": "card info ",
+        "props": {
+            "showCloseButton": true,
+            "iconCloseSize": 24
+        }
+    },
+    /* link boton seguir comprando */
+    "link#seguir_comprando": {
+        "title": "button supermercado",
+        "children": [
+            "rich-text#_comprando"
+        ],
+        "props": {
+            "blockClass": "botonLinkeable_comprando",
+            "href": "/"
+        }
+    },
+    "rich-text#_comprando": {
+        "title": "text market",
+        "props": {
+            "blockClass": "botonLinkeable",
+            "text": "Seguir comprando"
+        }
+    },
+    "rich-text#product__promo_info": {
+        "title": "texto adicional del producto"
+    }
 }

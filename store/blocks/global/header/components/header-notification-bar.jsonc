@@ -1,132 +1,131 @@
 {
-    /* ....Barra Notificaciones header desktop */
-    "flex-layout.row#notification_bar": {
-        "title":"notification bar",
-        "children": [
-            "flex-layout.row#notification_bar-info-one",
-            "flex-layout.row#notification_bar-info-two"
-        ],
-        "props": {
-            "fullWidth":false,
-            "blockClass": "notification-bar",
-            "width": 90
-            // "horizontalAlign":"between"
-        }
-    },
-    "flex-layout.row#notification_bar-info-one": {
-        "title":"notification bar info one",
-        "children": [
-            "link#header_top_ventas",
-            "link#header_top_atencion_al cliente",
-            "link#header_whatssap" 
-        ],
-        "props": {
-            "blockClass":"bar-info-one",
-            "horizontalAlign": "left"
-        }
-    },
-    /* link venta telefonica */
-    "link#header_top_ventas": {
-        "title":"header link",
-          "children":[
-            "icon#home_icon-venta",
-            "rich-text#text_venta"
-          ],
-          "props": {
-          "blockClass":"botonLinkeable_venta",
-            "href": "/electrodomesticos"
-          }
-        },
-        "icon#home_icon-venta":{
-          "title":"icono market",
-          "props":{
-            "id":"phone-icon",
-            "size":20
-          }
-       },
-       "rich-text#text_venta":{
-        "title":"text venta",
-        "props":{
-          "blockClass":"botonLinkeable",
-          "text":"venta telefonica"
-        }
-       },
-       /* link atencion al cilente */
-       "link#header_top_atencion_al cliente": {
-        "title":"link atencion al cliente",
-          "children":[
-            "icon#home_icon-cliente",
-            "rich-text#text_cliente"
-          ],
-          "props": {
-          "blockClass":"botonLinkeable_venta",
-            "href": "/electrodomesticos"
-          }
-        },
-        "icon#home_icon-cliente":{
-          "title":"icono cliente",
-          "props":{
-            "id":"headphone-icon",
-            "size":20
-          }
-       },
-       "rich-text#text_cliente":{
-        "title":"text cliente",
-        "props":{
-          "blockClass":"botonLinkeable",
-          "text":"Atencion al cliente"
-        }
-       },
-       /* whatssap */
-       "link#header_whatssap" : {
-        "title":"link whatssap",
-          "children":[
-            "icon#home_icon-whatssap",
-            "rich-text#text_whatssap"
-          ],
-          "props": {
-          "blockClass":"botonLinkeable_venta",
-            "href": "/electrodomesticos"
-          }
-        },
-        "icon#home_icon-whatssap":{
-          "title":"icono whatssap",
-          "props":{
-            "id":"whatssap-icon",
-            "size":20
-          }
-       },
-       "rich-text#text_whatssap":{
-        "title":"text cliente",
-        "props":{
-          "blockClass":"botonLinkeable",
-          "text":"whatssap "
-        }
-       },
-    /* ............................................ */
-    
-    "flex-layout.row#notification_bar-info-two": {
-        "title":"container bar info two",
-        "children": [
-            "rich-text#viajar_olimpica",
-            "rich-text#tarjeta_olimpica"
-        ],
-        "props": {
-            "horizontalAlign": "right"
-        }
-    },
-    "rich-text#viajar_olimpica": {
-        "title":"text viajar",
-        "props": {
-            "blockClass": "Barra-Notificaciones_viajar",
-            "text": "Viajar olimpica"
-        }
-    },
-    "rich-text#tarjeta_olimpica": {
-        "title":"text tarjeta",
-        "props": {
-            "blockClass": "Barra-Notificaciones_tarjeta",
-            "text": "Tarjeta olimpica"
-        }
+  /* ....Barra Notificaciones header desktop */
+  "flex-layout.row#notification_bar": {
+    "title": "notification bar",
+    "children": [
+      "flex-layout.row#notification_bar-info-one",
+      "flex-layout.row#notification_bar-info-two"
+    ],
+    "props": {
+      "fullWidth": false,
+      "blockClass": "notification-bar",
+      "width": 90
+      // "horizontalAlign":"between"
     }
+  },
+  "flex-layout.row#notification_bar-info-one": {
+    "title": "notification bar info one",
+    "children": [
+      "link#header_top_ventas",
+      "link#header_top_atencion_al cliente",
+      "link#header_whatssap"
+    ],
+    "props": {
+      "blockClass": "bar-info-one",
+      "horizontalAlign": "left"
+    }
+  },
+  /* link venta telefonica */
+  "link#header_top_ventas": {
+    "title": "header link",
+    "children": [
+      "icon#home_icon-venta",
+      "rich-text#text_venta"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_venta",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_icon-venta": {
+    "title": "icono market",
+    "props": {
+      "id": "phone-icon",
+      "size": 20
+    }
+  },
+  "rich-text#text_venta": {
+    "title": "text venta",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "venta telefonica"
+    }
+  },
+  /* link atencion al cilente */
+  "link#header_top_atencion_al cliente": {
+    "title": "link atencion al cliente",
+    "children": [
+      "icon#home_icon-cliente",
+      "rich-text#text_cliente"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_venta",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_icon-cliente": {
+    "title": "icono cliente",
+    "props": {
+      "id": "headphone-icon",
+      "size": 20
+    }
+  },
+  "rich-text#text_cliente": {
+    "title": "text cliente",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "Atencion al cliente"
+    }
+  },
+  /* whatssap */
+  "link#header_whatssap": {
+    "title": "link whatssap",
+    "children": [
+      "icon#home_icon-whatssap",
+      "rich-text#text_whatssap"
+    ],
+    "props": {
+      "blockClass": "botonLinkeable_venta",
+      "href": "/electrodomesticos"
+    }
+  },
+  "icon#home_icon-whatssap": {
+    "title": "icono whatssap",
+    "props": {
+      "id": "whatssap-icon",
+      "size": 20
+    }
+  },
+  "rich-text#text_whatssap": {
+    "title": "text cliente",
+    "props": {
+      "blockClass": "botonLinkeable",
+      "text": "whatssap 4376238 "
+    }
+  },
+  /* ............................................ */
+  "flex-layout.row#notification_bar-info-two": {
+    "title": "container bar info two",
+    "children": [
+      "rich-text#viajar_olimpica",
+      "rich-text#tarjeta_olimpica"
+    ],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+  "rich-text#viajar_olimpica": {
+    "title": "text viajar",
+    "props": {
+      "blockClass": "Barra-Notificaciones_viajar",
+      "text": "Viajar olimpica"
+    }
+  },
+  "rich-text#tarjeta_olimpica": {
+    "title": "text tarjeta",
+    "props": {
+      "blockClass": "Barra-Notificaciones_tarjeta",
+      "text": "Tarjeta olimpica"
+    }
+  }
 }

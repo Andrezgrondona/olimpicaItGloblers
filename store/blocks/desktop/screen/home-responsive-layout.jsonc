@@ -19,17 +19,20 @@
         ]
       },
       "rich-text#home__info--phone":{
+        "title":"text info home",
         "props":{
           "text":"#resolucion de telefono"
         }
       },
       
       "rich-text#home__info--tablet":{
+        "title":"text info home tablet",
         "props":{
           "text":"#resolucion de tableta"
         }
       },
       "rich-text#home__info--dektop":{
+        "title":"text info home desktop",
         "props":{
           "text":"#resolucion de escritorios"
         }

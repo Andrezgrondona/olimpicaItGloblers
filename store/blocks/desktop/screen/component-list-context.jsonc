@@ -1,0 +1,79 @@
+{
+    /* ..............componente List context................ */
+  "flex-layout.row#list-context.bullet-group": {
+    "title": "bullet-group",
+    "children": [
+      "list-context.bullet-group"
+    ]
+  },
+  "list-context.bullet-group": {
+    "title": "imagen group bullet",
+    "children": [
+      "slider-layout#bullet-group"
+    ],
+    "props": {
+      "bullets": [
+        {
+          "image": "assets/img/context/1.png",
+          "titleBullet": "Conserva",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/2.png",
+          "titleBullet": "Deayuno",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/3.png",
+          "titleBullet": "Aseo",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/4.png",
+          "titleBullet": "Lacteos",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/5.png",
+          "titleBullet": "Verduras",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/6.png",
+          "titleBullet": "Licores",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/img/context/7.png",
+          "titleBullet": "Carnes",
+          "link": {
+            "url": "/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#bullet-group": {
+    "title": "slider bullet-group",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "mobile": 5
+      },
+      "infinite": true
+    }
+  }
+}

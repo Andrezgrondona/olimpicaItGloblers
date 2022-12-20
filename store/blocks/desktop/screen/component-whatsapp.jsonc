@@ -1,0 +1,12 @@
+{
+    /* ..............componente Boton de Whatsapp................ */
+  "whatsapp-button": {
+    "title": "whatsapp button",
+    "props": {
+      "blockclass": "logo--Whatssap",
+      "logo": "assets/img/whatsapp-logo.png",
+      "phone": "30173475423",
+      "message": "txt de prueba vtex"
+    }
+  }
+}

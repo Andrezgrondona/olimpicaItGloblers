@@ -41,5 +41,12 @@
  }
 
 
+ /* boton sku desktop */
+
+ @media (max-width: 800px) {
+    .flexRowContent--container-modal__sku{
+        display: none;
+  }
+}
 
 

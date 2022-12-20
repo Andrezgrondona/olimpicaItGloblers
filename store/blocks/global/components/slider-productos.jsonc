@@ -21,11 +21,12 @@
       "product-summary-buy-button"
       //"product-summary-sku-selector",
     ],
-    "props":{
-      "blockclass":"product__sumary-home"
+    "props": {
+      "blockclass": "product__sumary-home"
     }
   },
   "slider-layout#demo-products": {
+    "title": "demo products",
     "props": {
       "horizontalAlign": "center",
       "blockClass": "carousel",

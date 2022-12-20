@@ -1,82 +1,82 @@
 {
-    "flex-layout.row#home__cardShop_section_two":{
-      "title":"container card shop section two",
-        "children":[
-          "flex-layout.col#card__one_section_two",
-          "flex-layout.col#card__two_section_two",
-          "flex-layout.col#card__three_section_two",
-          "flex-layout.col#card__four_section_two"
-        ],
-        "props":{
-          "horizontalAlign":"center"
-        }
-      },
-      "flex-layout.col#card__one_section_two":{
-        "title":"card one section two",
-        "children":[
-          "image#one_section_two"
-        ],
-        "props":{ 
-          "blockClass":"img_grid-four",
-          "horizontalAlign":"center"
-        }
-      },
-      "flex-layout.col#card__two_section_two":{
-        "title":"card two section two",
-        "children":[
-          "image#two_section_two"
-        ],
-        "props":{
-          "blockClass":"img_grid-four",
-          "horizontalAlign":"center"
-        }
-      },
-      "flex-layout.col#card__three_section_two":{
-        "title":"card three section two",
-        "children":[
-          "image#three_section_two"
-        ],
-        "props":{
-          "blockClass":"img_grid-four",
-          "horizontalAlign":"center"
-        }
-      },
-      "flex-layout.col#card__four_section_two":{
-        "title":"card four section two",
-        "children":[
-          "image#four_section_two"
-        ],
-        "props":{
-          "blockClass":"img_grid-four",
-          "horizontalAlign":"center"
-        }
-      },
-      "image#one_section_two":{
-        "title":"image one section two",
-        "props": {
-          "src": "assets/img/grid4-img-2/a.png",
-           "width":"100%"
-        }
-      },
-      "image#two_section_two":{
-        "title":"image two section two",
-        "props": {
-          "src": "assets/img/grid4-img-2/b.png",
-          "width":"100%"
-        }
-      },
-      "image#three_section_two":{
-        "title":"image three section two",
-        "props": {
-          "src": "assets/img/grid4-img-2/c.png",
-          "width":"100%"
-        }
-      },
-      "image#four_section_two":{
-        "title":"image four section two",
-        "props": {
-          "src": "assets/img/grid4-img-2/d.png",
-          "width":"100%"
-        }
-      }
+  "flex-layout.row#home__cardShop_section_two": {
+    "title": "container card shop section two",
+    "children": [
+      "flex-layout.col#card__one_section_two",
+      "flex-layout.col#card__two_section_two",
+      "flex-layout.col#card__three_section_two",
+      "flex-layout.col#card__four_section_two"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#card__one_section_two": {
+    "title": "card one section two",
+    "children": [
+      "image#one_section_two"
+    ],
+    "props": {
+      "blockClass": "img_grid-four",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#card__two_section_two": {
+    "title": "card two section two",
+    "children": [
+      "image#two_section_two"
+    ],
+    "props": {
+      "blockClass": "img_grid-four",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#card__three_section_two": {
+    "title": "card three section two",
+    "children": [
+      "image#three_section_two"
+    ],
+    "props": {
+      "blockClass": "img_grid-four",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#card__four_section_two": {
+    "title": "card four section two",
+    "children": [
+      "image#four_section_two"
+    ],
+    "props": {
+      "blockClass": "img_grid-four",
+      "horizontalAlign": "center"
+    }
+  },
+  "image#one_section_two": {
+    "title": "image one section two",
+    "props": {
+      "src": "assets/img/grid4-img-2/a.png",
+      "width": "100%"
+    }
+  },
+  "image#two_section_two": {
+    "title": "image two section two",
+    "props": {
+      "src": "assets/img/grid4-img-2/b.png",
+      "width": "100%"
+    }
+  },
+  "image#three_section_two": {
+    "title": "image three section two",
+    "props": {
+      "src": "assets/img/grid4-img-2/c.png",
+      "width": "100%"
+    }
+  },
+  "image#four_section_two": {
+    "title": "image four section two",
+    "props": {
+      "src": "assets/img/grid4-img-2/d.png",
+      "width": "100%"
+    }
+  }
 }

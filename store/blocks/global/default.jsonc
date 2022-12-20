@@ -25,6 +25,7 @@
     }
   },
   "product-summary.shelf": {
+    "title": "summary ",
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-image",
@@ -40,6 +41,7 @@
     }
   },
   "product-summary.shelf#list": {
+    "title": "list ",
     "children": [
       "product-summary-image",
       /* "product-summary-name",
@@ -55,6 +57,7 @@
   },
 /* .............................................................................. */
   "product-summary.shelf#listLayout": {
+    "title": "list layout ",
     "props": {
       "blockClass": "listLayout"
     },
@@ -63,6 +66,7 @@
     ]
   },
   "responsive-layout.desktop#productSummaryList": {
+    "title": "list layout summary ",
     "children": [
       "flex-layout.row#summaryListDesktop"
     ],
@@ -71,6 +75,7 @@
     }
   },
   "flex-layout.row#summaryListDesktop": {
+    "title": "ListDesktop ",
     "children": [
       "product-summary-image",
       "product-summary-name",
