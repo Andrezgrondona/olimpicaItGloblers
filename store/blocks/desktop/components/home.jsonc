@@ -23,6 +23,13 @@
       "list-context.image-list#home-slider-random__products",
       "list-context.image-list#home__slider-servicios_para-ti"
     ]
+  },
+  "pdf-reader":{
+    "props":{
+      "pdfUrl": "assets/documents/terms.pdf", 
+      "width":500,
+      "height":800
+    }
   }
   
 }

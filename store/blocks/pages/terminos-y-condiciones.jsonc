@@ -1,0 +1,32 @@
+{
+    "store.custom#terminosycondiciones": {
+        "title": "terminos y condiciones",
+        "blocks": [
+            "flex-layout.row#terminos-y-condiciones"
+        ]
+    },
+    "flex-layout.row#terminos-y-condiciones": {
+        "title": "terminos y condiciones",
+        "children": [
+            "flex-layout.col#terminos-y-condiciones"
+        ]
+    },
+    "flex-layout.col#terminos-y-condiciones": {
+        "title": "terminos y condiciones col",
+        "children": [
+            "rich-text#termnos",
+            "pdf-reader"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "blockclass": "terminos__condiciones"
+        }
+    },
+    "rich-text#termnos": {
+        "props": {
+            "horizontalAlign": "center",
+            "blockclass": "text-terminos__condiciones",
+            "text": "Terminos y condiciones"
+        }
+    }
+}
