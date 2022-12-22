@@ -28,3 +28,55 @@
 	- "itgloberspartnercl.pdf-reader": "0.x"
 
 -------
+
+6. Al ejecutar vtex list, puede verificar si algún tema está instalado.
+Es común tener ya instalado un vtex.store-theme cuando inicia el proceso de desarrollo frontal de la tienda.
+Por lo tanto, si lo encuentra en la lista de aplicaciones, copie su nombre y version, luego utilícelo junto con el comando vtex uninstall. Por ejemplo:
+vtex uninstall vtex.store-theme@0.0.1
+7. Store Components
+- "vtex.store": "2.x",
+- "vtex.store-header": "2.x",
+- "vtex.product-summary": "2.x",
+- "vtex.store-footer": "2.x",
+- "vtex.store-components": "3.x",
+- "vtex.styleguide": "9.x",
+- "vtex.slider": "0.x",
+- "vtex.carousel": "2.x",
+- "vtex.shelf": "1.x",
+- "vtex.menu": "2.x",
+- "vtex.minicart": "2.x",
+- "vtex.product-details": "1.x",
+- "vtex.product-kit": "1.x",
+- "vtex.search-result": "3.x",
+- "vtex.login": "2.x",
+- "vtex.my-account": "1.x",
+- "vtex.flex-layout": "0.x",
+- "vtex.rich-text": "0.x",
+- "vtex.store-drawer": "0.x",
+- "vtex.locale-switcher": "0.x",
+- "vtex.product-quantity": "1.x",
+- "vtex.product-identifier": "0.x",
+- "vtex.product-specification-badges": "0.x",
+- "vtex.product-review-interfaces": "1.x",
+- "vtex.telemarketing": "2.x",
+- "vtex.order-placed": "2.x",
+- "vtex.stack-layout": "0.x",
+- "vtex.tab-layout": "0.x",
+- "vtex.responsive-layout": "0.x",
+- "vtex.slider-layout": "0.x",
+- "vtex.iframe": "0.x",
+- "vtex.breadcrumb": "1.x",
+- "vtex.sticky-layout": "0.x",
+- "vtex.add-to-cart-button": "0.x",
+- "vtex.store-image": "0.x",
+- "vtex.modal-layout": "0.x",
+- "vtex.search": "1.x",
+- "vtex.store-link": "0.x",
+- "vtex.disclosure-layout": "1.x",
+- "vtex.product-list": "0.x",
+- "vtex.store-icons": "0.x",
+- "vtex.product-price": "1.x",
+- "vtex.store-form": "0.x",
+- "vtex.store-newsletter": "1.x"
+
+--------
