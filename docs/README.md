@@ -11,11 +11,11 @@
 Acceda a la guia basica de configuracion de VTEX IO. Ademas de esto debera tener instalado el CLI (Command Line Interface) de VTEX IO
 
 
-####Paso 2 - Clonar el repositorio
+#### Paso 2 - Clonar el repositorio
 Clona este repositorio en tu maquina local para poder trabajar y accede a el por tu terminal.
 
 
-####Paso 3 - Edita el manifest.json
+#### Paso 3 - Edita el manifest.json
 Una vez clonado el repositorio hay que hacer unas cuantas modificaciones en el manifest.json del proyecto.
 
 Tendras que modificar valores de la propiedad vendor por el nombre de la cuenta en la que estes trabajando. la propiedad name no es obligatoria modificarla para su uso pero puedes cambiarla por el nombre que quieras
@@ -26,7 +26,7 @@ Tendras que modificar valores de la propiedad vendor por el nombre de la cuenta 
 
 --------
 
-####Paso 4 -Instala las app
+#### Paso 4 -Instala las app
 
 
 Para usar Store Framework y trabajar en el tema de su tienda, es necesario tener instalados vtex.store-sitemap y vtex.store.
@@ -57,7 +57,11 @@ Se debera ejecutar el siguiente comando para realizar la desinstalacion
 Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando vtex link.
 
 Si el proceso se ejecuta sin ningún error, se mostrará el siguiente mensaje: Aplicación vinculada con éxito. Luego, ejecute el comando vtex browser para abrir una ventana del navegador que tenga su tienda vinculada.
+
+
 Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cuenta y el espacio de trabajo en el que está trabajando.
+
+
 --------
 
 ####Store Components
@@ -107,9 +111,4 @@ Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cue
 - "vtex.store-newsletter": "1.x"
 
 ---------
-
-
-
-
-
 
