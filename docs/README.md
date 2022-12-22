@@ -6,34 +6,56 @@
 ##### Olimpica es un E-commerce que se desarrollo en su diagramacion y funcionalidad con la plataforma VTEX IO
 ----------------------
 ### Configuracion
-------------
-1. Accede de configuracion de VTEX IO, se debera instalar ell CLI (Command Line Interface) de VTEX IO ,
 
-2. Clona este repositorio en tu maquina local para poder trabajar y accede a el por tu terminal.
+#### Paso 1- Inicio
+Acceda a la guia basica de configuracion de VTEX IO. Ademas de esto debera tener instalado el CLI (Command Line Interface) de VTEX IO
 
-	Ya clonado el repositorio se deberan hacer modificaciones en el 	 manifest.json.
-	Se debera modificar el `vendor` y en `name`
-	`"vendor": "name-vendor"`, `"name": "my-test-theme"`
-	
-3. Para usar Store Framework , ejecute vtex list y verifique si esas aplicaciones ya están instaladas, Si no lo están, ejecute el siguiente comando para instalarlos: vtex install vtex.store-sitemap vtex.store -f.
 
-4. Adicionalmente tendras que instalar las siguientes aplicaciones customizadas de la tienda
-5. Aplicaciones  Customizadas
-	- "itgloberspartnercl.whatsapp-button": "0.x",
-	- "itgloberspartnercl.bullets-diagramation": "0.x",
-	- "itgloberspartnercl.add-to-cart-info": "0.x",
-	- "itgloberspartnercl.custom-deparment-search": "0.x",
-	- "itgloberspartnercl.quick-order": "0.x",
-	- "itgloberspartnercl.special-diagramation": "0.x",
-	- "itgloberspartnercl.pdf-reader": "0.x"
+####Paso 2 - Clonar el repositorio
+Clona este repositorio en tu maquina local para poder trabajar y accede a el por tu terminal.
 
--------
 
-6. Al ejecutar vtex list, puede verificar si algún tema está instalado.
+####Paso 3 - Edita el manifest.json
+Una vez clonado el repositorio hay que hacer unas cuantas modificaciones en el manifest.json del proyecto.
+
+Tendras que modificar valores de la propiedad vendor por el nombre de la cuenta en la que estes trabajando. la propiedad name no es obligatoria modificarla para su uso pero puedes cambiarla por el nombre que quieras
+
+`"vendor": "name-vendor"`, `"name": "my-test-theme"`
+--------
+####Paso 4 -Instala las app
+Para usar Store Framework y trabajar en el tema de su tienda, es necesario tener instalados vtex.store-sitemap y vtex.store.
+
+`Ejecute vtex list` y verifique si esas aplicaciones ya están instaladas.
+
+Si no lo están, ejecute el siguiente comando para instalarlos: vtex install vtex.store-sitemap `vtex.store -f`
+- "itgloberspartnercl.whatsapp-button": "0.x",
+- "itgloberspartnercl.bullets-diagramation": "0.x",
+- "itgloberspartnercl.add-to-cart-info": "0.x",
+- "itgloberspartnercl.custom-deparment-search": "0.x",
+- "itgloberspartnercl.quick-order": "0.x",
+- "itgloberspartnercl.special-diagramation": "0.x",
+- "itgloberspartnercl.pdf-reader": "0.x"
+
+
+Para iniciar el entorno de trabajo o un preview de la tienda, ejecute el comando vtex link en la terminal.
+
+####Paso 5 - Desinstalar el store-theme predeterminado
+Al ejecutar vtex list, puede verificar si algún tema está instalado.
+
 Es común tener ya instalado un vtex.store-theme cuando inicia el proceso de desarrollo frontal de la tienda.
-Por lo tanto, si lo encuentra en la lista de aplicaciones, copie su nombre y version, luego utilícelo junto con el comando vtex uninstall. Por ejemplo:
-vtex uninstall vtex.store-theme@0.0.1
-7. Store Components
+
+Se debera ejecutar el siguiente comando para realizar la desinstalacion
+`vtex uninstall vtex.store-theme@0.0.1`
+
+####Paso 6 - Ejecute un preview de la tienda
+Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando vtex link.
+
+Si el proceso se ejecuta sin ningún error, se mostrará el siguiente mensaje: Aplicación vinculada con éxito. Luego, ejecute el comando vtex browser para abrir una ventana del navegador que tenga su tienda vinculada.
+
+Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cuenta y el espacio de trabajo en el que está trabajando.
+--------
+
+####Store Components
 - "vtex.store": "2.x",
 - "vtex.store-header": "2.x",
 - "vtex.product-summary": "2.x",
@@ -79,4 +101,5 @@ vtex uninstall vtex.store-theme@0.0.1
 - "vtex.store-form": "0.x",
 - "vtex.store-newsletter": "1.x"
 
---------
+---------
+
