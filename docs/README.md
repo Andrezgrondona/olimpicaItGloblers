@@ -45,7 +45,7 @@ Si no lo están, ejecute el siguiente comando para instalarlos: vtex install vte
 
 Para iniciar el entorno de trabajo o un preview de la tienda, ejecute el comando vtex link en la terminal.
 
-####Paso 5 - Desinstalar el store-theme predeterminado
+#### Paso 5 - Desinstalar el store-theme predeterminado
 Al ejecutar vtex list, puede verificar si algún tema está instalado.
 
 Es común tener ya instalado un vtex.store-theme cuando inicia el proceso de desarrollo frontal de la tienda.
@@ -53,7 +53,7 @@ Es común tener ya instalado un vtex.store-theme cuando inicia el proceso de des
 Se debera ejecutar el siguiente comando para realizar la desinstalacion
 `vtex uninstall vtex.store-theme@0.0.1`
 
-####Paso 6 - Ejecute un preview de la tienda
+#### Paso 6 - Ejecute un preview de la tienda
 Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando vtex link.
 
 Si el proceso se ejecuta sin ningún error, se mostrará el siguiente mensaje: Aplicación vinculada con éxito. Luego, ejecute el comando vtex browser para abrir una ventana del navegador que tenga su tienda vinculada.
@@ -64,7 +64,8 @@ Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cue
 
 --------
 
-####Store Components
+#### Store Components
+
 - "vtex.store": "2.x",
 - "vtex.store-header": "2.x",
 - "vtex.product-summary": "2.x",
@@ -111,4 +112,5 @@ Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cue
 - "vtex.store-newsletter": "1.x"
 
 ---------
+
 
