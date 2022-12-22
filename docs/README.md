@@ -20,9 +20,15 @@ Una vez clonado el repositorio hay que hacer unas cuantas modificaciones en el m
 
 Tendras que modificar valores de la propiedad vendor por el nombre de la cuenta en la que estes trabajando. la propiedad name no es obligatoria modificarla para su uso pero puedes cambiarla por el nombre que quieras
 
+
 `"vendor": "name-vendor"`, `"name": "my-test-theme"`
+
+
 --------
+
 ####Paso 4 -Instala las app
+
+
 Para usar Store Framework y trabajar en el tema de su tienda, es necesario tener instalados vtex.store-sitemap y vtex.store.
 
 `Ejecute vtex list` y verifique si esas aplicaciones ya están instaladas.
@@ -51,7 +57,6 @@ Se debera ejecutar el siguiente comando para realizar la desinstalacion
 Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando vtex link.
 
 Si el proceso se ejecuta sin ningún error, se mostrará el siguiente mensaje: Aplicación vinculada con éxito. Luego, ejecute el comando vtex browser para abrir una ventana del navegador que tenga su tienda vinculada.
-
 Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cuenta y el espacio de trabajo en el que está trabajando.
 --------
 
@@ -102,4 +107,9 @@ Esto le permitirá ver los cambios aplicados en tiempo real, a través de la cue
 - "vtex.store-newsletter": "1.x"
 
 ---------
+
+
+
+
+
 
