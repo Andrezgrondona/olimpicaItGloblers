@@ -2,6 +2,7 @@
 {
   "store.home": {
     "blocks": [
+      "count-down",
       "whatsapp-button",
       "flex-layout.row#home__section--button_info",
       "flex-layout.row#banner",
